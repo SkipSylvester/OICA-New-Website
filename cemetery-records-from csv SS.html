@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<!--
+	Horizons by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Names List</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+		body {
+  					background: url(images/bg18.jpg) no-repeat center center fixed;
+  					-webkit-background-size: cover;
+  					-moz-background-size: cover;
+  					-o-background-size: cover;
+  					background-size: cover;
+					}
+		</style>
+		<style>
+			.dropbtn {
+			    background-color: #4CAF50;
+			    color: white;
+			    padding: 16px;
+			    font-size: 16px;
+ 			   border: none;
+ 			   cursor: pointer;
+			}
+
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: rgba(0,240,240,0.9);
+			    min-width: 160px;
+			    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+
+			.dropdown-content a {
+			    color: black;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			}
+
+			.dropdown-content a:hover {background-color: #f1f190}
+
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+
+			.dropdown:hover .dropbtn {
+			    background-color: #3e8e41;
+			}
+
+			img {
+    		max-width: 100%;
+    		height: auto;
+			}
+
+			.loading {
+				text-align: center;
+				color: white;
+				font-style: italic;
+			}
+
+			#namesList {
+				min-height: 100px;
+			}
+
+			.names-columns {
+				display: flex;
+				justify-content: space-between;
+				gap: 20px;
+			}
+
+			.names-column {
+				flex: 1;
+				font-weight: 500;
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const namesListDiv = document.getElementById('namesList');
+
+				// Show loading message
+				namesListDiv.innerHTML = '<p class="loading">Loading names list...</p>';
+
+				// Parse the CSV file
+				Papa.parse('data/occupants.csv', {
+					download: true,
+					header: true,
+					skipEmptyLines: true,
+					complete: function(results) {
+						// Create array of people with their info
+						const people = [];
+
+						results.data.forEach(function(person) {
+							if (person['name'] && person['lot_id']) {
+								// Extract plot_id from lot_id (e.g., "CYA1-L4" -> "CYA1")
+								const plotId = person['lot_id'].split('-')[0].toUpperCase();
+								const nameOriginal = person['name'];
+								const status = person['status'];
+
+								// Convert "First Middle Last" to "Last, First Middle"
+								const nameParts = nameOriginal.trim().split(/\s+/);
+								let formattedName = nameOriginal; // default if parsing fails
+								if (nameParts.length >= 2) {
+									const lastName = nameParts[nameParts.length - 1];
+									const firstMiddle = nameParts.slice(0, -1).join(' ');
+									formattedName = lastName + ', ' + firstMiddle;
+								}
+
+								// Determine superscript based on status
+								let superscript = '';
+								if (status === 'Memorial') superscript = 'm';
+								else if (status === 'Reserved') superscript = 'r';
+								// Check notes for additional info
+								if (person['notes'] && person['notes'].includes('Cremation')) superscript = 'c';
+								if (person['notes'] && person['notes'].includes('Vault')) superscript = 'v';
+
+								people.push({
+									name: formattedName,
+									plotId: plotId,
+									superscript: superscript
+								});
+							}
+						});
+
+						// Sort alphabetically by last name (which is now at the beginning)
+						people.sort((a, b) => a.name.localeCompare(b.name));
+
+						// Split into three columns
+						const itemsPerColumn = Math.ceil(people.length / 3);
+						let html = '<div class="names-columns">';
+
+						for (let col = 0; col < 3; col++) {
+							html += '<div class="names-column">';
+							const start = col * itemsPerColumn;
+							const end = Math.min(start + itemsPerColumn, people.length);
+
+							for (let i = start; i < end; i++) {
+								const person = people[i];
+								html += '<a href="cemetery-viewer-v9.html?plot=' + person.plotId + '">' +
+								        person.name + '</a>';
+								if (person.superscript) {
+									html += '<sup>' + person.superscript + '</sup>';
+								}
+								html += '</br>\n';
+							}
+
+							html += '</div>';
+						}
+
+						html += '</div>';
+
+						namesListDiv.innerHTML = html;
+					},
+					error: function(error) {
+						namesListDiv.innerHTML = '<p style="color: red; text-align: center;">Error loading names list. Please ensure data/occupants.csv exists.</p>';
+						console.error('Error loading CSV:', error);
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+	</br></br>
+		<div style="background:rgba(60,60,60,0.7)"; class="container">
+			<h1 style="text-align: center; color:white; "><a href="#" id="logo">Names List</a></h1>
+			<!-- Nav -->
+			<nav id="nav">
+				<div style="text-align: center;"><!-- center menu -->
+					<span  class="dropdown">
+  					<h1 style="font-size: 1.25em; color: white; font-weight: 500" >
+						<a href="index.html">Home</a></h1>
+  				</span>
+					<span  style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Visit Us</h1>
+  				<div class="dropdown-content">
+    				<a href="general.html#Location">Location</a>
+    				<a href="general.html#Directions">Directions</a>
+					<a href="general.html#Parking">Parking</a>
+    				<a href="general.html#Visiting">Visiting</a>
+					<a href="general.html#Basic Rules">Basic Rules</a>
+					<a href="schematicmap.html">Schematic Map</a>
+				</div>
+			</span>
+			<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Cemetery Data</h1>
+  				<div class="dropdown-content">
+					<a href="overview.html">Overview</a>
+    				<a href="cemetery-grounds.html">Interactive Map</a>
+    				<a href="cemetery-records.html">Cemetery Records</a>
+					<a href="vetlist.html">Military Veterans</a>
+					<a href="Friends.html">Friends of the Cemetery</a>
+					<a href="pdf files/OICA Rules and Regs.pdf">Rules and Regulations</a>
+				</div>
+			</span>
+			<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Memorabilia</h1>
+  				<div class="dropdown-content">
+    				<a href="islandtown.html">Island and Town</a>
+    				<a href="artifacts.html">Artifacts and Articles</a>
+					<a href="rememberances.html">Rememberances</a>
+    				<a href="photographs.html">Photographs</a>
+				</div>
+			</span>
+			<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Contact For</h1>
+  				<div class="dropdown-content">
+					<a href="staffcontact.html">The Staff</a>
+					<a href="membership.html">Becoming Members</a>
+					<a href="burialrights.html">Burial Rights Purchases</a>
+					<a href="burials.html">Burials</a>
+					<a href="stones.html">Grave and Memorial Stones</a>
+				</div>
+			</span>
+			<span style="padding-left: 20px;" class="dropdown">
+				<h1 style="font-size: 1.25em; 		color: white; 		font-weight: 500" >
+					<a href="memberslogin.html">Members Only</a>
+				</h1>
+			</span>
+		</div>	<!-- center menu -->
+		</nav>
+						</br></br>
+						<div style="font-size: 1.25em; color: white; font-weight: 400;  margin-left:5%; margin-right:5%;">
+							<!--Text Div-->
+			<p style="text-align: center; font-weight: 500;">Using the Names List</p> <!--Section Heading-->
+					<p>What follows is a list of all persons buried, memorialized or with lots reserved at the Orr's Island Cemetery.  Each name is linked to the applicable plot record page where plot owner, individual grave or memorial location, date of birth, date of death and monument images are displayed. At the top of the record page is a link to a schematic map that shows by section, row and number where each plot is located.</p>
+
+<p>The superscript character after the name provides additional information about the burial where known: Cremation <sup>c</sup>, Memorial Only <sup>m</sup>, Space Reserved <sup>r</sup>, Casket Vault <sup>v</sup>.  The absence of the superscript means the additional information is not known.
+
+<p>You may use your browser search feature, normally "Ctrl F" to enter a name and find all instances of it in the list below.  Or you may simply scan the list in three columns below that is alphabetized by last name then first name.</p>
+
+<div id="namesList">
+<!-- Names list will be loaded here from CSV -->
+</div>
+
+		</div><!--Close text div-->
+		</div><!--Close the background containter div-->
+		</br></br></br></br></br></br>
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<!-- Copyright -->
+						<div class="copyright">
+						<p>Copyright &copy 2015-2023, Orrs Island Cemetery Association</p>
+						<p>Template Design by: <a href="http://templated.co">TEMPLATED</a> </p>
+						</div>
+				</div>
+			</div>
+		</body>
+</html>

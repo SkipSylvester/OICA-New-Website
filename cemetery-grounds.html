@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<!--
+	Horizons by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Cemetery Interactive Map</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+		body { 
+  					background: url(images/bg2.jpg) no-repeat center center fixed; 
+  					-webkit-background-size: cover;
+  					-moz-background-size: cover;
+  					-o-background-size: cover;
+  					background-size: cover;
+					}
+		</style>
+		<style>
+			.dropbtn {
+			    background-color: #4CAF50;
+			    color: white;
+			    padding: 16px;
+			    font-size: 16px;
+ 			   border: none;
+ 			   cursor: pointer;
+			}
+
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: rgba(0,240,240,0.9);
+			    min-width: 160px;
+			    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+
+			.dropdown-content a {
+			    color: black;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			}
+
+			.dropdown-content a:hover {background-color: #f1f190}
+
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+
+			.dropdown:hover .dropbtn {
+			    background-color: #3e8e41;
+			}
+		</style>
+	</head>
+	<body>
+		</br></br>
+		<div style="background:rgba(60,60,60,0.7)" ; class="container"> <!--Background-->
+			
+			<h1 style="text-align: center; color:white; "><a href="#" id="logo">Interactive Map</a></h1><!-- Page Title -->
+					
+			<nav id="nav"><!-- Menu -->
+				<div style="text-align: center;">
+					<span class="dropdown"><!-- menu item 1 -->
+  					<h1 style="font-size:1.25em; color: white; font-weight:500"><a href="index.html">Home</a></h1>
+  				</span>
+					<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500">Visit Us</h1>
+  				<div style="padding-left: 20px;" class="dropdown-content">
+    				<a href="general.html#Location">Location</a>
+    				<a href="general.html#Directions">Directions</a>
+						<a href="general.html#Parking">Parking</a>
+    				<a href="general.html#Visiting">Visiting</a>
+						<a href="general.html#Basic Rules">Basic Rules</a>
+						<a href="schematicmap.html">Schematic Map</a>
+					</div>
+				</span>
+				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500">Cemetery Data</h1>
+  				<div class="dropdown-content">
+						<a href="overview.html">Overview</a>
+    				<a href="cemetery-grounds.html">Interactive Map</a>
+    				<a href="cemetery-records.html">Cemetery Records</a>
+						<a href="vetlist.html">Military Veterans</a>
+						<a href="Friends.html">Friends of the Cemetery</a>
+						<a href="pdf files/OICA Rules and Regs.pdf">Rules and Regulations</a>
+
+					</div>
+				</span>
+<!--				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Organization</h1>
+  				<div class="dropdown-content">
+    				<a href="organization.html#Background">Background</a>
+    				<a href="organization.html#Ownership">Ownership</a>
+						<a href="organization.html#Management">Management</a>
+    				<a href="organization.html#Tax Status">Tax Status</a>
+						<a href="organization.html#Perpetual Care">Perpetual Care</a>
+						<a href="organization.html#News">News</a>
+					</div>
+				</span>-->
+				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500">Memorabilia</h1>
+  				<div class="dropdown-content">
+    				<a href="islandtown.html">Island and Town</a>
+    				<a href="artifacts.html">Artifacts and Articles</a>
+						<a href="rememberances.html">Rememberances</a>
+    				<!--<a href="cemeteries.html">Other Cemeteries</a>
+						<a href="photographs.html">Photographs</a>-->
+					</div>
+				</span>
+				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500">Contact For</h1>
+  				<div class="dropdown-content">
+						<a href="staffcontact.html">The Staff</a>
+						<a href="membership.html">Becoming Members</a>
+						<a href="burialrights.html">Burial Rights Purchases</a>
+						<a href="burials.html">Burials</a>
+						<a href="stones.html">Grave and Memorial Stones</a>
+					</div>
+				</span>
+				<span style="padding-left: 20px;" class="dropdown">
+					<h1 style="font-size: 1.25em; 		color: white; 		font-weight: 500">
+						<a href="memberslogin.html">Members Only</a>
+					</h1>
+				</span>
+				</div><!--center menu	-->	
+			</nav><!-- Menu Div -->
+			</br></br>
+			<div style="font-size: 1.25em; color: white; font-weight: 400;  margin-left:5%; margin-right:5%;"> <!--Text Div-->
+				<p style="text-align: center; font-weight: 500;">Using the Interactive Map</p> <!--Section Heading-->
+
+				<p>The interactive map displayed below provides access to graphical representations of each plot in the cemetery, including links to images of the stones on that plot.  Each plot is located at an address comprised of section name, row letter and column number. Row letters increase from west to east, column numbers increase from north to south. Within each plot the lot numbers increase from north to south.  Clicking a plot address on the map opens a window with information about that plot and the lots in that plot, including plot owner, occupants of the lots and links to images any stones on the plot.  For technical reasons the interactive map size remains fixed as the size of the containing window decreases so on small screen devices you will need to drag the map image to expose the plot in which you are interested. Click the <a href="Available Lots.html">Available Lots</a> link for the list of unsold lots.
+				</p>
+			</div><!--Close Text Div-->			
+			<div class="container" id="Map">
+				<section id="map"><!-- Section 3 -->
+					<img width="1200" alt="Interactive image map" src="images/OICA imap 2021.jpg" usemap="#OICA imap 2018" style="border-style:none" />
+				</section>
+			</div><!--  map container-->
+		</div><!--Close Background Div-->		
+				</br></br></br></br></br></br></br></br></br></br></br><!--Depress the footer to reveal background-->
+		<div id="footer"><!-- Footer -->
+			<div class="container"><!-- Copyright etc. container-->
+				<div class="copyright">
+					<p>Copyright &copy 2015-2023, Orrs Island Cemetery Association</p>
+					<p>Template Design by: <a href="http://templated.co">TEMPLATED</a> </p> 
+				</div><!--Close copyright class-->
+			</div><!--Close copyright container-->
+		</div><!-- CloseFooter -->
+	
+<!--Image map coordinate data-->			
+			
+		<map id="OICA imap 2018" name="OICA imap 2018">
+<area shape="rect" alt="Old Yard Plot A1 Records" coords="919,236,951,254" href="cemetery-viewer-v9.html?plot=OYA1" title="Old Yard Plot A1 Records" />
+<area shape="rect" alt="Old Yard Plot A2 Records" coords="880,237,911,253" href="cemetery-viewer-v9.html?plot=OYA2" title="Old Yard Plot A2 Records" />
+<area shape="rect" alt="Old Yard Plot A3 Records" coords="842,237,874,253" href="cemetery-viewer-v9.html?plot=OYA3" title="Old Yard Plot A3 Records" />
+<area shape="rect" alt="Old Yard Plot B1 Records" coords="921,261,953,276" href="cemetery-viewer-v9.html?plot=OYB1" title="Old Yard Plot B1 Records" />
+<area shape="rect" alt="Old Yard Plot B2 Records" coords="882,261,914,275" href="cemetery-viewer-v9.html?plot=OYB2" title="Old Yard Plot B2 Records" />
+<area shape="rect" alt="Old Yard Plot B3 Records" coords="843,260,873,275" href="cemetery-viewer-v9.html?plot=OYB3" title="Old Yard Plot B3 Records" />
+<area shape="rect" alt="Old Yard Plot B4 Records" coords="803,260,835,275" href="cemetery-viewer-v9.html?plot=OYB4" title="Old Yard Plot B4 Records" />
+<area shape="rect" alt="Old Yard Plot B5 Records" coords="762,260,794,275" href="cemetery-viewer-v9.html?plot=OYB5" title="Old Yard Plot B5 Records" />
+<area shape="rect" alt="Old Yard Plot C1 Records" coords="921,284,952,297" href="cemetery-viewer-v9.html?plot=OYC1" title="Old Yard Plot C1 Records" />
+<area shape="rect" alt="Old Yard Plot C2 Records" coords="882,283,914,297" href="cemetery-viewer-v9.html?plot=OYC2" title="Old Yard Plot C2 Records" />
+<area shape="rect" alt="Old Yard Plot C3 Records" coords="842,284,873,298" href="cemetery-viewer-v9.html?plot=OYC3" title="Old Yard Plot C3 Records" />
+<area shape="rect" alt="Old Yard Plot C4 Records" coords="803,284,835,298" href="cemetery-viewer-v9.html?plot=OYC4" title="Old Yard Plot C4 Records" />
+<area shape="rect" alt="Old Yard Plot C5 Records" coords="763,282,795,297" href="cemetery-viewer-v9.html?plot=OYC5" title="Old Yard Plot C5 Records" />
+<area shape="rect" alt="Old Yard Plot C6 Records" coords="724,284,756,298" href="cemetery-viewer-v9.html?plot=OYC6" title="Old Yard Plot C6 Records" />
+<area shape="rect" alt="Old Yard Plot C7 Records" coords="683,283,716,298" href="cemetery-viewer-v9.html?plot=OYC7" title="Old Yard Plot C7 Records" />
+<area shape="rect" alt="Old Yard Plot D1 Records" coords="921,305,952,319" href="cemetery-viewer-v9.html?plot=OYD1" title="Old Yard Plot D1 Records" />
+<area shape="rect" alt="Old Yard Plot D2 Records" coords="880,306,912,320" href="cemetery-viewer-v9.html?plot=OYD2" title="Old Yard Plot D2 Records" />
+<area shape="rect" alt="Old Yard Plot D3 Records" coords="843,306,874,321" href="cemetery-viewer-v9.html?plot=OYD3" title="Old Yard Plot D3 Records" />
+<area shape="rect" alt="Old Yard Plot D4 Records" coords="800,306,833,322" href="cemetery-viewer-v9.html?plot=OYD4" title="Old Yard Plot D4 Records" />
+<area shape="rect" alt="Old Yard Plot D5 Records" coords="764,306,796,321" href="cemetery-viewer-v9.html?plot=OYD5" title="Old Yard Plot D5 Records" />
+<area shape="rect" alt="Old Yard Plot D6 Records" coords="724,306,755,322" href="cemetery-viewer-v9.html?plot=OYD6" title="Old Yard Plot D6 Records" />
+<area shape="rect" alt="Old Yard Plot D7 Records" coords="685,305,716,319" href="cemetery-viewer-v9.html?plot=OYD7" title="Old Yard Plot D7 Records" />
+<area shape="rect" alt="Old Yard Plot D8 Records" coords="645,306,678,321" href="cemetery-viewer-v9.html?plot=OYD8" title="Old Yard Plot D8 Records" />
+<area shape="rect" alt="Old Yard Plot D8 Records" coords="604,306,636,322" href="cemetery-viewer-v9.html?plot=OYD9" title="Old Yard Plot D8 Records" />
+<area shape="rect" alt="Old Yard Plot D10 Records" coords="564,306,596,323" href="cemetery-viewer-v9.html?plot=OYD10" title="Old Yard Plot D10 Records" />
+<area shape="rect" alt="Old Yard Plot E1 Records" coords="921,328,953,343" href="cemetery-viewer-v9.html?plot=OYE1" title="Old Yard Plot E1 Records" />
+<area shape="rect" alt="Old Yard Plot E2 Records" coords="881,329,914,346" href="cemetery-viewer-v9.html?plot=OYE2" title="Old Yard Plot E2 Records" />
+<area shape="rect" alt="Old Yard Plot E3 Records" coords="845,329,877,344" href="cemetery-viewer-v9.html?plot=OYE3" title="Old Yard Plot E3 Records" />
+<area shape="rect" alt="Old Yard Plot E4 Records" coords="804,329,836,344" href="cemetery-viewer-v9.html?plot=OYE4" title="Old Yard Plot E4 Records" />
+<area shape="rect" alt="Old Yard Plot E5 Records" coords="763,330,795,344" href="cemetery-viewer-v9.html?plot=OYE5" title="Old Yard Plot E5 Records" />
+<area shape="rect" alt="Old Yard Plot E6 Records" coords="726,329,757,344" href="cemetery-viewer-v9.html?plot=OYE6" title="Old Yard Plot E6 Records" />
+<area shape="rect" alt="Old Yard Plot E7 Records" coords="685,329,717,343" href="cemetery-viewer-v9.html?plot=OYE7" title="Old Yard Plot E7 Records" />
+<area shape="rect" alt="Old Yard Plot E8 Records" coords="645,328,678,343" href="cemetery-viewer-v9.html?plot=OYE8" title="Old Yard Plot E8 Records" />
+<area shape="rect" alt="Old Yard Plot E9 Records" coords="605,329,637,344" href="cemetery-viewer-v9.html?plot=OYE9" title="Old Yard Plot E9 Records" />
+<area shape="rect" alt="Old Yard Plot E10 Records" coords="565,328,597,343" href="cemetery-viewer-v9.html?plot=OYE10" title="Old Yard Plot E10 Records" />
+<area shape="rect" alt="Old Yard Plot E11 Records" coords="525,329,556,343" href="cemetery-viewer-v9.html?plot=OYE11" title="Old Yard Plot E11 Records" />
+<area shape="rect" alt="Old Yard Plot E12 Records" coords="485,327,517,342" href="cemetery-viewer-v9.html?plot=OYE12" title="Old Yard Plot E12 Records" />
+<area shape="rect" alt="Old Yard Plot F1 Records" coords="920,351,952,367" href="cemetery-viewer-v9.html?plot=OYF1" title="Old Yard Plot F1 Records" />
+<area shape="rect" alt="Old Yard Plot F2 Records" coords="885,352,917,368" href="cemetery-viewer-v9.html?plot=OYF2" title="Old Yard Plot F2 Records" />
+<area shape="rect" alt="Old Yard Plot F3 Records" coords="842,351,875,367" href="cemetery-viewer-v9.html?plot=OYF3" title="Old Yard Plot F3 Records" />
+<area shape="rect" alt="Old Yard Plot F4 Records" coords="803,352,835,366" href="cemetery-viewer-v9.html?plot=OYF4" title="Old Yard Plot F4 Records" />
+<area shape="rect" alt="Old Yard Plot F5 Records" coords="764,351,796,366" href="cemetery-viewer-v9.html?plot=OYF5" title="Old Yard Plot F5 Records" />
+<area shape="rect" alt="Old Yard Plot F6 Records" coords="727,351,758,366" href="cemetery-viewer-v9.html?plot=OYF6" title="Old Yard Plot F6 Records" />
+<area shape="rect" alt="Old Yard Plot F7 Records" coords="684,352,716,367" href="cemetery-viewer-v9.html?plot=OYF7" title="Old Yard Plot F7 Records" />
+<area shape="rect" alt="Old Yard Plot F8 Records" coords="647,352,679,365" href="cemetery-viewer-v9.html?plot=OYF8" title="Old Yard Plot F8 Records" />
+<area shape="rect" alt="Old Yard Plot F9 Records" coords="606,352,638,369" href="cemetery-viewer-v9.html?plot=OYF9" title="Old Yard Plot F9 Records" />
+<area shape="rect" alt="Old Yard Plot F10 Records" coords="566,351,598,365" href="cemetery-viewer-v9.html?plot=OYF10" title="Old Yard Plot F10 Records" />
+<area shape="rect" alt="Old Yard Plot F11 Records" coords="523,352,556,367" href="cemetery-viewer-v9.html?plot=OYF11" title="Old Yard Plot F11 Records" />
+<area shape="rect" alt="Old Yard Plot F12 Records" coords="487,352,519,367" href="cemetery-viewer-v9.html?plot=OYF12" title="Old Yard Plot F12 Records" />
+<area shape="rect" alt="Old Yard Plot G1 Records" coords="920,374,952,389" href="cemetery-viewer-v9.html?plot=OYG1" title="Old Yard Plot G1 Records" />
+<area shape="rect" alt="Old Yard Plot G2 Records" coords="881,375,913,389" href="cemetery-viewer-v9.html?plot=OYG2" title="Old Yard Plot G2 Records" />
+<area shape="rect" alt="Old Yard Plot G3 Records" coords="844,375,877,390" href="cemetery-viewer-v9.html?plot=OYG3" title="Old Yard Plot G3 Records" />
+<area shape="rect" alt="Old Yard Plot G4 Records" coords="806,375,838,390" href="cemetery-viewer-v9.html?plot=OYG4" title="Old Yard Plot G4 Records" />
+<area shape="rect" alt="Old Yard Plot G5 Records" coords="766,375,798,390" href="cemetery-viewer-v9.html?plot=OYG5" title="Old Yard Plot G5 Records" />
+<area shape="rect" alt="Old Yard Plot G6 Records" coords="723,375,754,391" href="cemetery-viewer-v9.html?plot=OYG6" title="Old Yard Plot G6 Records" />
+<area shape="rect" alt="Old Yard Plot G7 Records" coords="684,374,716,389" href="cemetery-viewer-v9.html?plot=OYG7" title="Old Yard Plot G7 Records" />
+<area shape="rect" alt="Old Yard Plot G8 Records" coords="646,375,678,392" href="cemetery-viewer-v9.html?plot=OYG8" title="Old Yard Plot G8 Records" />
+<area shape="rect" alt="Old Yard Plot G9 Records" coords="603,375,636,390" href="cemetery-viewer-v9.html?plot=OYG9" title="Old Yard Plot G9 Records" />
+<area shape="rect" alt="Old Yard Plot G10 Records" coords="565,374,598,389" href="cemetery-viewer-v9.html?plot=OYG10" title="Old Yard Plot G10 Records" />
+<area shape="rect" alt="Old Yard Plot G11 Records" coords="528,375,560,391" href="cemetery-viewer-v9.html?plot=OYG11" title="Old Yard Plot G11 Records" />
+<area shape="rect" alt="Old Yard Plot G12 Records" coords="487,374,520,391" href="cemetery-viewer-v9.html?plot=OYG12" title="Old Yard Plot G12 Records" />
+<area shape="rect" alt="Old Yard Plot H1 Records" coords="921,396,952,411" href="cemetery-viewer-v9.html?plot=OYH1" title="Old Yard Plot H1 Records" />
+<area shape="rect" alt="Old Yard Plot H2 Records" coords="883,396,915,412" href="cemetery-viewer-v9.html?plot=OYH2" title="Old Yard Plot H2 Records" />
+<area shape="rect" alt="Old Yard Plot H3 Records" coords="842,396,874,410" href="cemetery-viewer-v9.html?plot=OYH3" title="Old Yard Plot H3 Records" />
+<area shape="rect" alt="Old Yard Plot H4 Records" coords="804,396,836,411" href="cemetery-viewer-v9.html?plot=OYH4" title="Old Yard Plot H4 Records" />
+<area shape="rect" alt="Old Yard Plot H5 Records" coords="765,396,797,411" href="cemetery-viewer-v9.html?plot=OYH5" title="Old Yard Plot H5 Records" />
+<area shape="rect" alt="Old Yard Plot H6 Records" coords="725,397,755,410" href="cemetery-viewer-v9.html?plot=OYH6" title="Old Yard Plot H6 Records" />
+<area shape="rect" alt="Old Yard Plot H7 Records" coords="685,395,717,411" href="cemetery-viewer-v9.html?plot=OYH7" title="Old Yard Plot H7 Records" />
+<area shape="rect" alt="Old Yard Plot H8 Records" coords="645,396,678,412" href="cemetery-viewer-v9.html?plot=OYH8" title="Old Yard Plot H8 Records" />
+<area shape="rect" alt="Old Yard Plot H9 Records" coords="606,396,639,411" href="cemetery-viewer-v9.html?plot=OYH9" title="Old Yard Plot H9 Records" />
+<area shape="rect" alt="Old Yard Plot H10 Records" coords="568,397,600,413" href="cemetery-viewer-v9.html?plot=OYH10" title="Old Yard Plot H10 Records" />
+<area shape="rect" alt="Old Yard Plot H11 Records" coords="524,396,557,413" href="cemetery-viewer-v9.html?plot=OYH11" title="Old Yard Plot H11 Records" />
+<area shape="rect" alt="Old Yard Plot H12 Records" coords="487,396,519,411" href="cemetery-viewer-v9.html?plot=OYH12" title="Old Yard Plot H12 Records" />
+<area shape="rect" alt="Old Yard Plot I1 Records" coords="920,420,953,435" href="cemetery-viewer-v9.html?plot=OYI1" title="Old Yard Plot I1 Records" />
+<area shape="rect" alt="Old Yard Plot I2 Records" coords="882,420,914,435" href="cemetery-viewer-v9.html?plot=OYI2" title="Old Yard Plot I2 Records" />
+<area shape="rect" alt="Old Yard Plot I3 Records" coords="841,420,873,435" href="cemetery-viewer-v9.html?plot=OYI3" title="Old Yard Plot I3 Records" />
+<area shape="rect" alt="Old Yard Plot I4 Records" coords="802,421,834,436" href="cemetery-viewer-v9.html?plot=OYI4" title="Old Yard Plot I4 Records" />
+<area shape="rect" alt="Old Yard Plot I5 Records" coords="765,421,797,437" href="cemetery-viewer-v9.html?plot=OYI5" title="Old Yard Plot I5 Records" />
+<area shape="rect" alt="Old Yard Plot I6 Records" coords="724,419,756,434" href="cemetery-viewer-v9.html?plot=OYI6" title="Old Yard Plot I6 Records" />
+<area shape="rect" alt="Old Yard Plot I7 Records" coords="685,419,717,433" href="cemetery-viewer-v9.html?plot=OYI7" title="Old Yard Plot I7 Records" />
+<area shape="rect" alt="Old Yard Plot I8 Records" coords="646,419,678,435" href="cemetery-viewer-v9.html?plot=OYI8" title="Old Yard Plot I8 Records" />
+<area shape="rect" alt="Old Yard Plot I9 Records" coords="605,417,638,433" href="cemetery-viewer-v9.html?plot=OYI9" title="Old Yard Plot I9 Records" />
+<area shape="rect" alt="Old Yard Plot 10 Records" coords="563,418,595,434" href="cemetery-viewer-v9.html?plot=OYI10" title="Old Yard Plot 10 Records" />
+<area shape="rect" alt="Old Yard Plot 11 Records" coords="524,419,556,436" href="cemetery-viewer-v9.html?plot=OYI11" title="Old Yard Plot 11 Records" />
+<area shape="rect" alt="Old Yard Plot 12 Records" coords="485,420,517,435" href="cemetery-viewer-v9.html?plot=OYI12" title="Old Yard Plot 12 Records" />
+<area shape="rect" alt="Old Yard Plot J1 Records" coords="922,444,953,458" href="cemetery-viewer-v9.html?plot=OYJ1" title="Old Yard Plot J1 Records" />
+<area shape="rect" alt="Old Yard Plot J2 Records" coords="881,444,914,460" href="cemetery-viewer-v9.html?plot=OYJ2" title="Old Yard Plot J2 Records" />
+<area shape="rect" alt="Old Yard Plot J3 Records" coords="840,444,872,460" href="cemetery-viewer-v9.html?plot=OYJ3" title="Old Yard Plot J3 Records" />
+<area shape="rect" alt="Old Yard Plot J4 Records" coords="805,443,837,458" href="cemetery-viewer-v9.html?plot=OYJ4" title="Old Yard Plot J4 Records" />
+<area shape="rect" alt="Old Yard Plot J5 Records" coords="764,443,797,460" href="cemetery-viewer-v9.html?plot=OYJ5" title="Old Yard Plot J5 Records" />
+<area shape="rect" alt="Old Yard Plot J6 Records" coords="725,444,757,459" href="cemetery-viewer-v9.html?plot=OYJ6" title="Old Yard Plot J6 Records" />
+<area shape="rect" alt="Old Yard Plot J7 Records" coords="683,443,715,458" href="cemetery-viewer-v9.html?plot=OYJ7" title="Old Yard Plot J7 Records" />
+<area shape="rect" alt="Old Yard Plot J8 Records" coords="649,443,681,459" href="cemetery-viewer-v9.html?plot=OYJ8" title="Old Yard Plot J8 Records" />
+<area shape="rect" alt="Old Yard Plot J9 Records" coords="607,442,640,458" href="cemetery-viewer-v9.html?plot=OYJ9" title="Old Yard Plot J9 Records" />
+<area shape="rect" alt="Old Yard Plot J10 Records" coords="567,445,600,460" href="cemetery-viewer-v9.html?plot=OYJ10" title="Old Yard Plot J10 Records" />
+<area shape="rect" alt="Old Yard Plot J11 Records" coords="526,444,558,458" href="cemetery-viewer-v9.html?plot=OYJ11" title="Old Yard Plot J11 Records" />
+<area shape="rect" alt="Old Yard Plot J12 Records" coords="486,444,519,460" href="cemetery-viewer-v9.html?plot=OYJ12" title="Old Yard Plot J12 Records" />
+<area shape="rect" alt="Old Yard Plot K1 Records" coords="920,464,952,481" href="cemetery-viewer-v9.html?plot=OYK1" title="Old Yard Plot K1 Records" />
+<area shape="rect" alt="Old Yard Plot K2 Records" coords="884,464,916,479" href="cemetery-viewer-v9.html?plot=OYK2" title="Old Yard Plot K2 Records" />
+<area shape="rect" alt="Old Yard Plot K3 Records" coords="841,466,873,482" href="cemetery-viewer-v9.html?plot=OYK3" title="Old Yard Plot K3 Records" />
+<area shape="rect" alt="Old Yard Plot K4 Records" coords="802,466,835,481" href="cemetery-viewer-v9.html?plot=OYK4" title="Old Yard Plot K4 Records" />
+<area shape="rect" alt="Old Yard Plot K5 Records" coords="761,465,794,480" href="cemetery-viewer-v9.html?plot=OYK5" title="Old Yard Plot K5 Records" />
+<area shape="rect" alt="Old Yard Plot K6 Records" coords="723,464,755,480" href="cemetery-viewer-v9.html?plot=OYK6" title="Old Yard Plot K6 Records" />
+<area shape="rect" alt="Old Yard Plot K7 Records" coords="684,466,716,482" href="cemetery-viewer-v9.html?plot=OYK7" title="Old Yard Plot K7 Records" />
+<area shape="rect" alt="Old Yard Plot K8 Records" coords="643,465,676,479" href="cemetery-viewer-v9.html?plot=OYK8" title="Old Yard Plot K8 Records" />
+<area shape="rect" alt="Old Yard Plot K9 Records" coords="607,464,639,480" href="cemetery-viewer-v9.html?plot=OYK9" title="Old Yard Plot K9 Records" />
+<area shape="rect" alt="Old Yard Plot K10 Records" coords="566,466,599,483" href="cemetery-viewer-v9.html?plot=OYK10" title="Old Yard Plot K10 Records" />
+<area shape="rect" alt="Old Yard Plot K11 Records" coords="525,466,557,481" href="cemetery-viewer-v9.html?plot=OYK11" title="Old Yard Plot K11 Records" />
+<area shape="rect" alt="Old Yard Plot K12 Records" coords="486,465,518,480" href="cemetery-viewer-v9.html?plot=OYK12" title="Old Yard Plot K12 Records" />
+<area shape="rect" alt="Old Yard Plot L1 Records" coords="920,488,953,504" href="cemetery-viewer-v9.html?plot=OYL1" title="Old Yard Plot L1 Records" />
+<area shape="rect" alt="Old Yard Plot L2 Records" coords="884,488,916,503" href="cemetery-viewer-v9.html?plot=OYL2" title="Old Yard Plot L2 Records" />
+<area shape="rect" alt="Old Yard Plot L3 Records" coords="843,487,875,503" href="cemetery-viewer-v9.html?plot=OYL3" title="Old Yard Plot L3 Records" />
+<area shape="rect" alt="Old Yard Plot L4 Records" coords="803,488,835,504" href="cemetery-viewer-v9.html?plot=OYL4" title="Old Yard Plot L4 Records" />
+<area shape="rect" alt="Old Yard Plot L5 Records" coords="763,488,795,503" href="cemetery-viewer-v9.html?plot=OYL5" title="Old Yard Plot L5 Records" />
+<area shape="rect" alt="Old Yard Plot L6 Records" coords="725,486,757,502" href="cemetery-viewer-v9.html?plot=OYL6" title="Old Yard Plot L6 Records" />
+<area shape="rect" alt="Old Yard Plot L7 Records" coords="685,486,717,502" href="cemetery-viewer-v9.html?plot=OYL7" title="Old Yard Plot L7 Records" />
+<area shape="rect" alt="Old Yard Plot L8 Records" coords="643,487,676,503" href="cemetery-viewer-v9.html?plot=OYL8" title="Old Yard Plot L8 Records" />
+<area shape="rect" alt="Old Yard Plot L9 Records" coords="603,487,636,502" href="cemetery-viewer-v9.html?plot=OYL9" title="Old Yard Plot L9 Records" />
+<area shape="rect" alt="Old Yard Plot L10 Records" coords="566,486,598,501" href="cemetery-viewer-v9.html?plot=OYL10" title="Old Yard Plot L10 Records" />
+<area shape="rect" alt="Old Yard Plot L11 Records" coords="527,486,560,501" href="cemetery-viewer-v9.html?plot=OYL11" title="Old Yard Plot L11 Records" />
+<area shape="rect" alt="Old Yard Plot L12 Records" coords="488,487,521,502" href="cemetery-viewer-v9.html?plot=OYL12" title="Old Yard Plot L12 Records" />
+<area shape="rect" alt="Old Yard Plot M1 Records" coords="921,509,953,525" href="cemetery-viewer-v9.html?plot=OYM1" title="Old Yard Plot M1 Records" />
+<area shape="rect" alt="Old Yard Plot M2 Records" coords="883,510,916,525" href="cemetery-viewer-v9.html?plot=OYM2" title="Old Yard Plot M2 Records" />
+<area shape="rect" alt="Old Yard Plot M3 Records" coords="843,511,875,527" href="cemetery-viewer-v9.html?plot=OYM3" title="Old Yard Plot M3 Records" />
+<area shape="rect" alt="Old Yard Plot M4 Records" coords="801,510,833,526" href="cemetery-viewer-v9.html?plot=OYM4" title="Old Yard Plot M4 Records" />
+<area shape="rect" alt="Old Yard Plot M5 Records" coords="766,509,800,525" href="cemetery-viewer-v9.html?plot=OYM5" title="Old Yard Plot M5 Records" />
+<area shape="rect" alt="Old Yard Plot M6 Records" coords="723,509,757,524" href="cemetery-viewer-v9.html?plot=OYM6" title="Old Yard Plot M6 Records" />
+<area shape="rect" alt="Old Yard Plot M7 Records" coords="685,510,718,525" href="cemetery-viewer-v9.html?plot=OYM7" title="Old Yard Plot M7 Records" />
+<area shape="rect" alt="Old Yard Plot M8 Records" coords="646,510,677,525" href="cemetery-viewer-v9.html?plot=OYM8" title="Old Yard Plot M8 Records" />
+<area shape="rect" alt="Old Yard Plot M9 Records" coords="604,510,636,525" href="cemetery-viewer-v9.html?plot=OYM9" title="Old Yard Plot M9 Records" />
+<area shape="rect" alt="Old Yard Plot M10 Records" coords="567,510,599,526" href="cemetery-viewer-v9.html?plot=OYM10" title="Old Yard Plot M10 Records" />
+<area shape="rect" alt="Old Yard Plot M11 Records" coords="525,509,558,525" href="cemetery-viewer-v9.html?plot=OYM11" title="Old Yard Plot M11 Records" />
+<area shape="rect" alt="Old Yard Plot M12 Records" coords="487,510,519,526" href="cemetery-viewer-v9.html?plot=OYM12" title="Old Yard Plot M12 Records" />
+<area shape="rect" alt="New Yard Plot A1 Records" coords="406,329,440,343" href="cemetery-viewer-v9.html?plot=NYA1" title="New Yard Plot A1 Records" />
+<area shape="rect" alt="New Yard Plot A2 Records" coords="369,329,399,344" href="cemetery-viewer-v9.html?plot=NYA2" title="New Yard Plot A2 Records" />
+<area shape="rect" alt="New Yard Plot A3 Records" coords="332,329,362,343" href="cemetery-viewer-v9.html?plot=NYA3" title="New Yard Plot A3 Records" />
+<area shape="rect" alt="New Yard Plot A4 Records" coords="290,329,321,344" href="cemetery-viewer-v9.html?plot=NYA4" title="New Yard Plot A4 Records" />
+<area shape="rect" alt="New Yard Plot A5 Records" coords="171,329,204,345" href="cemetery-viewer-v9.html?plot=NYA5" title="New Yard Plot A5 Records" />
+<area shape="rect" alt="New Yard Plot A6 Records" coords="130,328,162,343" href="cemetery-viewer-v9.html?plot=NYA6" title="New Yard Plot A6 Records" />
+<area shape="rect" alt="New Yard Plot A7 Records" coords="90,327,123,343" href="cemetery-viewer-v9.html?plot=NYA7" title="New Yard Plot A7 Records" />
+<area shape="rect" alt="New Yard Plot B1 Records" coords="409,351,440,366" href="cemetery-viewer-v9.html?plot=NYB1" title="New Yard Plot B1 Records" />
+<area shape="rect" alt="New Yard Plot B2 Records" coords="370,352,400,367" href="cemetery-viewer-v9.html?plot=NYB2" title="New Yard Plot B2 Records" />
+<area shape="rect" alt="New Yard Plot B3 Records" coords="330,351,362,366" href="cemetery-viewer-v9.html?plot=NYB3" title="New Yard Plot B3 Records" />
+<area shape="rect" alt="New Yard Plot B4 Records" coords="291,351,323,368" href="cemetery-viewer-v9.html?plot=NYB4" title="New Yard Plot B4 Records" />
+<area shape="rect" alt="New Yard Plot B5 Records" coords="171,352,204,368" href="cemetery-viewer-v9.html?plot=NYB5" title="New Yard Plot B5 Records" />
+<area shape="rect" alt="New Yard Plot B6 Records" coords="133,351,164,368" href="cemetery-viewer-v9.html?plot=NYB6" title="New Yard Plot B6 Records" />
+<area shape="rect" alt="New Yard Plot B7 Records" coords="91,352,123,366" href="cemetery-viewer-v9.html?plot=NYB7" title="New Yard Plot B7 Records" />
+<area shape="rect" alt="New Yard Plot C1 Records" coords="408,373,440,389" href="cemetery-viewer-v9.html?plot=NYC1" title="New Yard Plot C1 Records" />
+<area shape="rect" alt="New Yard Plot C2 Records" coords="370,374,400,389" href="cemetery-viewer-v9.html?plot=NYC2" title="New Yard Plot C2 Records" />
+<area shape="rect" alt="New Yard Plot C3 Records" coords="329,374,362,388" href="cemetery-viewer-v9.html?plot=NYC3" title="New Yard Plot C3 Records" />
+<area shape="rect" alt="New Yard Plot C4 Records" coords="291,374,322,389" href="cemetery-viewer-v9.html?plot=NYC4" title="New Yard Plot C4 Records" />
+<area shape="rect" alt="New Yard Plot C5 Records" coords="173,375,206,389" href="cemetery-viewer-v9.html?plot=NYC5" title="New Yard Plot C5 Records" />
+<area shape="rect" alt="New Yard Plot C6 Records" coords="131,375,162,388" href="cemetery-viewer-v9.html?plot=NYC6" title="New Yard Plot C6 Records" />
+<area shape="rect" alt="New Yard Plot C7 Records" coords="91,375,122,390" href="cemetery-viewer-v9.html?plot=NYC7" title="New Yard Plot C7 Records" />
+<area shape="rect" alt="New Yard Plot D1 Records" coords="407,398,438,411" href="cemetery-viewer-v9.html?plot=NYD1" title="New Yard Plot D1 Records" />
+<area shape="rect" alt="New Yard Plot D2 Records" coords="369,397,400,412" href="cemetery-viewer-v9.html?plot=NYD2" title="New Yard Plot D2 Records" />
+<area shape="rect" alt="New Yard Plot D3 Records" coords="331,397,363,412" href="cemetery-viewer-v9.html?plot=NYD3" title="New Yard Plot D3 Records" />
+<area shape="rect" alt="New Yard Plot D4 Records" coords="290,397,322,412" href="cemetery-viewer-v9.html?plot=NYD4" title="New Yard Plot D4 Records" />
+<area shape="rect" alt="New Yard Plot D5 Records" coords="171,398,204,412" href="cemetery-viewer-v9.html?plot=NYD5" title="New Yard Plot D5 Records" />
+<area shape="rect" alt="New Yard Plot D6 Records" coords="133,395,164,411" href="cemetery-viewer-v9.html?plot=NYD6" title="New Yard Plot D6 Records" />
+<area shape="rect" alt="New Yard Plot D7 Records" coords="92,397,125,413" href="cemetery-viewer-v9.html?plot=NYD7" title="New Yard Plot D7 Records" />
+<area shape="rect" alt="New Yard Plot E1 Records" coords="408,420,439,435" href="cemetery-viewer-v9.html?plot=NYE1" title="New Yard Plot E1 Records" />
+<area shape="rect" alt="New Yard Plot E2 Records" coords="370,419,401,435" href="cemetery-viewer-v9.html?plot=NYE2" title="New Yard Plot E2 Records" />
+<area shape="rect" alt="New Yard Plot E3 Records" coords="330,420,361,434" href="cemetery-viewer-v9.html?plot=NYE3" title="New Yard Plot E3 Records" />
+<area shape="rect" alt="New Yard Plot E4 Records" coords="290,420,323,435" href="cemetery-viewer-v9.html?plot=NYE4" title="New Yard Plot E4 Records" />
+<area shape="rect" alt="New Yard Plot E5 Records" coords="169,419,204,435" href="cemetery-viewer-v9.html?plot=NYE5" title="New Yard Plot E5 Records" />
+<area shape="rect" alt="New Yard Plot E6 Records" coords="131,420,163,435" href="cemetery-viewer-v9.html?plot=NYE6" title="New Yard Plot E6 Records" />
+<area shape="rect" alt="New Yard Plot E7 Records" coords="92,419,124,435" href="cemetery-viewer-v9.html?plot=NYE7" title="New Yard Plot E7 Records" />
+<area shape="rect" alt="New Yard Plot F1 Records" coords="408,443,440,459" href="cemetery-viewer-v9.html?plot=NYF1" title="New Yard Plot F1 Records" />
+<area shape="rect" alt="New Yard Plot F2 Records" coords="371,443,402,458" href="cemetery-viewer-v9.html?plot=NYF2" title="New Yard Plot F2 Records" />
+<area shape="rect" alt="New Yard Plot F3 Records" coords="330,442,362,459" href="cemetery-viewer-v9.html?plot=NYF3" title="New Yard Plot F3 Records" />
+<area shape="rect" alt="New Yard Plot F4 Records" coords="292,443,324,458" href="cemetery-viewer-v9.html?plot=NYF4" title="New Yard Plot F4 Records" />
+<area shape="rect" alt="New Yard Plot F5 Records" coords="170,443,203,460" href="cemetery-viewer-v9.html?plot=NYF5" title="New Yard Plot F5 Records" />
+<area shape="rect" alt="New Yard Plot F6 Records" coords="132,442,165,457" href="cemetery-viewer-v9.html?plot=NYF6" title="New Yard Plot F6 Records" />
+<area shape="rect" alt="New Yard Plot F7 Records" coords="93,442,125,459" href="cemetery-viewer-v9.html?plot=NYF7" title="New Yard Plot F7 Records" />
+<area shape="rect" alt="New Yard Plot G1 Records" coords="406,464,439,480" href="cemetery-viewer-v9.html?plot=NYG1" title="New Yard Plot G1 Records" />
+<area shape="rect" alt="New Yard Plot G2 Records" coords="370,466,401,480" href="cemetery-viewer-v9.html?plot=NYG2" title="New Yard Plot G2 Records" />
+<area shape="rect" alt="New Yard Plot G3 Records" coords="327,464,361,480" href="cemetery-viewer-v9.html?plot=NYG3" title="New Yard Plot G3 Records" />
+<area shape="rect" alt="New Yard Plot G4 Records" coords="291,465,323,481" href="cemetery-viewer-v9.html?plot=NYG4" title="New Yard Plot G4 Records" />
+<area shape="rect" alt="New Yard Plot G5 Records" coords="169,465,203,481" href="cemetery-viewer-v9.html?plot=NYG5" title="New Yard Plot G5 Records" />
+<area shape="rect" alt="New Yard Plot G6 Records" coords="130,466,163,483" href="cemetery-viewer-v9.html?plot=NYG6" title="New Yard Plot G6 Records" />
+<area shape="rect" alt="New Yard Plot G7 Records" coords="91,465,124,480" href="cemetery-viewer-v9.html?plot=NYG7" title="New Yard Plot G7 Records" />
+<area shape="rect" alt="New Yard Plot H1 Records" coords="408,487,441,503" href="cemetery-viewer-v9.html?plot=NYH1" title="New Yard Plot H1 Records" />
+<area shape="rect" alt="New Yard Plot H2 Records" coords="370,487,401,501" href="cemetery-viewer-v9.html?plot=NYH2" title="New Yard Plot H2 Records" />
+<area shape="rect" alt="New Yard Plot H3 Records" coords="332,487,364,503" href="cemetery-viewer-v9.html?plot=NYH3" title="New Yard Plot H3 Records" />
+<area shape="rect" alt="New Yard Plot H4 Records" coords="292,488,324,504" href="cemetery-viewer-v9.html?plot=NYH4" title="New Yard Plot H4 Records" />
+<area shape="rect" alt="New Yard Plot H5 Records" coords="169,487,202,502" href="cemetery-viewer-v9.html?plot=NYH5" title="New Yard Plot H5 Records" />
+<area shape="rect" alt="New Yard Plot H6 Records" coords="130,488,162,503" href="cemetery-viewer-v9.html?plot=NYH6" title="New Yard Plot H6 Records" />
+<area shape="rect" alt="New Yard Plot H7 Records" coords="91,488,123,503" href="cemetery-viewer-v9.html?plot=NYH7" title="New Yard Plot H7 Records" />
+<area shape="rect" alt="Church Yard Plot A1 Records" coords="1158,397,1190,412" href="cemetery-viewer-v9.html?plot=CYA1" title="Church Yard Plot A1 Records" />
+<area shape="rect" alt="Church Yard Plot A2 Records" coords="1119,397,1151,412" href="cemetery-viewer-v9.html?plot=CYA2" title="Church Yard Plot A2 Records" />
+<area shape="rect" alt="Church Yard Plot A3 Records" coords="1081,398,1112,413" href="cemetery-viewer-v9.html?plot=CYA3" title="Church Yard Plot A3 Records" />
+<area shape="rect" alt="Church Yard Plot A4 Records" coords="1038,396,1071,411" href="cemetery-viewer-v9.html?plot=CYA4" title="Church Yard Plot A4 Records" />
+<area shape="rect" alt="Church Yard Plot B1 Records" coords="1158,421,1190,435" href="cemetery-viewer-v9.html?plot=CYB1" title="Church Yard Plot B1 Records" />
+<area shape="rect" alt="Church Yard Plot B2 Records" coords="1117,418,1149,434" href="cemetery-viewer-v9.html?plot=CYB2" title="Church Yard Plot B2 Records" />
+<area shape="rect" alt="Church Yard Plot B3 Records" coords="1080,418,1112,434" href="cemetery-viewer-v9.html?plot=CYB3" title="Church Yard Plot B3 Records" />
+<area shape="rect" alt="Church Yard Plot B4 Records" coords="1038,419,1070,435" href="cemetery-viewer-v9.html?plot=CYB4" title="Church Yard Plot B4 Records" />
+<area shape="rect" alt="Church Yard Plot C1 Records" coords="1159,443,1191,459" href="cemetery-viewer-v9.html?plot=CYC1" title="Church Yard Plot C1 Records" />
+<area shape="rect" alt="Church Yard Plot C2 Records" coords="1115,442,1147,458" href="cemetery-viewer-v9.html?plot=CYC2" title="Church Yard Plot C2 Records" />
+<area shape="rect" alt="Church Yard Plot C3 Records" coords="1079,443,1110,458" href="cemetery-viewer-v9.html?plot=CYC3" title="Church Yard Plot C3 Records" />
+<area shape="rect" alt="Church Yard Plot C4 Records" coords="1039,443,1072,458" href="cemetery-viewer-v9.html?plot=CYC4" title="Church Yard Plot C4 Records" />
+<area shape="rect" alt="Church Yard Plot D1 Records" coords="1157,466,1190,483" href="cemetery-viewer-v9.html?plot=CYD1" title="Church Yard Plot D1 Records" />
+<area shape="rect" alt="Church Yard Plot D2 Records" coords="1117,465,1150,480" href="cemetery-viewer-v9.html?plot=CYD2" title="Church Yard Plot D2 Records" />
+<area shape="rect" alt="Church Yard Plot D3 Records" coords="1078,465,1111,480" href="cemetery-viewer-v9.html?plot=CYD3" title="Church Yard Plot D3 Records" />
+<area shape="rect" alt="Church Yard Plot D4 Records" coords="1041,464,1072,480" href="cemetery-viewer-v9.html?plot=CYD4" title="Church Yard Plot D4 Records" />
+<area shape="rect" alt="Church Yard Plot E1 Records" coords="1159,489,1191,503" href="cemetery-viewer-v9.html?plot=CYE1" title="Church Yard Plot E1 Records" />
+<area shape="rect" alt="Church Yard Plot E2 Records" coords="1117,489,1151,504" href="cemetery-viewer-v9.html?plot=CYE2" title="Church Yard Plot E2 Records" />
+<area shape="rect" alt="Church Yard Plot E3 Records" coords="1080,489,1112,506" href="cemetery-viewer-v9.html?plot=CYE3" title="Church Yard Plot E3 Records" />
+<area shape="rect" alt="Church Yard Plot E4 Records" coords="1040,487,1073,503" href="cemetery-viewer-v9.html?plot=CYE4" title="Church Yard Plot E4 Records" />
+<area shape="rect" alt="Church Yard Plot F1 Records" coords="1160,510,1192,526" href="cemetery-viewer-v9.html?plot=CYF1" title="Church Yard Plot F1 Records" />
+<area shape="rect" alt="Church Yard Plot F2 Records" coords="1119,512,1151,526" href="cemetery-viewer-v9.html?plot=CYF2" title="Church Yard Plot F2 Records" />
+<area shape="rect" alt="Church Yard Plot F3 Records" coords="1082,511,1114,527" href="cemetery-viewer-v9.html?plot=CYF3" title="Church Yard Plot F3 Records" />
+<area shape="rect" alt="Church Yard Plot F4 Records" coords="1040,509,1072,524" href="cemetery-viewer-v9.html?plot=CYF4" title="Church Yard Plot F4 Records" />
+<area shape="rect" alt="Upper Terrace Plot A1 Records" coords="1157,577,1189,591" href="cemetery-viewer-v9.html?plot=UTA1" title="Upper Terrace Plot A1 Records" />
+<area shape="rect" alt="Upper Terrace Plot A2 Records" coords="1117,575,1148,590" href="cemetery-viewer-v9.html?plot=UTA2" title="Upper Terrace Plot A2 Records" />
+<area shape="rect" alt="Upper Terrace Plot A3 Records" coords="1076,575,1110,591" href="cemetery-viewer-v9.html?plot=UTA3" title="Upper Terrace Plot A3 Records" />
+<area shape="rect" alt="Upper Terrace Plot A4 Records" coords="1038,576,1070,590" href="cemetery-viewer-v9.html?plot=UTA4" title="Upper Terrace Plot A4 Records" />
+<area shape="rect" alt="Upper Terrace Plot A5 Records" coords="960,575,992,591" href="cemetery-viewer-v9.html?plot=UTA5" title="Upper Terrace Plot A5 Records" />
+<area shape="rect" alt="Upper Terrace Plot A6 Records" coords="921,575,953,591" href="cemetery-viewer-v9.html?plot=UTA6" title="Upper Terrace Plot A6 Records" />
+<area shape="rect" alt="Upper Terrace Plot A7 Records" coords="881,576,913,590" href="cemetery-viewer-v9.html?plot=UTA7" title="Upper Terrace Plot A7 Records" />
+<area shape="rect" alt="Upper Terrace Plot A8 Records" coords="842,576,874,591" href="cemetery-viewer-v9.html?plot=UTA8" title="Upper Terrace Plot A8 Records" />
+<area shape="rect" alt="Upper Terrace Plot A9 Records" coords="803,576,835,591" href="cemetery-viewer-v9.html?plot=UTA9" title="Upper Terrace Plot A9 Records" />
+<area shape="rect" alt="Upper Terrace Plot A10 Records" coords="763,576,796,590" href="cemetery-viewer-v9.html?plot=UTA10" title="Upper Terrace Plot A10 Records" />
+<area shape="rect" alt="Upper Terrace Plot A11 Records" coords="722,578,755,593" href="cemetery-viewer-v9.html?plot=UTA11" title="Upper Terrace Plot A11 Records" />
+<area shape="rect" alt="Upper Terrace Plot A12 Records" coords="681,577,714,592" href="cemetery-viewer-v9.html?plot=UTA12" title="Upper Terrace Plot A12 Records" />
+<area shape="rect" alt="Upper Terrace Plot A13 Records" coords="644,576,675,591" href="cemetery-viewer-v9.html?plot=UTA13" title="Upper Terrace Plot A13 Records" />
+<area shape="rect" alt="Upper Terrace Plot A14 Records" coords="605,577,637,592" href="cemetery-viewer-v9.html?plot=UTA14" title="Upper Terrace Plot A14 Records" />
+<area shape="rect" alt="Upper Terrace Plot A15 Records" coords="565,576,597,591" href="cemetery-viewer-v9.html?plot=UTA15" title="Upper Terrace Plot A15 Records" />
+<area shape="rect" alt="Upper Terrace Plot A16 Records" coords="526,577,557,592" href="cemetery-viewer-v9.html?plot=UTA16" title="Upper Terrace Plot A16 Records" />
+<area shape="rect" alt="Upper Terrace Plot A17 Records" coords="488,577,519,590" href="cemetery-viewer-v9.html?plot=UTA17" title="Upper Terrace Plot A17 Records" />
+<area shape="rect" alt="Upper Terrace Plot A18 Records" coords="446,575,477,590" href="cemetery-viewer-v9.html?plot=UTA18" title="Upper Terrace Plot A18 Records" />
+<area shape="rect" alt="Upper Terrace Plot A19 Records" coords="408,576,441,592" href="cemetery-viewer-v9.html?plot=UTA19" title="Upper Terrace Plot A19 Records" />
+<area shape="rect" alt="Upper Terrace Plot A20 Records" coords="368,576,397,590" href="cemetery-viewer-v9.html?plot=UTA20" title="Upper Terrace Plot A20 Records" />
+<area shape="rect" alt="Upper Terrace Plot A21 Records" coords="330,577,361,592" href="cemetery-viewer-v9.html?plot=UTA21" title="Upper Terrace Plot A21 Records" />
+<area shape="rect" alt="Upper Terrace Plot A22 Records" coords="291,576,323,591" href="cemetery-viewer-v9.html?plot=UTA22" title="Upper Terrace Plot A22 Records" />
+<area shape="rect" alt="Upper Terrace Plot A23 Records" coords="211,576,243,591" href="cemetery-viewer-v9.html?plot=UTA23" title="Upper Terrace Plot A23 Records" />
+<area shape="rect" alt="Upper Terrace Plot A24 Records" coords="169,575,203,591" href="cemetery-viewer-v9.html?plot=UTA24" title="Upper Terrace Plot A24 Records" />
+<area shape="rect" alt="Upper Terrace Plot A25 Records" coords="132,577,165,592" href="cemetery-viewer-v9.html?plot=UTA25" title="Upper Terrace Plot A25 Records" />
+<area shape="rect" alt="Upper Terrace Plot A26 Records" coords="94,577,124,590" href="cemetery-viewer-v9.html?plot=UTA26" title="Upper Terrace Plot A26 Records" />
+<area shape="rect" alt="Upper Terrace Plot B1 Records" coords="1157,600,1189,614" href="cemetery-viewer-v9.html?plot=UTB1" title="Upper Terrace Plot B1 Records" />
+<area shape="rect" alt="Upper Terrace Plot B2 Records" coords="1119,600,1151,614" href="cemetery-viewer-v9.html?plot=UTB2" title="Upper Terrace Plot B2 Records" />
+<area shape="rect" alt="Upper Terrace Plot B3 Records" coords="1080,600,1112,613" href="cemetery-viewer-v9.html?plot=UTB3" title="Upper Terrace Plot B3 Records" />
+<area shape="rect" alt="Upper Terrace Plot B4 Records" coords="1038,600,1071,617" href="cemetery-viewer-v9.html?plot=UTB4" title="Upper Terrace Plot B4 Records" />
+<area shape="rect" alt="Upper Terrace Plot B5 Records" coords="960,598,992,614" href="cemetery-viewer-v9.html?plot=UTB5" title="Upper Terrace Plot B5 Records" />
+<area shape="rect" alt="Upper Terrace Plot B6 Records" coords="921,599,952,613" href="cemetery-viewer-v9.html?plot=UTB6" title="Upper Terrace Plot B6 Records" />
+<area shape="rect" alt="Upper Terrace Plot B7 Records" coords="882,597,914,613" href="cemetery-viewer-v9.html?plot=UTB7" title="Upper Terrace Plot B7 Records" />
+<area shape="rect" alt="Upper Terrace Plot B8 Records" coords="840,598,873,614" href="cemetery-viewer-v9.html?plot=UTB8" title="Upper Terrace Plot B8 Records" />
+<area shape="rect" alt="Upper Terrace Plot B9 Records" coords="801,598,832,612" href="cemetery-viewer-v9.html?plot=UTB9" title="Upper Terrace Plot B9 Records" />
+<area shape="rect" alt="Upper Terrace Plot B10 Records" coords="762,599,794,614" href="cemetery-viewer-v9.html?plot=UTB10" title="Upper Terrace Plot B10 Records" />
+<area shape="rect" alt="Upper Terrace Plot B11 Records" coords="723,598,755,614" href="cemetery-viewer-v9.html?plot=UTB11" title="Upper Terrace Plot B11 Records" />
+<area shape="rect" alt="Upper Terrace Plot B12 Records" coords="684,599,715,613" href="cemetery-viewer-v9.html?plot=UTB12" title="Upper Terrace Plot B12 Records" />
+<area shape="rect" alt="Upper Terrace Plot B13 Records" coords="645,599,677,614" href="cemetery-viewer-v9.html?plot=UTB13" title="Upper Terrace Plot B13 Records" />
+<area shape="rect" alt="Upper Terrace Plot B14 Records" coords="604,598,636,613" href="cemetery-viewer-v9.html?plot=UTB14" title="Upper Terrace Plot B14 Records" />
+<area shape="rect" alt="Upper Terrace Plot B15 Records" coords="565,599,596,615" href="cemetery-viewer-v9.html?plot=UTB15" title="Upper Terrace Plot B15 Records" />
+<area shape="rect" alt="Upper Terrace Plot B16 Records" coords="524,599,556,614" href="cemetery-viewer-v9.html?plot=UTB16" title="Upper Terrace Plot B16 Records" />
+<area shape="rect" alt="Upper Terrace Plot B17 Records" coords="485,599,517,614" href="cemetery-viewer-v9.html?plot=UTB17" title="Upper Terrace Plot B17 Records" />
+<area shape="rect" alt="Upper Terrace Plot B18 Records" coords="446,599,478,614" href="cemetery-viewer-v9.html?plot=UTB18" title="Upper Terrace Plot B18 Records" />
+<area shape="rect" alt="Upper Terrace Plot B19 Records" coords="407,598,438,613" href="cemetery-viewer-v9.html?plot=UTB19" title="Upper Terrace Plot B19 Records" />
+<area shape="rect" alt="Upper Terrace Plot B20 Records" coords="369,600,400,615" href="cemetery-viewer-v9.html?plot=UTB20" title="Upper Terrace Plot B20 Records" />
+<area shape="rect" alt="Upper Terrace Plot B21 Records" coords="329,598,360,614" href="cemetery-viewer-v9.html?plot=UTB21" title="Upper Terrace Plot B21 Records" />
+<area shape="rect" alt="Upper Terrace Plot B22 Records" coords="290,599,321,614" href="cemetery-viewer-v9.html?plot=UTB22" title="Upper Terrace Plot B22 Records" />
+<area shape="rect" alt="Upper Terrace Plot B23 Records" coords="212,599,243,614" href="cemetery-viewer-v9.html?plot=UTB23" title="Upper Terrace Plot B23 Records" />
+<area shape="rect" alt="Upper Terrace Plot B24 Records" coords="168,599,200,613" href="cemetery-viewer-v9.html?plot=UTB24" title="Upper Terrace Plot B24 Records" />
+<area shape="rect" alt="Upper Terrace Plot B25 Records" coords="130,600,161,614" href="cemetery-viewer-v9.html?plot=UTB25" title="Upper Terrace Plot B25 Records" />
+<area shape="rect" alt="Upper Terrace Plot B26 Records" coords="94,599,125,613" href="cemetery-viewer-v9.html?plot=UTB26" title="Upper Terrace Plot B26 Records" />
+<area shape="rect" alt="Upper Terrace Plot C1 Records" coords="1159,622,1190,636" href="cemetery-viewer-v9.html?plot=UTC1" title="Upper Terrace Plot C1 Records" />
+<area shape="rect" alt="Upper Terrace Plot C2 Records" coords="1119,621,1149,634" href="cemetery-viewer-v9.html?plot=UTC2" title="Upper Terrace Plot C2 Records" />
+<area shape="rect" alt="Upper Terrace Plot C3 Records" coords="1080,622,1111,636" href="cemetery-viewer-v9.html?plot=UTC3" title="Upper Terrace Plot C3 Records" />
+<area shape="rect" alt="Upper Terrace Plot C4 Records" coords="1040,622,1072,635" href="cemetery-viewer-v9.html?plot=UTC4" title="Upper Terrace Plot C4 Records" />
+<area shape="rect" alt="Upper Terrace Plot C5 Records" coords="961,620,993,635" href="cemetery-viewer-v9.html?plot=UTC5" title="Upper Terrace Plot C5 Records" />
+<area shape="rect" alt="Upper Terrace Plot C6 Records" coords="921,622,951,636" href="cemetery-viewer-v9.html?plot=UTC6" title="Upper Terrace Plot C6 Records" />
+<area shape="rect" alt="Upper Terrace Plot C7 Records" coords="880,621,912,635" href="cemetery-viewer-v9.html?plot=UTC7" title="Upper Terrace Plot C7 Records" />
+<area shape="rect" alt="Upper Terrace Plot C8 Records" coords="842,621,874,636" href="cemetery-viewer-v9.html?plot=UTC8" title="Upper Terrace Plot C8 Records" />
+<area shape="rect" alt="Upper Terrace Plot C9 Records" coords="802,620,834,636" href="cemetery-viewer-v9.html?plot=UTC9" title="Upper Terrace Plot C9 Records" />
+<area shape="rect" alt="Upper Terrace Plot C10 Records" coords="763,623,795,637" href="cemetery-viewer-v9.html?plot=UTC10" title="Upper Terrace Plot C10 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A1 Records" coords="1118,667,1149,682" href="cemetery-viewer-v9.html?plot=ITA1" title="Intervale Terrace Plot A1 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A2 Records" coords="1078,666,1109,680" href="cemetery-viewer-v9.html?plot=ITA2" title="Intervale Terrace Plot A2 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A3 Records" coords="1040,668,1070,681" href="cemetery-viewer-v9.html?plot=ITA3" title="Intervale Terrace Plot A3 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A4 Records" coords="999,666,1031,682" href="cemetery-viewer-v9.html?plot=ITA4" title="Intervale Terrace Plot A4 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A5 Records" coords="962,666,992,681" href="cemetery-viewer-v9.html?plot=ITA5" title="Intervale Terrace Plot A5 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A6 Records" coords="921,666,954,681" href="cemetery-viewer-v9.html?plot=ITA6" title="Intervale Terrace Plot A6 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A7 Records" coords="880,667,911,682" href="cemetery-viewer-v9.html?plot=ITA7" title="Intervale Terrace Plot A7 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A8 Records" coords="843,666,874,681" href="cemetery-viewer-v9.html?plot=ITA8" title="Intervale Terrace Plot A8 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A9 Records" coords="801,665,832,681" href="cemetery-viewer-v9.html?plot=ITA9" title="Intervale Terrace Plot A9 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A10 Records" coords="765,665,796,681" href="cemetery-viewer-v9.html?plot=ITA10" title="Intervale Terrace Plot A10 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A11 Records" coords="723,667,756,682" href="cemetery-viewer-v9.html?plot=ITA11" title="Intervale Terrace Plot A11 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A12 Records" coords="685,668,717,683" href="cemetery-viewer-v9.html?plot=ITA12" title="Intervale Terrace Plot A12 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A13 Records" coords="644,667,676,681" href="cemetery-viewer-v9.html?plot=ITA13" title="Intervale Terrace Plot A13 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A14 Records" coords="607,667,637,682" href="cemetery-viewer-v9.html?plot=ITA14" title="Intervale Terrace Plot A14 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A15 Records" coords="566,667,596,681" href="cemetery-viewer-v9.html?plot=ITA15" title="Intervale Terrace Plot A15 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A16 Records" coords="529,667,559,681" href="cemetery-viewer-v9.html?plot=ITA16" title="Intervale Terrace Plot A16 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A17 Records" coords="487,666,519,679" href="cemetery-viewer-v9.html?plot=ITA17" title="Intervale Terrace Plot A17 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A18 Records" coords="449,666,480,681" href="cemetery-viewer-v9.html?plot=ITA18" title="Intervale Terrace Plot A18 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A19 Records" coords="409,666,442,681" href="cemetery-viewer-v9.html?plot=ITA19" title="Intervale Terrace Plot A19 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A20 Records" coords="370,665,401,681" href="cemetery-viewer-v9.html?plot=ITA20" title="Intervale Terrace Plot A20 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A21 Records" coords="326,664,358,681" href="cemetery-viewer-v9.html?plot=ITA21" title="Intervale Terrace Plot A21 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A22 Records" coords="289,667,322,681" href="cemetery-viewer-v9.html?plot=ITA22" title="Intervale Terrace Plot A22 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A23 Records" coords="253,669,284,682" href="cemetery-viewer-v9.html?plot=ITA23" title="Intervale Terrace Plot A23 Records" />
+<area shape="rect" alt="Intervale Terrace Plot A24 Records" coords="211,667,242,681" href="cemetery-viewer-v9.html?plot=ITA24" title="Intervale Terrace Plot A24 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B1 Records" coords="1120,689,1152,703" href="cemetery-viewer-v9.html?plot=ITB1" title="Intervale Terrace Plot B1 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B2 Records" coords="1080,690,1111,703" href="cemetery-viewer-v9.html?plot=ITB2" title="Intervale Terrace Plot B2 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B3 Records" coords="1041,689,1072,702" href="cemetery-viewer-v9.html?plot=ITB3" title="Intervale Terrace Plot B3 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B4 Records" coords="999,689,1031,704" href="cemetery-viewer-v9.html?plot=ITB4" title="Intervale Terrace Plot B4 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B5 Records" coords="960,689,992,704" href="cemetery-viewer-v9.html?plot=ITB5" title="Intervale Terrace Plot B5 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B6 Records" coords="921,689,954,704" href="cemetery-viewer-v9.html?plot=ITB6" title="Intervale Terrace Plot B6 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B7 Records" coords="881,688,913,702" href="cemetery-viewer-v9.html?plot=ITB7" title="Intervale Terrace Plot B7 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B8 Records" coords="842,688,872,704" href="cemetery-viewer-v9.html?plot=ITB8" title="Intervale Terrace Plot B8 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B9 Records" coords="803,689,835,704" href="cemetery-viewer-v9.html?plot=ITB9" title="Intervale Terrace Plot B9 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B10 Records" coords="763,689,795,703" href="cemetery-viewer-v9.html?plot=ITB10" title="Intervale Terrace Plot B10 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B11 Records" coords="725,689,756,706" href="cemetery-viewer-v9.html?plot=ITB11" title="Intervale Terrace Plot B11 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B12 Records" coords="683,688,715,704" href="cemetery-viewer-v9.html?plot=ITB12" title="Intervale Terrace Plot B12 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B13 Records" coords="644,688,677,704" href="cemetery-viewer-v9.html?plot=ITB13" title="Intervale Terrace Plot B13 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B14 Records" coords="605,690,636,704" href="cemetery-viewer-v9.html?plot=ITB14" title="Intervale Terrace Plot B14 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B15 Records" coords="564,690,596,704" href="cemetery-viewer-v9.html?plot=ITB15" title="Intervale Terrace Plot B15 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B16 Records" coords="526,689,557,703" href="cemetery-viewer-v9.html?plot=ITB16" title="Intervale Terrace Plot B16 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B17 Records" coords="489,689,519,702" href="cemetery-viewer-v9.html?plot=ITB17" title="Intervale Terrace Plot B17 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B18 Records" coords="448,689,480,702" href="cemetery-viewer-v9.html?plot=ITB18" title="Intervale Terrace Plot B18 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B19 Records" coords="406,690,438,704" href="cemetery-viewer-v9.html?plot=ITB19" title="Intervale Terrace Plot B19 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B20 Records" coords="367,688,398,703" href="cemetery-viewer-v9.html?plot=ITB20" title="Intervale Terrace Plot B20 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B21 Records" coords="330,690,361,703" href="cemetery-viewer-v9.html?plot=ITB21" title="Intervale Terrace Plot B21 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B22 Records" coords="291,689,321,703" href="cemetery-viewer-v9.html?plot=ITB22" title="Intervale Terrace Plot B22 Records" />
+<area shape="rect" alt="Intervale Terrace Plot B23 Records" coords="252,688,283,702" href="cemetery-viewer-v9.html?plot=ITB23" title="Intervale Terrace Plot B23 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C1 Records" coords="1118,712,1149,726" href="cemetery-viewer-v9.html?plot=ITC1" title="Intervale Terrace Plot C1 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C2 Records" coords="1081,711,1112,726" href="cemetery-viewer-v9.html?plot=ITC2" title="Intervale Terrace Plot C2 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C3 Records" coords="1040,711,1071,726" href="cemetery-viewer-v9.html?plot=ITC3" title="Intervale Terrace Plot C3 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C4 Records" coords="1001,712,1031,726" href="cemetery-viewer-v9.html?plot=ITC4" title="Intervale Terrace Plot C4 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C5 Records" coords="962,712,992,726" href="cemetery-viewer-v9.html?plot=ITC5" title="Intervale Terrace Plot C5 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C6 Records" coords="922,712,952,727" href="cemetery-viewer-v9.html?plot=ITC6" title="Intervale Terrace Plot C6 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C7 Records" coords="882,712,914,727" href="cemetery-viewer-v9.html?plot=ITC7" title="Intervale Terrace Plot C7 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C8 Records" coords="841,713,871,727" href="cemetery-viewer-v9.html?plot=ITC8" title="Intervale Terrace Plot C8 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C9 Records" coords="803,712,833,726" href="cemetery-viewer-v9.html?plot=ITC9" title="Intervale Terrace Plot C9 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C10 Records" coords="764,711,797,726" href="cemetery-viewer-v9.html?plot=ITC10" title="Intervale Terrace Plot C10 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C11 Records" coords="725,711,756,725" href="cemetery-viewer-v9.html?plot=ITC11" title="Intervale Terrace Plot C11 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C12 Records" coords="683,711,717,725" href="cemetery-viewer-v9.html?plot=ITC12" title="Intervale Terrace Plot C12 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C13 Records" coords="645,712,675,726" href="cemetery-viewer-v9.html?plot=ITC13" title="Intervale Terrace Plot C13 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C14 Records" coords="606,711,637,727" href="cemetery-viewer-v9.html?plot=ITC14" title="Intervale Terrace Plot C14 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C15 Records" coords="568,711,600,726" href="cemetery-viewer-v9.html?plot=ITC15" title="Intervale Terrace Plot C15 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C16 Records" coords="528,711,559,725" href="cemetery-viewer-v9.html?plot=ITC16" title="Intervale Terrace Plot C16 Records" />
+<area shape="rect" alt="Intervale Terrace Plot C17 Records" coords="488,711,520,726" href="cemetery-viewer-v9.html?plot=ITC17" title="Intervale Terrace Plot C17 Records" />
+<!--
+<area shape="rect" alt="Intervale Terrace Plot D1 Records" coords="1084,734,1114,748" href="cemetery-viewer-v9.html?plot=ITD1" title="Intervale Terrace Plot D1 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D2 Records" coords="1040,734,1071,748" href="cemetery-viewer-v9.html?plot=ITD2" title="Intervale Terrace Plot D2 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D3 Records" coords="999,734,1030,748" href="cemetery-viewer-v9.html?plot=ITD3" title="Intervale Terrace Plot D3 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D4 Records" coords="961,735,992,750" href="cemetery-viewer-v9.html?plot=ITD4" title="Intervale Terrace Plot D4 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D5 Records" coords="922,735,952,748" href="cemetery-viewer-v9.html?plot=ITD5" title="Intervale Terrace Plot D5 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D6 Records" coords="883,734,916,749" href="cemetery-viewer-v9.html?plot=ITD6" title="Intervale Terrace Plot D6 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D7 Records" coords="844,735,874,748" href="cemetery-viewer-v9.html?plot=ITD7" title="Intervale Terrace Plot D7 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D8 Records" coords="803,735,835,750" href="cemetery-viewer-v9.html?plot=ITD8" title="Intervale Terrace Plot D8 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D9 Records" coords="764,734,796,748" href="cemetery-viewer-v9.html?plot=ITD9" title="Intervale Terrace Plot D9 Records" />
+<area shape="rect" alt="Intervale Terrace Plot D10 Records" coords="723,734,755,749" href="cemetery-viewer-v9.html?plot=ITD10" title="Intervale Terrace Plot D10 Records" /> -->
+<area shape="default" nohref="nohref" alt="" />
+</map>
+</body>
+</html>

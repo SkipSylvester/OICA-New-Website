@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<!--
+	Horizons by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Military Veterans List</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+			body { 
+  					background: url(images/bg3.jpg) no-repeat center center fixed; 
+  					-webkit-background-size: cover;
+  					-moz-background-size: cover;
+  					-o-background-size: cover;
+  					background-size: cover;
+					}
+		</style>
+		<style>
+			.dropbtn {
+			    background-color: #4CAF50;
+			    color: white;
+			    padding: 16px;
+			    font-size: 16px;
+ 			   border: none;
+ 			   cursor: pointer;
+			}
+
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: rgba(0,240,240,0.9);
+			    min-width: 160px;
+			    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+
+			.dropdown-content a {
+			    color: black;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			}
+
+			.dropdown-content a:hover {background-color: #f1f190}
+
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+
+			.dropdown:hover .dropbtn {
+			    background-color: #3e8e41;
+			}
+			
+			#veteranList {
+				min-height: 100px;
+			}
+			
+			.loading {
+				text-align: center;
+				color: white;
+				font-style: italic;
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const veteranListDiv = document.getElementById('veteranList');
+				
+				// Show loading message
+				veteranListDiv.innerHTML = '<p class="loading">Loading veterans list...</p>';
+				
+				// Parse the CSV file
+				Papa.parse('data/veterans.csv', {
+					download: true,
+					header: true,
+					skipEmptyLines: true,
+					complete: function(results) {
+						let html = '';
+						
+						results.data.forEach(function(veteran) {
+							// Build the name
+							let name = veteran['Last Name'];
+							if (veteran['First Name']) {
+								name += ', ' + veteran['First Name'];
+							}
+							if (veteran['Middle Name/Initial']) {
+								name += ' ' + veteran['Middle Name/Initial'];
+							}
+							
+							// Build the dates
+							let dates = '';
+							if (veteran['Birth Year'] || veteran['Death Year']) {
+								dates = ' ' + (veteran['Birth Year'] || '') + '-' + (veteran['Death Year'] || '');
+							}
+							
+							// Build the service info
+							let service = '';
+							if (veteran['Branch'] || veteran['Service Period']) {
+								service = ' - ' + (veteran['Branch'] || '') + (veteran['Branch'] && veteran['Service Period'] ? ', ' : '') + (veteran['Service Period'] || '');
+							}
+							
+							// Build the link to new CSV-based viewer
+							if (veteran['Record ID']) {
+								// Convert record ID to uppercase for plot ID (e.g., 'oyc5' -> 'OYC5')
+								const plotId = veteran['Record ID'].toUpperCase();
+								html += '<a href="cemetery-viewer-v9.html?plot=' + plotId + '">' +
+								        name + dates + service + '</a></br>\n';
+							}
+						});
+						
+						veteranListDiv.innerHTML = html;
+					},
+					error: function(error) {
+						veteranListDiv.innerHTML = '<p style="color: red; text-align: center;">Error loading veterans list. Please ensure data/veterans.csv exists.</p>';
+						console.error('Error loading CSV:', error);
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		</br></br>
+		<div style="background:rgba(60,60,60,0.7)"; class="container"> <!--Background-->
+			
+			<h1 style="text-align: center; color:white; "><a href="#" id="logo">Veteran Names List</a></h1><!-- Page Title -->
+					
+			<nav id="nav" ><!-- Menu -->
+				<div style="text-align: center;">
+					<span  class="dropdown"><!-- menu item 1 -->
+  					<h1 style="font-size:1.25em; color: white; font-weight:500" ><a href="index.html">Home</a></h1>
+  				</span>
+					<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Visit Us</h1>
+  				<div class="dropdown-content">
+    				<a href="general.html#Location">Location</a>
+    				<a href="general.html#Directions">Directions</a>
+						<a href="general.html#Parking">Parking</a>
+    				<a href="general.html#Visiting">Visiting</a>
+						<a href="general.html#Basic Rules">Basic Rules</a>
+						<a href="schematicmap.html">Schematic Map</a>
+					</div>
+				</span>
+				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Cemetery Data</h1>
+  				<div class="dropdown-content">
+						<a href="overview.html">Overview</a>
+    				<a href="cemetery-grounds.html">Interactive Map</a>
+    				<a href="cemetery-records.html">Cemetery Records</a>
+						<a href="vetlist.html">Military Veterans</a>
+						<a href="Friends.html">Friends of the Cemetery</a>
+						<a href="pdf files/OICA Rules and Regs.pdf">Rules and Regulations</a>
+
+					</div>
+				</span>
+<!--				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Organization</h1>
+  				<div class="dropdown-content">
+    				<a href="organization.html#Background">Background</a>
+    				<a href="organization.html#Ownership">Ownership</a>
+						<a href="organization.html#Management">Management</a>
+    				<a href="organization.html#Tax Status">Tax Status</a>
+						<a href="organization.html#Perpetual Care">Perpetual Care</a>
+						<a href="organization.html#News">News</a>
+					</div>
+				</span>-->
+				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Memorabilia</h1>
+  				<div class="dropdown-content">
+    				<a href="islandtown.html">Island and Town</a>
+    				<a href="artifacts.html">Artifacts and Articles</a>
+						<a href="rememberances.html">Rememberances</a>
+    				<!--<a href="cemeteries.html">Other Cemeteries</a>-->
+						
+						
+						
+						--><a href="photographs.html">Photographs</a>
+					</div>
+				</span>
+				<span style="padding-left: 20px;" class="dropdown">
+  				<h1 style="font-size: 1.25em; color: white; font-weight: 500" >Contact For</h1>
+  				<div class="dropdown-content">
+						<a href="staffcontact.html">The Staff</a>
+						<a href="membership.html">Becoming Members</a>
+						<a href="burialrights.html">Burial Rights Purchases</a>
+						<a href="burials.html">Burials</a>
+						<a href="stones.html">Grave and Memorial Stones</a>
+					</div>
+				</span>
+				<span style="padding-left: 20px;" class="dropdown">
+					<h1 style="font-size: 1.25em; 		color: white; 		font-weight: 500" >
+						<a href="memberslogin.html">Members Only</a>
+					</h1>
+				</span>
+					</div><!--center menu	-->
+			</nav> <!-- Menu Div -->
+			</br></br>
+		<div style="font-size: 1.25em; color: white; font-weight: 400;  margin-left:5%; margin-right:5%;"> <!--Text Div-->
+			<p style="text-align: center; font-weight: 500;">Using the Veteran Names List</p> <!--Section Heading-->					
+				<p>What follows is a list of all military vetrans buried or memorialized at the Orr's Island Cemetery.  Each name is linked to the applicable plot record page where plot owner, individual grave or memorial location, date of birth, date of death and monument images are displayed. At the top of the record page is a link to a schematic map that shows by section, row and number where each plot is located. The branch of service and service period are included with the names listed below.  </p>
+				<p>The branch of service codes are:  USAF - U.S. Air Force, Army - U.S. Army, GAR - Grand Army of the Republic, USMC - U.S. Marine Corps, USMM - U.S. Merchant Marine, Navy - U.S. Navy, NA - Not Available</p>  
+				<p>The service periods codes are: ACW - American Civil War, SAW - Spanish American War, WWI - World War I, WWII - World War II, KW - Korean War, VW - Vietnam War, NA - Not Available.</p>
+
+			<p>You may use your browser search feature, normally "Ctrl F" to enter a name and find all instances of it in the list below.  Or you may simply scan the list below that is alphabetized by last name then first name.</p>		
+		<div style="text-align: center; font-weight: 600;" id="veteranList">												
+<!-- Veterans list will be loaded here from CSV -->
+		</div>
+			</div><!--Close text div-->
+		</div><!--Close the background containter div-->
+		</br></br></br></br></br></br></br></br></br></br><!--Depress the footer to reveal background-->
+		<div id="footer"><!-- Footer -->
+			<div class="container"><!-- Copyright etc. container-->
+				<div class="copyright">
+					<p>Copyright &copy 2015-2023, Orrs Island Cemetery Association</p>
+					<p>Template Design by: <a href="http://templated.co">TEMPLATED</a> </p> 
+				</div><!--Close copyright class-->
+			</div><!--Close copyright container-->
+		</div><!-- CloseFooter -->	
+	</body>
+</html>
