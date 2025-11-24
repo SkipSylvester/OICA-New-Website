@@ -1,3 +1,5 @@
 .DS_Store
-Monument Images/*/ - Ignores all subdirectories in Monument Images
-!Monument Images/OICA Church Yard/
+Monument Images/OICA Intervale/
+Monument Images/OICA New Yard/
+Monument Images/OICA Old Yard/
+Monument Images/OICA Upper Terrace/
