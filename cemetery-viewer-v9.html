@@ -677,7 +677,7 @@
                 images.forEach(filename => {
                     if (filename) {
                         const folder = getFolderFromPrefix(filename);
-                        const fullPath = `All Raw Monument Images/${folder}/${filename}`;
+                        const fullPath = `Monument Images/${folder}/${filename}`;
                         html += `<div class="image-item">`;
                         html += `<a href="${fullPath}" target="_blank">`;
                         html += `<img src="${fullPath}" alt="Monument image" loading="lazy">`;

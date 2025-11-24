@@ -16,6 +16,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -75,7 +76,83 @@
     		max-width: 100%;
     		height: auto;
 			}
+
+			.loading {
+				text-align: center;
+				color: white;
+				font-style: italic;
+			}
 		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const oldYardDiv = document.getElementById('oldYardLots');
+				const upperTerraceDiv = document.getElementById('upperTerraceLots');
+				const intervaleTerraceDiv = document.getElementById('intervaleTerraceLots');
+
+				// Show loading message
+				oldYardDiv.innerHTML = '<p class="loading">Loading...</p>';
+				upperTerraceDiv.innerHTML = '<p class="loading">Loading...</p>';
+				intervaleTerraceDiv.innerHTML = '<p class="loading">Loading...</p>';
+
+				// Parse the CSV file
+				Papa.parse('data/available_lots.csv', {
+					download: true,
+					header: true,
+					skipEmptyLines: true,
+					complete: function(results) {
+						let oldYardHtml = 'Old Yard Lots</br>';
+						let upperTerraceHtml = 'Upper Terrace Lots</br>';
+						let intervaleTerraceHtml = 'Intervale Terrace Lots</br>';
+
+						let oldYardCount = 0;
+						let upperTerraceCount = 0;
+						let intervaleTerraceCount = 0;
+
+						results.data.forEach(function(lot) {
+							if (lot['plot_id'] && lot['lots_available']) {
+								const plotId = lot['plot_id'].toUpperCase();
+								const lotsText = lot['lots_available'];
+								const link = '<a href="cemetery-viewer-v9.html?plot=' + plotId + '">' +
+								            plotId + '-' + lotsText + '</a></br>\n';
+
+								// Count lots (count dashes and commas to estimate number of lots)
+								const lotCount = (lotsText.match(/[\d]/g) || []).length;
+
+								// Categorize by section
+								if (plotId.startsWith('OY')) {
+									oldYardHtml += link;
+									oldYardCount += lotCount;
+								} else if (plotId.startsWith('UT')) {
+									upperTerraceHtml += link;
+									upperTerraceCount += lotCount;
+								} else if (plotId.startsWith('IT')) {
+									intervaleTerraceHtml += link;
+									intervaleTerraceCount += lotCount;
+								}
+							}
+						});
+
+						oldYardHtml += 'Total Old Yard Lots = ' + oldYardCount + '</br></br>';
+						upperTerraceHtml += 'Total Upper Terrace Lots = ' + upperTerraceCount + '</br></br>';
+						intervaleTerraceHtml += 'Total Intervale Terrace Lots = ' + intervaleTerraceCount + '</br></br>';
+
+						oldYardDiv.innerHTML = oldYardHtml;
+						upperTerraceDiv.innerHTML = upperTerraceHtml;
+						intervaleTerraceDiv.innerHTML = intervaleTerraceHtml;
+
+						// Update total
+						const totalLots = oldYardCount + upperTerraceCount + intervaleTerraceCount;
+						document.getElementById('totalLots').innerHTML = 'Total Available Lots = ' + totalLots;
+					},
+					error: function(error) {
+						oldYardDiv.innerHTML = '<p style="color: red;">Error loading data</p>';
+						upperTerraceDiv.innerHTML = '';
+						intervaleTerraceDiv.innerHTML = '';
+						console.error('Error loading CSV:', error);
+					}
+				});
+			});
+		</script>
 	</head>
 	<body>
 	</br></br>
@@ -153,78 +230,19 @@
 			<p style="text-align: center; font-weight: 500;">Using the Avilable Lots List</p> <!--Section Heading-->	
 					<p>What follows is a list of all unsold lots in the Orr's Island Cemetery.  Each lot identified is linked to the applicable plot record page where information on ownership and burials of adjacent lots is displayed. At the top of the record page is a link to a schematic map that shows by section, row and number where each plot is located.</p>
   				
-<table style="text-align: center; font-weight: 500;">
-						<tr>
-							<td>
-							Old Yard Lots</br>
-<a href="cemetery-viewer-v9.html?plot=OYD5">OYD5-1,2</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYD7">OYD7-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYE1">OYE1-1,2,3,4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYE8">OYE8-2</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYH5">OYH5-1-2-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYH7">OYH7-1-2-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYH9">OYH9-1-2-3</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYJ2">OYJ2-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYJ3">OYJ3-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYJ4">OYJ4-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYJ5">OYJ5-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYJ12">OYJ12-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYK1">OYK1-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYK2">OYK2-1-2-3</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYL1">OYL1-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYL2">OYL2-1-2-3</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYL8">OYL8-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYL9">OYL9-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYL11">OYL11-1-2-3</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYM4">OYM4-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYM5">OYM5-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYM7">OYM7-1-2-3</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYM9">OYM9-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYM10">OYM10-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=OYM11">OYM11-1-2-3-4-5</a></br>
-Total Old Yard Lots = 93</br></br>
+<div style="text-align: center; font-weight: 500;">
+<div id="oldYardLots"></div>
 
 New Yard Lots, None</br></br>
 
 Church Yard Lots, None</br></br>
 
-Upper Terrace Lots</br>
-<a href="cemetery-viewer-v9.html?plot=UTA10">UTA10-1-2-4-5 </a></br>
-<a href="cemetery-viewer-v9.html?plot=UTB14">UTB14-1-2-3-4-5</a></br>
-Total Upper Terrace Lots = 9</br></br>
+<div id="upperTerraceLots"></div>
 
-Intervale Terrace Lots</br>
-<a href="cemetery-viewer-v9.html?plot=ITA1">ITA1-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITA2">ITA2-1</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITA4">ITA4-1</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITA24">ITA24-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB2">ITB2-3</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB8">ITB8-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB18">ITB18-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB19">ITB19-1-2-3-4</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB20">ITB20-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB21">ITB21-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB22">ITB22-1-2-3</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB23">ITB23-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITB24">ITB24-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC3">ITC3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC4">ITC4-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC5">ITC5-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC6">ITC6-4-5 </a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC7">ITC7-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC8">ITC8-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC9">ITC9-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC10">ITC10-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC11">ITC11-1-2-3-4-5</a><sup>r</sup></br>
-<a href="cemetery-viewer-v9.html?plot=ITC12">ITC12-1-2-3-4-5</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC14">ITC14-1-2</a></br>
-<a href="cemetery-viewer-v9.html?plot=ITC15">ITC15-1-2-3-4-5</a></br>
-Total Intervale Terrace Lots = 86</br></br>
-Total Available Lots = 188
- </p>
-							</td></u>
-						</tr>					
-					</table>
+<div id="intervaleTerraceLots"></div>
+
+<div id="totalLots"></div>
+</div>
 				</div>
 			</div>
 				</br></br></br></br></br></br>
