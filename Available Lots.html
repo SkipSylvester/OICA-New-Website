@@ -22,68 +22,38 @@
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<style>
-		body { 
-  					background: url(images/bg18.jpg) no-repeat center center fixed; 
-  					-webkit-background-size: cover;
-  					-moz-background-size: cover;
-  					-o-background-size: cover;
-  					background-size: cover;
-					}
-		</style>
-		<style>
-			.dropbtn {
-			    background-color: #4CAF50;
-			    color: white;
-			    padding: 16px;
-			    font-size: 16px;
- 			   border: none;
- 			   cursor: pointer;
-			}
+	<link rel="stylesheet" href="css/common.css" />
+	<style>
+		/* Page-specific styles */
+		body {
+			background: url(images/bg18.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
 
-			.dropdown {
-			    position: relative;
-			    display: inline-block;
-			}
+		.dropdown-content {
+			background-color: rgba(0,240,240,0.9);
+		}
 
-			.dropdown-content {
-			    display: none;
-			    position: absolute;
-			    background-color: rgba(0,240,240,0.9);
-			    min-width: 160px;
-			    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			}
+		.dropdown-content a:hover {
+			background-color: #f1f190;
+		}
 
-			.dropdown-content a {
-			    color: black;
-			    padding: 12px 16px;
-			    text-decoration: none;
-			    display: block;
-			}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
 
-			.dropdown-content a:hover {background-color: #f1f190}
+		.loading {
+			text-align: center;
+			color: white;
+			font-style: italic;
+		}
+	</style>
 
-			.dropdown:hover .dropdown-content {
-			    display: block;
-			}
-
-			.dropdown:hover .dropbtn {
-			    background-color: #3e8e41;
-			}
-		</style>
-		<style>
-			img {
-    		max-width: 100%;
-    		height: auto;
-			}
-
-			.loading {
-				text-align: center;
-				color: white;
-				font-style: italic;
-			}
-		</style>
-		<script>
+<script>
 			document.addEventListener('DOMContentLoaded', function() {
 				const oldYardDiv = document.getElementById('oldYardLots');
 				const upperTerraceDiv = document.getElementById('upperTerraceLots');
@@ -183,7 +153,7 @@
     				<a href="cemetery-grounds.html">Interactive Map</a>
     				<a href="cemetery-records.html">Cemetery Records</a>
 						<a href="vetlist.html">Military Veterans</a>
-						<a href="Friends.html">Friends of the Cemetery</a>
+						<a href="friends.html">Friends of the Cemetery</a>
 					</div>
 				</span>
 <!--				<span style="padding-left: 20px;" class="dropdown">
