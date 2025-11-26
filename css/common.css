@@ -99,3 +99,35 @@ img {
         column-count: 1;
     }
 }
+
+/* Common page structure classes */
+.page-container {
+    background: rgba(60, 60, 60, 0.7);
+}
+
+.page-title {
+    text-align: center;
+    color: white;
+}
+
+.content-wrapper {
+    font-size: 1.25em;
+    color: white;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section-heading {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Spacing utilities */
+.spacing-top {
+    margin-top: 2em;
+}
+
+.spacing-bottom {
+    margin-bottom: 2em;
+}
