@@ -18,6 +18,8 @@
 		<script src="js/init.js"></script>
 		<script src="js/load-navigation.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+		<script src="js/csv-list-loader.js"></script>
+		<script src="js/veterans-list.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -52,62 +54,6 @@
 			font-style: italic;
 		}
 	</style>
-
-<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				const veteranListDiv = document.getElementById('veteranList');
-				
-				// Show loading message
-				veteranListDiv.innerHTML = '<p class="loading">Loading veterans list...</p>';
-				
-				// Parse the CSV file
-				Papa.parse('data/veterans.csv', {
-					download: true,
-					header: true,
-					skipEmptyLines: true,
-					complete: function(results) {
-						let html = '';
-						
-						results.data.forEach(function(veteran) {
-							// Build the name
-							let name = veteran['Last Name'];
-							if (veteran['First Name']) {
-								name += ', ' + veteran['First Name'];
-							}
-							if (veteran['Middle Name/Initial']) {
-								name += ' ' + veteran['Middle Name/Initial'];
-							}
-							
-							// Build the dates
-							let dates = '';
-							if (veteran['Birth Year'] || veteran['Death Year']) {
-								dates = ' ' + (veteran['Birth Year'] || '') + '-' + (veteran['Death Year'] || '');
-							}
-							
-							// Build the service info
-							let service = '';
-							if (veteran['Branch'] || veteran['Service Period']) {
-								service = ' - ' + (veteran['Branch'] || '') + (veteran['Branch'] && veteran['Service Period'] ? ', ' : '') + (veteran['Service Period'] || '');
-							}
-							
-							// Build the link to new CSV-based viewer
-							if (veteran['Record ID']) {
-								// Convert record ID to uppercase for plot ID (e.g., 'oyc5' -> 'OYC5')
-								const plotId = veteran['Record ID'].toUpperCase();
-								html += '<a href="cemetery-viewer-v9.html?plot=' + plotId + '">' +
-								        name + dates + service + '</a></br>\n';
-							}
-						});
-						
-						veteranListDiv.innerHTML = html;
-					},
-					error: function(error) {
-						veteranListDiv.innerHTML = '<p style="color: red; text-align: center;">Error loading veterans list. Please ensure data/veterans.csv exists.</p>';
-						console.error('Error loading CSV:', error);
-					}
-				});
-			});
-		</script>
 	</head>
 	<body>
 		</br></br>
