@@ -1,0 +1,94 @@
+================================================================================
+MISSING DATES REPORT - OICA Cemetery Occupants
+================================================================================
+
+Total occupants: 994
+Missing both DOB and DOD: 42
+Missing DOB only: 20
+Missing DOD only: 9
+Total with missing date info: 71
+
+================================================================================
+MISSING BOTH DOB AND DOD (42 occupants)
+================================================================================
+  CYF1-L3         Walter A. Leeman, Sr.
+  ITB1-L2         Sarah Pye Ivey
+  NYA1-L5         George R. Johnson
+  NYA1-L4         David Johnson
+  NYA1-L3         Arthur Madison Johnson
+  NYA5-L2         Charles M. Wallace
+  NYA5-L1         Joseph L. Wallace
+  NYC3-L5         Fan E. Boyce
+  NYD2-L2         Etta F. Lord
+  NYD2-L1         Charles F. Lord
+  NYD3-L3         Hattie M. Stilphen
+  NYD3-L2         James F. Stilphen
+  NYD4-L5         Mary L. Pye
+  NYD4-L4         John H. Pye
+  NYD4-L3         Estelle L. Pye
+  NYD4-L2         Mahala E. Pye
+  NYD4-L1         James E. Pye
+  NYD7-L1         Stephen F. Morrill
+  NYF6-L4         Cora Belle Wilson
+  NYF6-L3         Elmer L. Wilson
+  NYG4-L2         Natalie (no last name)
+  NYH3-L5         Lena M. Harris
+  NYH3-L4         Natalie P. Harris
+  NYH3-L2         Irving C. Harris
+  OYB4-L1         E. M. Wilson
+  OYD1-L4         Ethel and Baby Starbird
+  OYE8-L1         Baby Johnson
+  OYF1-L3         Freddie C. Green
+  OYF1-L2         Mary F. Green
+  OYF1-L1         Arthur A. Green
+  OYF11-L7        Abbie J. Frye
+  OYF11-L6        Lydia A. M. Frye
+  OYF11-L5        Thankful Frye
+  OYG12-L4        Eliza F. Stevens
+  OYG12-L3        Albert H. Stevens
+  OYG7-L2         Unknown
+  OYH4-L4         Unknown
+  OYH4-L3         Unknown
+  OYI2-L2         Unknown
+  OYK6-L4         Laura Gilliam
+  UTA8-L2         Elizabeth Bragdon
+  UTB15-L5        Unknown
+
+================================================================================
+MISSING DOB ONLY (20 occupants)
+================================================================================
+  CYA4-L3         Mary Louise Given                        DOD: 1950
+  ITA24-L1        Glenys Cary                              DOD: 8/18/2004
+  ITB10-L1        Rose Welch                               DOD: 12/29/1981
+  NYA2-L5         John Prince                              DOD: 12/23/1893
+  NYC2-L6         Frank I. York                            DOD: 03/04/1930
+  NYC2-L4         Ira J. York                              DOD: 07/10/1983
+  NYC4-L3         Stewart Ferris                           DOD: 09/01/1931
+  NYG2-L2         Zephalena L. Green                       DOD: 05/16/1906
+  NYG4-L3         William H. Hall                          DOD: 10/25/1939
+  OYD10-L3        Baby Boy Sylvester                       DOD: 07/07/1937
+  OYD4-L5         Harvey W. Orr                            DOD: 1880
+  OYD4-L4         Sadie E. Orr                             DOD: 1885
+  OYE10-L2        Fred E. Linscott                         DOD: 04/16/1901
+  OYE11-L2        Moses Black Linscott                     DOD: 06/17/1930
+  OYF1-L6         Tavia L. York                            DOD: 1912
+  OYJ10-L1        Vanie E. Green                           DOD: 04/03/1878
+  OYL10-L5        Deborah Sinnett                          DOD: 10/15/1832
+  UTB1-L3         Frances Phillips                         DOD: 1970
+  UTB24-L1        Bernard E. Wilson                        DOD: ~2/6/1964
+  UTC5-L2         Lee Theberge, Jr.                        DOD: 05/10/1969
+
+================================================================================
+MISSING DOD ONLY (9 occupants)
+================================================================================
+  CYB1-L3         Patricia A. Bailey                       DOB: 06/07/1945
+  ITB22-L5        Jeanne L. David                          DOB: 11/11/1943
+  ITC17-L2        Wynne Swormstedt Winchell                DOB: 1/15/1956
+  NYB3-L5         James E. Stilphen                        DOB: 1839
+  NYB5-L2         James E. Doughty                         DOB: 1897
+  NYD6-L1         Charles E. Richardson                    DOB: 1892
+  OYE3-L3         Lucy Ellen Ward                          DOB: 1898
+  OYF12-L2        Aulenah G. Allen                         DOB: 1867
+  UTA13-L5        Doris E. Neal                            DOB: 8/15/1912
+
+================================================================================

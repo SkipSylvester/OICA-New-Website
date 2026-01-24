@@ -36,7 +36,7 @@ document.addEventListener('csvLoaderReady', function() {
             // Build the link to cemetery viewer
             if (veteran['Record ID']) {
                 const plotId = veteran['Record ID'].toUpperCase();
-                return '<a href="cemetery-viewer-v9.html?plot=' + plotId + '">' +
+                return '<a href="cemetery-viewer.html?plot=' + plotId + '">' +
                        name + dates + service + '</a></br>\n';
             }
 

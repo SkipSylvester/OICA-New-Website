@@ -1,0 +1,17 @@
+OLDEST OCCUPANTS AT DEATH - OICA Cemetery
+
+Total occupants with both dates: 687
+
+Top 10 Oldest at Death:
+
+Rank	Lot ID	Name	Age (years)	Birth Date	Death Date
+1	ITB21-L1	Edward Reed	105.2	3/14/1916	5/22/2021
+2	NYD5-L2	Ellen L. Hanson	104.0	1864	1968
+3	UTA21-L1	Paul B. Winnewisser	104.0	1890	1994
+4	ITB22-L5	Alice M. Thibault	103.7	05/11/1902	01/22/2006
+5	OYI3-L5	William Gilliam	103.2	1799	04/04/1902
+6	UTB17-L2	Nellie Doyle Morrill	100.9	10/21/1901	9/15/2002
+7	NYA6-L1	Minnie Heyer	100.0	1876	1976
+8	UTA24-L3	Leo G. Mercier	99.0	1913	2012
+9	NYC4-L1	Mary Ferris Bangs	98.9	10/18/1921	09/07/2020
+10	CYA3-L3	Alonzo F. Doughty	98.6	04/30/1893	11/22/1991

@@ -1,0 +1,22 @@
+==========================================================================================
+OLDEST BURIALS (EARLIEST DEATH DATES) - OICA Cemetery
+==========================================================================================
+
+Total occupants with death dates: 849
+
+Top 10 Oldest Burials:
+
+Rank   Lot ID          Name                                Birth        Death
+------------------------------------------------------------------------------------------
+1      OYI11-L4        Alfred Johnson                      about 1823   09/18/1826
+2      OYL10-L5        Deborah Sinnett                     Unknown      10/15/1832
+3      OYI11-L2        Lydia Johnson                       about 1800   06/13/1836
+4      OYF10-L1        James Sinnett                       about 1770   10/10/1838
+5      OYL5-L5         Rebecca Orr                         about 1813   02/20/1842
+6      OYF10-L2        Susan Sinnett                       about 1769   07/09/1842
+7      OYM2-L5         Henry Green                         11/15/1839   10/11/1842
+8      OYL10-L4        Hannah B. Sinnett                   07/10/1768   12/05/1843
+9      OYF9-L1         James E. Littlejohn                 05/29/1843   01/05/1844
+10     OYF6-L1         Adam Sinnett                        about 1817   01/08/1844
+
+==========================================================================================

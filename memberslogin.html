@@ -78,17 +78,17 @@
 		</script>
 		</body>
 		<SCRIPT>
-		function passWord() 
+		function passWord()
 			{
 			var testV = 1;
 			var pass1 = prompt('Please Enter Your Password',' ');
-			while (testV < 3) 
+			while (testV < 3)
 				{
 				if (!pass1)
 				history.go(-1);
-				if (pass1 == words[0]) 
+				if (pass1 == words[0])
 					{
-					window.open('text.html');
+					window.location.href = 'membersonly.html';
 					break;
 					}
 				testV+=1;

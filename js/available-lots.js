@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (lot['plot_id'] && lot['lots_available']) {
                     const plotId = lot['plot_id'].toUpperCase();
                     const lotsText = lot['lots_available'];
-                    const link = '<a href="cemetery-viewer-v9.html?plot=' + plotId + '">' +
+                    const link = '<a href="cemetery-viewer.html?plot=' + plotId + '">' +
                                 plotId + '-' + lotsText + '</a></br>\n';
 
                     // Count lots (count dashes and commas to estimate number of lots)

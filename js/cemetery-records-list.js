@@ -30,22 +30,58 @@ document.addEventListener('DOMContentLoaded', function() {
                     const nameOriginal = person['name'];
                     const status = person['status'];
 
-                    // Convert "First Middle Last" to "Last, First Middle"
-                    const nameParts = nameOriginal.trim().split(/\s+/);
+                    // Convert "First Middle Last" or "First Middle Last, Suffix" to "Last, First Middle Suffix"
                     let formattedName = nameOriginal; // default if parsing fails
-                    if (nameParts.length >= 2) {
-                        const lastName = nameParts[nameParts.length - 1];
-                        const firstMiddle = nameParts.slice(0, -1).join(' ');
-                        formattedName = lastName + ', ' + firstMiddle;
+
+                    // Check if name already has a comma (indicating suffix like "Bailey, Jr.")
+                    if (nameOriginal.includes(',')) {
+                        // Name is like "Lawrence Bailey, Jr." - need to rearrange
+                        const parts = nameOriginal.split(',').map(p => p.trim());
+                        if (parts.length === 2) {
+                            const mainName = parts[0].trim();
+                            const suffix = parts[1].trim();
+
+                            // Split main name into parts
+                            const nameParts = mainName.split(/\s+/);
+                            if (nameParts.length >= 2) {
+                                const lastName = nameParts[nameParts.length - 1];
+                                const firstMiddle = nameParts.slice(0, -1).join(' ');
+                                formattedName = lastName + ', ' + firstMiddle + ' ' + suffix;
+                            }
+                        }
+                    } else {
+                        // No comma - check if last word is a suffix (Jr., Sr., II, III, IV, etc.)
+                        const nameParts = nameOriginal.trim().split(/\s+/);
+                        if (nameParts.length >= 2) {
+                            const lastWord = nameParts[nameParts.length - 1];
+                            // Check if last word is a suffix
+                            if (/^(Jr\.?|Sr\.?|II|III|IV|V|VI)$/i.test(lastWord)) {
+                                // Name is like "John Atwood Jr." - treat last word as suffix
+                                const suffix = lastWord;
+                                const nameWithoutSuffix = nameParts.slice(0, -1);
+                                if (nameWithoutSuffix.length >= 2) {
+                                    const lastName = nameWithoutSuffix[nameWithoutSuffix.length - 1];
+                                    const firstMiddle = nameWithoutSuffix.slice(0, -1).join(' ');
+                                    formattedName = lastName + ', ' + firstMiddle + ' ' + suffix;
+                                } else if (nameWithoutSuffix.length === 1) {
+                                    // Single name + suffix (shouldn't happen, but handle it)
+                                    formattedName = nameWithoutSuffix[0] + ' ' + suffix;
+                                }
+                            } else {
+                                // Normal "First Middle Last" format
+                                const lastName = nameParts[nameParts.length - 1];
+                                const firstMiddle = nameParts.slice(0, -1).join(' ');
+                                formattedName = lastName + ', ' + firstMiddle;
+                            }
+                        }
                     }
 
                     // Determine superscript based on status
                     let superscript = '';
-                    if (status === 'Memorial') superscript = 'm';
+                    if (status === 'Cremation') superscript = 'c';
+                    else if (status === 'Vault') superscript = 'v';
+                    else if (status === 'Memorial') superscript = 'm';
                     else if (status === 'Reserved') superscript = 'r';
-                    // Check notes for additional info
-                    if (person['notes'] && person['notes'].includes('Cremation')) superscript = 'c';
-                    if (person['notes'] && person['notes'].includes('Vault')) superscript = 'v';
 
                     people.push({
                         name: formattedName,
@@ -69,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 for (let i = start; i < end; i++) {
                     const person = people[i];
-                    html += '<a href="cemetery-viewer-v9.html?plot=' + person.plotId + '">' +
+                    html += '<a href="cemetery-viewer.html?plot=' + person.plotId + '">' +
                             person.name + '</a>';
                     if (person.superscript) {
                         html += '<sup>' + person.superscript + '</sup>';

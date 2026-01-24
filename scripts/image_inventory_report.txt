@@ -1,0 +1,852 @@
+====================================================================================================
+OICA CEMETERY - IMAGE INVENTORY REPORT
+Generated: 2025-12-29 10:17:05
+====================================================================================================
+
+SUMMARY STATISTICS
+----------------------------------------------------------------------------------------------------
+Total Image Files in Folders: 765
+Total Images Referenced in plots.csv: 744
+
+====================================================================================================
+SECTION: CY (OICA Church Yard)
+====================================================================================================
+
+Physical Files: 74
+Referenced Files: 74
+
+REFERENCED IMAGES (in plots.csv)
+----------------------------------------------------------------------------------------------------
+  CYA1-1B.JPG                              ✓ EXISTS     8.8 MB     Plots: CYA1
+  CYA1-1F.JPG                              ✓ EXISTS     3.8 MB     Plots: CYA1
+  CYA1-2VP.jpg                             ✓ EXISTS     2.3 MB     Plots: CYA1
+  CYA1-3P.jpg                              ✓ EXISTS     5.1 MB     Plots: CYA1
+  CYA2-1B.JPG                              ✓ EXISTS     3.6 MB     Plots: CYA2
+  CYA2-1F.JPG                              ✓ EXISTS     4.1 MB     Plots: CYA2
+  CYA3-1VP.JPG                             ✓ EXISTS     4.1 MB     Plots: CYA3
+  CYA3-2B.JPG                              ✓ EXISTS     3.9 MB     Plots: CYA3
+  CYA3-2F.JPG                              ✓ EXISTS     4.1 MB     Plots: CYA3
+  CYA3-3VP.JPG                             ✓ EXISTS     3.7 MB     Plots: CYA3
+  CYA4-1VP.jpg                             ✓ EXISTS     5.0 MB     Plots: CYA4
+  CYA4-2P.JPG                              ✓ EXISTS     3.4 MB     Plots: CYA4
+  CYA4-3P.jpg                              ✓ EXISTS     5.2 MB     Plots: CYA4
+  CYA4-4B.JPG                              ✓ EXISTS     2.8 MB     Plots: CYA4
+  CYA4-4F.JPG                              ✓ EXISTS     3.3 MB     Plots: CYA4
+  CYB1-1P.JPG                              ✓ EXISTS     4.6 MB     Plots: CYB1
+  CYB1-2VP.jpg                             ✓ EXISTS     2.8 MB     Plots: CYB1
+  CYB1-3P.jpg                              ✓ EXISTS     4.1 MB     Plots: CYB1
+  CYB1-4.JPG                               ✓ EXISTS     4.3 MB     Plots: CYB1
+  CYB2-1V.JPG                              ✓ EXISTS     4.2 MB     Plots: CYB2
+  CYB3-1.JPG                               ✓ EXISTS     4.0 MB     Plots: CYB3
+  CYB3-2P.JPG                              ✓ EXISTS     4.6 MB     Plots: CYB3
+  CYB4-1B.JPG                              ✓ EXISTS     4.1 MB     Plots: CYB4
+  CYB4-1F.JPG                              ✓ EXISTS     3.7 MB     Plots: CYB4
+  CYB4-2P.jpg                              ✓ EXISTS     5.3 MB     Plots: CYB4
+  CYB4-3P.jpg                              ✓ EXISTS     5.8 MB     Plots: CYB4
+  CYB4-4P.jpg                              ✓ EXISTS     4.4 MB     Plots: CYB4
+  CYB4-5VP.jpg                             ✓ EXISTS     4.2 MB     Plots: CYB4
+  CYB4-6P.jpg                              ✓ EXISTS     5.3 MB     Plots: CYB4
+  CYC1-1P.JPG                              ✓ EXISTS     4.1 MB     Plots: CYC1
+  CYC1-2.JPG                               ✓ EXISTS     4.1 MB     Plots: CYC1
+  CYC2-2P.jpg                              ✓ EXISTS     256.8 KB   Plots: CYC2
+  CYC2-3.JPG                               ✓ EXISTS     4.0 MB     Plots: CYC2
+  CYC3-1P.JPG                              ✓ EXISTS     5.0 MB     Plots: CYC3
+  CYC3-2P.JPG                              ✓ EXISTS     4.3 MB     Plots: CYC3
+  CYC3-3B.jpg                              ✓ EXISTS     631.3 KB   Plots: CYC3
+  CYC3-3F.JPG                              ✓ EXISTS     4.1 MB     Plots: CYC3
+  CYC3-4VP.JPG                             ✓ EXISTS     2.8 MB     Plots: CYC3
+  CYC3-5VP.JPG                             ✓ EXISTS     3.8 MB     Plots: CYC3
+  CYC4-1P.JPG                              ✓ EXISTS     4.4 MB     Plots: CYC4
+  CYC4-2P.JPG                              ✓ EXISTS     4.0 MB     Plots: CYC4
+  CYC4-3B.JPG                              ✓ EXISTS     4.0 MB     Plots: CYC4
+  CYC4-3F.JPG                              ✓ EXISTS     4.1 MB     Plots: CYC4
+  CYD1-1V2VP.JPG                           ✓ EXISTS     4.2 MB     Plots: CYD1
+  CYD1-2.JPG                               ✓ EXISTS     4.1 MB     Plots: CYD1
+  CYD1-3P.JPG                              ✓ EXISTS     8.7 MB     Plots: CYD1
+  CYD2-1P.JPG                              ✓ EXISTS     4.4 MB     Plots: CYD2
+  CYD2-2P.JPG                              ✓ EXISTS     4.3 MB     Plots: CYD2
+  CYD3-1.JPG                               ✓ EXISTS     3.9 MB     Plots: CYD3
+  CYD4-1P.JPG                              ✓ EXISTS     4.2 MB     Plots: CYD4
+  CYD4-2P.JPG                              ✓ EXISTS     4.1 MB     Plots: CYD4
+  CYD4-3.JPG                               ✓ EXISTS     4.0 MB     Plots: CYD4
+  CYD4-4.jpg                               ✓ EXISTS     7.0 MB     Plots: CYD4
+  CYE1-1VP.JPG                             ✓ EXISTS     3.7 MB     Plots: CYE1
+  CYE1-2P.JPG                              ✓ EXISTS     4.0 MB     Plots: CYE1
+  CYE2-1VP.JPG                             ✓ EXISTS     4.2 MB     Plots: CYE2
+  CYE2-2F.JPG                              ✓ EXISTS     4.1 MB     Plots: CYE2
+  CYE2-3P.JPG                              ✓ EXISTS     4.3 MB     Plots: CYE2
+  CYE2-4VP.JPG                             ✓ EXISTS     4.0 MB     Plots: CYE2
+  CYE2-5P.JPG                              ✓ EXISTS     3.0 MB     Plots: CYE2
+  CYE3-1P.JPG                              ✓ EXISTS     4.1 MB     Plots: CYE3
+  CYE3-2P.JPG                              ✓ EXISTS     4.2 MB     Plots: CYE3
+  CYE3-3P.JPG                              ✓ EXISTS     4.1 MB     Plots: CYE3
+  CYE4-1V.JPG                              ✓ EXISTS     3.9 MB     Plots: CYE4
+  CYE4-2F.JPG                              ✓ EXISTS     4.3 MB     Plots: CYE4
+  CYE4-3.JPG                               ✓ EXISTS     9.5 MB     Plots: CYE4
+  CYF1-1P.JPG                              ✓ EXISTS     4.3 MB     Plots: CYF1
+  CYF1-2F.JPG                              ✓ EXISTS     4.1 MB     Plots: CYF1
+  CYF2-1F.jpg                              ✓ EXISTS     127.6 KB   Plots: CYF2
+  CYF3-1F.JPG                              ✓ EXISTS     8.9 MB     Plots: CYF3
+  CYF3-2F.JPG                              ✓ EXISTS     4.1 MB     Plots: CYF3
+  CYF3-3P.JPG                              ✓ EXISTS     4.4 MB     Plots: CYF3
+  CYF4-1P.JPG                              ✓ EXISTS     4.2 MB     Plots: CYF4
+  CYF4-2P.JPG                              ✓ EXISTS     3.9 MB     Plots: CYF4
+
+====================================================================================================
+SECTION: IT (OICA Intervale Terrace)
+====================================================================================================
+
+Physical Files: 94
+Referenced Files: 94
+
+REFERENCED IMAGES (in plots.csv)
+----------------------------------------------------------------------------------------------------
+  ITA1-4P.JPG                              ✓ EXISTS     5.7 MB     Plots: ITA1
+  ITA1-4P1.JPG                             ✓ EXISTS     2.9 MB     Plots: ITA1
+  ITA10-3.JPG                              ✓ EXISTS     8.5 MB     Plots: ITA10
+  ITA11-1.JPG                              ✓ EXISTS     4.8 MB     Plots: ITA11
+  ITA11-2.JPG                              ✓ EXISTS     4.5 MB     Plots: ITA11
+  ITA14-4.JPG                              ✓ EXISTS     4.8 MB     Plots: ITA14
+  ITA17-1.JPG                              ✓ EXISTS     3.8 MB     Plots: ITA17
+  ITA17-3B.JPG                             ✓ EXISTS     3.9 MB     Plots: ITA17
+  ITA17-3F.JPG                             ✓ EXISTS     4.4 MB     Plots: ITA17
+  ITA18-1VP.JPG                            ✓ EXISTS     2.9 MB     Plots: ITA18
+  ITA18-2.JPG                              ✓ EXISTS     4.6 MB     Plots: ITA18
+  ITA18-3.JPG                              ✓ EXISTS     4.5 MB     Plots: ITA18
+  ITA19-1B.JPG                             ✓ EXISTS     4.3 MB     Plots: ITA19
+  ITA19-1F.JPG                             ✓ EXISTS     4.6 MB     Plots: ITA19
+  ITA2-2.JPG                               ✓ EXISTS     4.4 MB     Plots: ITA2
+  ITA2-3.JPG                               ✓ EXISTS     4.0 MB     Plots: ITA2
+  ITA2-5.jpg                               ✓ EXISTS     3.0 MB     Plots: ITA2
+  ITA20-3VP.jpg                            ✓ EXISTS     2.5 MB     Plots: ITA20
+  ITA20-4P.JPG                             ✓ EXISTS     8.9 MB     Plots: ITA20
+  ITA21-3.JPG                              ✓ EXISTS     7.7 MB     Plots: ITA21
+  ITA21-4.JPG                              ✓ EXISTS     3.9 MB     Plots: ITA21
+  ITA21-5V.jpg                             ✓ EXISTS     3.9 MB     Plots: ITA21
+  ITA22-1.JPG                              ✓ EXISTS     4.3 MB     Plots: ITA22
+  ITA22-2V.jpg                             ✓ EXISTS     367.1 KB   Plots: ITA22
+  ITA23-3.jpg                              ✓ EXISTS     2.8 MB     Plots: ITA23
+  ITA24-2V.JPG                             ✓ EXISTS     5.1 MB     Plots: ITA24
+  ITA24-3.JPG                              ✓ EXISTS     4.3 MB     Plots: ITA24
+  ITA3-1.jpg                               ✓ EXISTS     3.0 MB     Plots: ITA3
+  ITA4-5.JPG                               ✓ EXISTS     1.2 MB     Plots: ITA4
+  ITA5-1F.JPG                              ✓ EXISTS     4.2 MB     Plots: ITA5
+  ITA5-2B.JPG                              ✓ EXISTS     4.5 MB     Plots: ITA5
+  ITA6-1P.JPG                              ✓ EXISTS     3.6 MB     Plots: ITA6
+  ITA6-5.JPG                               ✓ EXISTS     4.6 MB     Plots: ITA6
+  ITA8-2VP.JPG                             ✓ EXISTS     3.4 MB     Plots: ITA8
+  ITA8-3VP.JPG                             ✓ EXISTS     3.4 MB     Plots: ITA8
+  ITA8-4.JPG                               ✓ EXISTS     3.8 MB     Plots: ITA8
+  ITA8-4P.JPG                              ✓ EXISTS     4.7 MB     Plots: ITA8
+  ITA9-1VP.JPG                             ✓ EXISTS     4.2 MB     Plots: ITA9
+  ITA9-2.JPG                               ✓ EXISTS     4.6 MB     Plots: ITA9
+  ITA9-4.JPG                               ✓ EXISTS     4.6 MB     Plots: ITA9
+  ITA9-5.JPG                               ✓ EXISTS     4.7 MB     Plots: ITA9
+  ITB1-3P.JPG                              ✓ EXISTS     3.1 MB     Plots: ITB1
+  ITB10-1P.JPG                             ✓ EXISTS     3.2 MB     Plots: ITB10
+  ITB10-4B.JPG                             ✓ EXISTS     9.0 MB     Plots: ITB10
+  ITB10-4F.JPG                             ✓ EXISTS     8.8 MB     Plots: ITB10
+  ITB11-1.JPG                              ✓ EXISTS     8.1 MB     Plots: ITB11
+  ITB11-5VP.JPG                            ✓ EXISTS     2.8 MB     Plots: ITB11
+  ITB12-1.JPG                              ✓ EXISTS     4.6 MB     Plots: ITB12
+  ITB13-1P.jpg                             ✓ EXISTS     4.2 MB     Plots: ITB13
+  ITB13-5P-2.jpg                           ✓ EXISTS     4.6 MB     Plots: ITB13
+  ITB13-5VP-1.jpg                          ✓ EXISTS     4.0 MB     Plots: ITB13
+  ITB13.JPG                                ✓ EXISTS     4.7 MB     Plots: ITB13
+  ITB14-1B.JPG                             ✓ EXISTS     8.5 MB     Plots: ITB14
+  ITB14-1F.JPG                             ✓ EXISTS     4.5 MB     Plots: ITB14
+  ITB15-1.JPG                              ✓ EXISTS     4.3 MB     Plots: ITB15
+  ITB15-3VP.JPG                            ✓ EXISTS     8.6 MB     Plots: ITB15
+  ITB15-4.JPG                              ✓ EXISTS     8.9 MB     Plots: ITB15
+  ITB16-2.JPG                              ✓ EXISTS     11.5 MB    Plots: ITB16
+  ITB17-5V.JPG                             ✓ EXISTS     4.5 MB     Plots: ITB17
+  ITB18-1V.JPG                             ✓ EXISTS     4.5 MB     Plots: ITB18
+  ITB2-1P.JPG                              ✓ EXISTS     4.3 MB     Plots: ITB2
+  ITB2-4.JPG                               ✓ EXISTS     4.3 MB     Plots: ITB2
+  ITB20-4.jpeg                             ✓ EXISTS     559.7 KB   Plots: ITB20
+  ITB21-1VP.jpg                            ✓ EXISTS     1.4 MB     Plots: ITB21
+  ITB22-4B.JPG                             ✓ EXISTS     2.1 MB     Plots: ITB22
+  ITB22-4F.JPG                             ✓ EXISTS     2.2 MB     Plots: ITB22
+  ITB3-3V4.JPG                             ✓ EXISTS     4.3 MB     Plots: ITB3
+  ITB4-1.JPG                               ✓ EXISTS     3.0 MB     Plots: ITB4
+  ITB4-3.jpg                               ✓ EXISTS     242.5 KB   Plots: ITB4
+  ITB4-3VP.JPG                             ✓ EXISTS     4.1 MB     Plots: ITB4
+  ITB5-2.JPG                               ✓ EXISTS     4.4 MB     Plots: ITB5
+  ITB5-3.JPG                               ✓ EXISTS     4.4 MB     Plots: ITB5
+  ITB5-4.JPG                               ✓ EXISTS     4.0 MB     Plots: ITB5
+  ITB6-3P.JPG                              ✓ EXISTS     3.1 MB     Plots: ITB6
+  ITB7-1VP.JPG                             ✓ EXISTS     4.6 MB     Plots: ITB7
+  ITB7-2P.JPG                              ✓ EXISTS     4.7 MB     Plots: ITB7
+  ITB7-3P.JPG                              ✓ EXISTS     4.3 MB     Plots: ITB7
+  ITB9-3.JPG                               ✓ EXISTS     4.1 MB     Plots: ITB9
+  ITB9-4.JPG                               ✓ EXISTS     3.8 MB     Plots: ITB9
+  ITC1-1P.JPG                              ✓ EXISTS     3.1 MB     Plots: ITC1
+  ITC13-3.JPG                              ✓ EXISTS     2.1 MB     Plots: ITC13
+  ITC13-3VP.jpg                            ✓ EXISTS     2.1 MB     Plots: ITC13
+  ITC14-3V.JPG                             ✓ EXISTS     4.7 MB     Plots: ITC14
+  ITC16-1VB.jpg                            ✓ EXISTS     2.1 MB     Plots: ITC16
+  ITC16-1VF.JPG                            ✓ EXISTS     4.9 MB     Plots: ITC16
+  ITC17-B.JPG                              ✓ EXISTS     4.5 MB     Plots: ITC17
+  ITC17-F.JPG                              ✓ EXISTS     4.8 MB     Plots: ITC17
+  ITC2-3B.JPG                              ✓ EXISTS     4.5 MB     Plots: ITC2
+  ITC2-3F.JPG                              ✓ EXISTS     4.3 MB     Plots: ITC2
+  ITC3-1B.JPG                              ✓ EXISTS     2.2 MB     Plots: ITC3
+  ITC3-1F.JPG                              ✓ EXISTS     4.7 MB     Plots: ITC3
+  ITC3-3.JPG                               ✓ EXISTS     4.7 MB     Plots: ITC3
+  ITC6-1VP.JPG                             ✓ EXISTS     4.6 MB     Plots: ITC6
+  ITC6-3P.jpg                              ✓ EXISTS     8.9 MB     Plots: ITC6
+
+====================================================================================================
+SECTION: NY (OICA New Yard)
+====================================================================================================
+
+Physical Files: 159
+Referenced Files: 153
+
+REFERENCED IMAGES (in plots.csv)
+----------------------------------------------------------------------------------------------------
+  NYA1-1F.JPG                              ✓ EXISTS     3.4 MB     Plots: NYA1
+  NYA1-1F2.JPG                             ✓ EXISTS     4.0 MB     Plots: NYA1
+  NYA2-1.JPG                               ✓ EXISTS     4.7 MB     Plots: NYA2
+  NYA2-2.JPG                               ✓ EXISTS     2.9 MB     Plots: NYA2
+  NYA2-3.JPG                               ✓ EXISTS     4.1 MB     Plots: NYA2
+  NYA2-5.JPG                               ✓ EXISTS     3.4 MB     Plots: NYA2
+  NYA3.JPG                                 ✓ EXISTS     7.7 MB     Plots: NYA3
+  NYA4-2P.jpg                              ✓ EXISTS     226.8 KB   Plots: NYA4
+  NYA4-3P.jpg                              ✓ EXISTS     223.5 KB   Plots: NYA4
+  NYA4-4P.JPG                              ✓ EXISTS     10.0 MB    Plots: NYA4
+  NYA4-5P.JPG                              ✓ EXISTS     9.4 MB     Plots: NYA4
+  NYA4.JPG                                 ✓ EXISTS     2.8 MB     Plots: NYA4
+  NYA5-1B.JPG                              ✓ EXISTS     2.1 MB     Plots: NYA5
+  NYA5-1F.JPG                              ✓ EXISTS     3.2 MB     Plots: NYA5
+  NYA6-1B.JPG                              ✓ EXISTS     3.2 MB     Plots: NYA6
+  NYA6-1F.JPG                              ✓ EXISTS     3.7 MB     Plots: NYA6
+  NYA6-3.JPG                               ✓ EXISTS     3.7 MB     Plots: NYA6
+  NYA6-4.JPG                               ✓ EXISTS     4.1 MB     Plots: NYA6
+  NYA7-1V2VP.jpg                           ✓ EXISTS     5.0 MB     Plots: NYA7
+  NYA7-3VP.jpg                             ✓ EXISTS     5.4 MB     Plots: NYA7
+  NYA7-4P.jpg                              ✓ EXISTS     4.9 MB     Plots: NYA7
+  NYA7-5P.jpg                              ✓ EXISTS     4.7 MB     Plots: NYA7
+  NYB2-2.JPG                               ✓ EXISTS     4.1 MB     Plots: NYB2
+  NYB2-4P.JPG                              ✓ EXISTS     5.1 MB     Plots: NYB2
+  NYB2-5V.JPG                              ✓ EXISTS     3.3 MB     Plots: NYB2
+  NYB3-3.JPG                               ✓ EXISTS     3.7 MB     Plots: NYB3
+  NYB3-3P1.JPG                             ✓ EXISTS     4.4 MB     Plots: NYB3
+  NYB3-3P2.JPG                             ✓ EXISTS     4.4 MB     Plots: NYB3
+  NYB3-4.JPG                               ✓ EXISTS     2.7 MB     Plots: NYB3
+  NYB3-5V.JPG                              ✓ EXISTS     4.0 MB     Plots: NYB3
+  NYB4-1.JPG                               ✓ EXISTS     2.8 MB     Plots: NYB4
+  NYB4-2.JPG                               ✓ EXISTS     2.6 MB     Plots: NYB4
+  NYB4-4.JPG                               ✓ EXISTS     2.6 MB     Plots: NYB4
+  NYB4-4P.JPG                              ✓ EXISTS     5.6 MB     Plots: NYB4
+  NYB4-5.JPG                               ✓ EXISTS     2.6 MB     Plots: NYB4
+  NYB5-1B.JPG                              ✓ EXISTS     1.9 MB     Plots: NYB5
+  NYB5-1F.JPG                              ✓ EXISTS     2.1 MB     Plots: NYB5
+  NYB5-4V.JPG                              ✓ EXISTS     2.0 MB     Plots: NYB5
+  NYB6-1.JPG                               ✓ EXISTS     2.3 MB     Plots: NYB6
+  NYB6-2.JPG                               ✓ EXISTS     2.0 MB     Plots: NYB6
+  NYB7-1B.JPG                              ✓ EXISTS     3.6 MB     Plots: NYB7
+  NYB7-1F.JPG                              ✓ EXISTS     3.9 MB     Plots: NYB7
+  NYB7-4V.JPG                              ✓ EXISTS     3.6 MB     Plots: NYB7
+  NYB7-5V.JPG                              ✓ EXISTS     5.7 MB     Plots: NYB7
+  NYC1-1.JPG                               ✓ EXISTS     5.2 MB     Plots: NYC1
+  NYC1-2.JPG                               ✓ EXISTS     3.6 MB     Plots: NYC1
+  NYC2-1B.JPG                              ✓ EXISTS     3.0 MB     Plots: NYC2
+  NYC2-1F.JPG                              ✓ EXISTS     2.9 MB     Plots: NYC2
+  NYC2-2P.JPG                              ✓ EXISTS     4.5 MB     Plots: NYC2
+  NYC2-3VP.JPG                             ✓ EXISTS     4.9 MB     Plots: NYC2
+  NYC2-4VP.JPG                             ✓ EXISTS     9.2 MB     Plots: NYC2
+  NYC2-5.JPG                               ✓ EXISTS     3.2 MB     Plots: NYC2
+  NYC3-1.JPG                               ✓ EXISTS     5.0 MB     Plots: NYC3
+  NYC3-3.JPG                               ✓ EXISTS     2.9 MB     Plots: NYC3
+  NYC3-4.JPG                               ✓ EXISTS     2.9 MB     Plots: NYC3
+  NYC4-1V.JPG                              ✓ EXISTS     4.8 MB     Plots: NYC4
+  NYC4-4.JPG                               ✓ EXISTS     5.1 MB     Plots: NYC4
+  NYC4-5.JPG                               ✓ EXISTS     4.8 MB     Plots: NYC4
+  NYC5.JPG                                 ✓ EXISTS     2.5 MB     Plots: NYC5
+  NYC6-B.JPG                               ✓ EXISTS     3.3 MB     Plots: NYC6
+  NYC6-F.JPG                               ✓ EXISTS     3.6 MB     Plots: NYC6
+  NYC7-1.JPG                               ✓ EXISTS     2.9 MB     Plots: NYC7
+  NYC7-3.JPG                               ✓ EXISTS     2.4 MB     Plots: NYC7
+  NYC7-4.JPG                               ✓ EXISTS     2.7 MB     Plots: NYC7
+  NYC7-B.JPG                               ✓ EXISTS     2.4 MB     Plots: NYC7
+  NYC7-F.JPG                               ✓ EXISTS     2.2 MB     Plots: NYC7
+  NYD1-1.JPG                               ✓ EXISTS     4.4 MB     Plots: NYD1
+  NYD1-3.JPG                               ✓ EXISTS     2.9 MB     Plots: NYD1
+  NYD1-5.JPG                               ✓ EXISTS     2.4 MB     Plots: NYD1
+  NYD2-3.JPG                               ✓ EXISTS     3.2 MB     Plots: NYD2
+  NYD2.JPG                                 ✓ EXISTS     2.6 MB     Plots: NYD2
+  NYD3-1.JPG                               ✓ EXISTS     2.8 MB     Plots: NYD3
+  NYD3-2P.JPG                              ✓ EXISTS     4.4 MB     Plots: NYD3
+  NYD4.JPG                                 ✓ EXISTS     4.4 MB     Plots: NYD4
+  NYD5-1.JPG                               ✓ EXISTS     2.3 MB     Plots: NYD5
+  NYD6-1.JPG                               ✓ EXISTS     3.3 MB     Plots: NYD6
+  NYD6-3V.jpg                              ✓ EXISTS     110.9 KB   Plots: NYD6
+  NYD6-4V.JPG                              ✓ EXISTS     2.6 MB     Plots: NYD6
+  NYD7-1.JPG                               ✓ EXISTS     2.1 MB     Plots: NYD7
+  NYD7-3.JPG                               ✓ EXISTS     2.6 MB     Plots: NYD7
+  NYE1-B.JPG                               ✓ EXISTS     4.4 MB     Plots: NYE1
+  NYE1-F.JPG                               ✓ EXISTS     4.3 MB     Plots: NYE1
+  NYE3-1P.JPG                              ✓ EXISTS     3.8 MB     Plots: NYE3
+  NYE3-3VP.jpg                             ✓ EXISTS     132.9 KB   Plots: NYE3
+  NYE3-5.JPG                               ✓ EXISTS     2.6 MB     Plots: NYE3
+  NYE4-1P.JPG                              ✓ EXISTS     4.7 MB     Plots: NYE4
+  NYE4-3P.JPG                              ✓ EXISTS     5.1 MB     Plots: NYE4
+  NYE5-3.JPG                               ✓ EXISTS     3.7 MB     Plots: NYE5
+  NYE5-3P.JPG                              ✓ EXISTS     4.4 MB     Plots: NYE5
+  NYE5-4P.JPG                              ✓ EXISTS     4.7 MB     Plots: NYE5
+  NYE6-1.JPG                               ✓ EXISTS     4.2 MB     Plots: NYE6
+  NYE7-5.JPG                               ✓ EXISTS     2.8 MB     Plots: NYE7
+  NYF1.JPG                                 ✓ EXISTS     3.0 MB     Plots: NYF1
+  NYF2-1B.JPG                              ✓ EXISTS     3.9 MB     Plots: NYF2
+  NYF2-1F.JPG                              ✓ EXISTS     4.2 MB     Plots: NYF2
+  NYF2-1P.JPG                              ✓ EXISTS     4.7 MB     Plots: NYF2
+  NYF2-2B.JPG                              ✓ EXISTS     4.4 MB     Plots: NYF2
+  NYF2-2F.JPG                              ✓ EXISTS     4.4 MB     Plots: NYF2
+  NYF2-4B.JPG                              ✓ EXISTS     4.5 MB     Plots: NYF2
+  NYF2-4F.JPG                              ✓ EXISTS     4.3 MB     Plots: NYF2
+  NYF2-4P.JPG                              ✓ EXISTS     5.1 MB     Plots: NYF2
+  NYF2-5P.JPG                              ✓ EXISTS     4.7 MB     Plots: NYF2
+  NYF2-6P.JPG                              ✓ EXISTS     5.1 MB     Plots: NYF2
+  NYF3-1.JPG                               ✓ EXISTS     4.2 MB     Plots: NYF3
+  NYF3-3B.JPG                              ✓ EXISTS     4.2 MB     Plots: NYF3
+  NYF3-3F.JPG                              ✓ EXISTS     4.4 MB     Plots: NYF3
+  NYF4-1.JPG                               ✓ EXISTS     3.0 MB     Plots: NYF4
+  NYF4-1VP.JPG                             ✓ EXISTS     2.5 MB     Plots: NYF4
+  NYF4-3.JPG                               ✓ EXISTS     2.8 MB     Plots: NYF4
+  NYF4-4V.JPG                              ✓ EXISTS     2.6 MB     Plots: NYF4
+  NYF5-3VP.JPG                             ✓ EXISTS     4.5 MB     Plots: NYF5
+  NYF5.JPG                                 ✓ EXISTS     4.2 MB     Plots: NYF5
+  NYF6-1.JPG                               ✓ EXISTS     2.8 MB     Plots: NYF6
+  NYF6-2.JPG                               ✓ EXISTS     3.0 MB     Plots: NYF6
+  NYF6-3.JPG                               ✓ EXISTS     4.3 MB     Plots: NYF6
+  NYG2-1.JPG                               ✓ EXISTS     2.9 MB     Plots: NYG2
+  NYG2-2.JPG                               ✓ EXISTS     2.7 MB     Plots: NYG2
+  NYG2-3.JPG                               ✓ EXISTS     4.4 MB     Plots: NYG2
+  NYG2-4P.JPG                              ✓ EXISTS     5.1 MB     Plots: NYG2
+  NYG4-1.JPG                               ✓ EXISTS     4.8 MB     Plots: NYG4
+  NYG4-2P.JPG                              ✓ EXISTS     3.9 MB     Plots: NYG4
+  NYG4-3VP.JPG                             ✓ EXISTS     3.9 MB     Plots: NYG4
+  NYG4-4B.JPG                              ✓ EXISTS     4.3 MB     Plots: NYG4
+  NYG4-4F.JPG                              ✓ EXISTS     4.2 MB     Plots: NYG4
+  NYG5-1P.JPG                              ✓ EXISTS     4.4 MB     Plots: NYG5
+  NYG5-2P.JPG                              ✓ EXISTS     4.3 MB     Plots: NYG5
+  NYG5-3B.jpg                              ✓ EXISTS     120.6 KB   Plots: NYG5
+  NYG5-3F.JPG                              ✓ EXISTS     2.8 MB     Plots: NYG5
+  NYG6-4P.JPG                              ✓ EXISTS     4.2 MB     Plots: NYG6
+  NYG6-5P.JPG                              ✓ EXISTS     4.4 MB     Plots: NYG6
+  NYG6.JPG                                 ✓ EXISTS     3.3 MB     Plots: NYG6
+  NYG7-2P.JPG                              ✓ EXISTS     4.4 MB     Plots: NYG7
+  NYG7-3.JPG                               ✓ EXISTS     3.6 MB     Plots: NYG7
+  NYH1-1.JPG                               ✓ EXISTS     4.0 MB     Plots: NYH1
+  NYH1-3P.JPG                              ✓ EXISTS     5.4 MB     Plots: NYH1
+  NYH3-1P.JPG                              ✓ EXISTS     5.0 MB     Plots: NYH3
+  NYH3-2.JPG                               ✓ EXISTS     3.4 MB     Plots: NYH3
+  NYH3-4.JPG                               ✓ EXISTS     3.1 MB     Plots: NYH3
+  NYH3-5.JPG                               ✓ EXISTS     3.2 MB     Plots: NYH3
+  NYH4-1.JPG                               ✓ EXISTS     3.2 MB     Plots: NYH4
+  NYH5-1P.JPG                              ✓ EXISTS     4.1 MB     Plots: NYH5
+  NYH5-2VP1.JPG                            ✓ EXISTS     4.8 MB     Plots: NYH5
+  NYH5-2VP2.JPG                            ✓ EXISTS     7.8 MB     Plots: NYH5
+  NYH5-3.JPG                               ✓ EXISTS     3.8 MB     Plots: NYH5
+  NYH6-1B.JPG                              ✓ EXISTS     3.9 MB     Plots: NYH6
+  NYH6-1F.JPG                              ✓ EXISTS     3.9 MB     Plots: NYH6
+  NYH6-3P.JPG                              ✓ EXISTS     4.3 MB     Plots: NYH6
+  NYH6-4P.JPG                              ✓ EXISTS     3.9 MB     Plots: NYH6
+  NYH6-5P.JPG                              ✓ EXISTS     4.0 MB     Plots: NYH6
+  NYH6-5P1.JPG                             ✓ EXISTS     4.2 MB     Plots: NYH6
+  NYH7-1P.JPG                              ✓ EXISTS     4.4 MB     Plots: NYH7
+  NYH7-2V.JPG                              ✓ EXISTS     4.1 MB     Plots: NYH7
+  NYH7-5V.JPG                              ✓ EXISTS     2.7 MB     Plots: NYH7
+
+ORPHANED IMAGES (not referenced in plots.csv)
+----------------------------------------------------------------------------------------------------
+Total: 6 files
+
+  NYA5-5P.JPG                              4.8 MB     Modified: 2024-09-24
+  NYC4-1M.JPG                              8.1 MB     Modified: 2024-09-24
+  NYE7-F4.JPG                              2.2 MB     Modified: 2024-09-24
+  NYE7-F5.JPG                              2.4 MB     Modified: 2024-09-24
+  NYG2-VP.JPG                              4.9 MB     Modified: 2024-09-24
+  NYG4-1M.JPG                              9.5 MB     Modified: 2024-09-24
+
+====================================================================================================
+SECTION: OY (OICA Old Yard)
+====================================================================================================
+
+Physical Files: 303
+Referenced Files: 289
+
+REFERENCED IMAGES (in plots.csv)
+----------------------------------------------------------------------------------------------------
+  OYA1-1.JPG                               ✓ EXISTS     4.0 MB     Plots: OYA1
+  OYA1-2.JPG                               ✓ EXISTS     3.9 MB     Plots: OYA1
+  OYB1-1.JPG                               ✓ EXISTS     3.8 MB     Plots: OYB1
+  OYB1-2.JPG                               ✓ EXISTS     3.8 MB     Plots: OYB1
+  OYB1-4.jpg                               ✓ EXISTS     866.2 KB   Plots: OYB1
+  OYB2-1.jpg                               ✓ EXISTS     1.1 MB     Plots: OYB2
+  OYB2-3.jpg                               ✓ EXISTS     1.2 MB     Plots: OYB2
+  OYB2-4.jpg                               ✓ EXISTS     1.8 MB     Plots: OYB2
+  OYB3-1.jpg                               ✓ EXISTS     1.4 MB     Plots: OYB3
+  OYB3-2.JPG                               ✓ EXISTS     941.7 KB   Plots: OYB3
+  OYB4-1.jpg                               ✓ EXISTS     1.8 MB     Plots: OYB4
+  OYB4-2.jpg                               ✓ EXISTS     1.7 MB     Plots: OYB4
+  OYB4-4.JPG                               ✓ EXISTS     964.4 KB   Plots: OYB4
+  OYB5-1.jpg                               ✓ EXISTS     273.3 KB   Plots: OYB5
+  OYC1.JPG                                 ✓ EXISTS     3.9 MB     Plots: OYC1
+  OYC2-1.JPG                               ✓ EXISTS     2.3 MB     Plots: OYC2
+  OYC2-2.JPG                               ✓ EXISTS     2.4 MB     Plots: OYC2
+  OYC2-3.JPG                               ✓ EXISTS     2.5 MB     Plots: OYC2
+  OYC3-1V2.JPG                             ✓ EXISTS     4.3 MB     Plots: OYC3
+  OYC3-3.JPG                               ✓ EXISTS     3.0 MB     Plots: OYC3
+  OYC3-4.JPG                               ✓ EXISTS     2.9 MB     Plots: OYC3
+  OYC3-5.JPG                               ✓ EXISTS     2.7 MB     Plots: OYC3
+  OYC4-4.JPG                               ✓ EXISTS     2.6 MB     Plots: OYC4
+  OYC5-1VP.jpg                             ✓ EXISTS     6.0 MB     Plots: OYC5
+  OYC5-2.JPG                               ✓ EXISTS     2.7 MB     Plots: OYC5
+  OYC5-3.JPG                               ✓ EXISTS     2.6 MB     Plots: OYC5
+  OYC6-1BV.jpg                             ✓ EXISTS     3.6 MB     Plots: OYC6
+  OYC6-1F.jpg                              ✓ EXISTS     3.8 MB     Plots: OYC6
+  OYC6-2V.JPG                              ✓ EXISTS     4.3 MB     Plots: OYC6
+  OYC6-2VP.JPG                             ✓ EXISTS     9.6 MB     Plots: OYC6
+  OYC6-4.JPG                               ✓ EXISTS     3.0 MB     Plots: OYC6
+  OYC7-1.JPG                               ✓ EXISTS     3.0 MB     Plots: OYC7
+  OYD1-1.JPG                               ✓ EXISTS     2.2 MB     Plots: OYD1
+  OYD1-3.JPG                               ✓ EXISTS     2.5 MB     Plots: OYD1
+  OYD1-4.JPG                               ✓ EXISTS     4.1 MB     Plots: OYD1
+  OYD10-2B.JPG                             ✓ EXISTS     3.9 MB     Plots: OYD10
+  OYD10-2F.JPG                             ✓ EXISTS     4.6 MB     Plots: OYD10
+  OYD2-1B.JPG                              ✓ EXISTS     3.0 MB     Plots: OYD2
+  OYD2-1F.JPG                              ✓ EXISTS     2.4 MB     Plots: OYD2
+  OYD2-2B.JPG                              ✓ EXISTS     2.9 MB     Plots: OYD2
+  OYD2-2F.JPG                              ✓ EXISTS     2.4 MB     Plots: OYD2
+  OYD3.JPG                                 ✓ EXISTS     3.9 MB     Plots: OYD3
+  OYD4-1.JPG                               ✓ EXISTS     3.9 MB     Plots: OYD4
+  OYD4-2.JPG                               ✓ EXISTS     4.4 MB     Plots: OYD4
+  OYD4-3.jpg                               ✓ EXISTS     3.2 MB     Plots: OYD4
+  OYD4-4.JPG                               ✓ EXISTS     2.7 MB     Plots: OYD4
+  OYD4-5.JPG                               ✓ EXISTS     2.4 MB     Plots: OYD4
+  OYD6-F.JPG                               ✓ EXISTS     4.7 MB     Plots: OYD6
+  OYD7-1.JPG                               ✓ EXISTS     2.6 MB     Plots: OYD7
+  OYD7-3.JPG                               ✓ EXISTS     2.5 MB     Plots: OYD7
+  OYD8-3.JPG                               ✓ EXISTS     2.2 MB     Plots: OYD8
+  OYD9-1V.jpg                              ✓ EXISTS     4.4 MB     Plots: OYD9
+  OYE10-1.JPG                              ✓ EXISTS     4.1 MB     Plots: OYE10
+  OYE10-2.JPG                              ✓ EXISTS     4.3 MB     Plots: OYE10
+  OYE10-3.JPG                              ✓ EXISTS     4.5 MB     Plots: OYE10
+  OYE10-4.JPG                              ✓ EXISTS     5.0 MB     Plots: OYE10
+  OYE11-1.JPG                              ✓ EXISTS     4.3 MB     Plots: OYE11
+  OYE11-2.JPG                              ✓ EXISTS     3.1 MB     Plots: OYE11
+  OYE11-2B.JPG                             ✓ EXISTS     4.3 MB     Plots: OYE11
+  OYE11-5.JPG                              ✓ EXISTS     5.1 MB     Plots: OYE11
+  OYE12-1V2V.jpg                           ✓ EXISTS     5.5 MB     Plots: OYE12
+  OYE12-4VP.jpg                            ✓ EXISTS     1.9 MB     Plots: OYE12
+  OYE2-2F.JPG                              ✓ EXISTS     3.1 MB     Plots: OYE2
+  OYE3-2B.JPG                              ✓ EXISTS     2.8 MB     Plots: OYE3
+  OYE3-2F.JPG                              ✓ EXISTS     3.0 MB     Plots: OYE3
+  OYE4-1.JPG                               ✓ EXISTS     3.2 MB     Plots: OYE4
+  OYE4-2V.JPG                              ✓ EXISTS     3.1 MB     Plots: OYE4
+  OYE4-3.JPG                               ✓ EXISTS     3.1 MB     Plots: OYE4
+  OYE5-1.JPG                               ✓ EXISTS     2.8 MB     Plots: OYE5
+  OYE5-3.JPG                               ✓ EXISTS     2.9 MB     Plots: OYE5
+  OYE5-4P.JPG                              ✓ EXISTS     4.9 MB     Plots: OYE5
+  OYE6-1B.JPG                              ✓ EXISTS     4.3 MB     Plots: OYE6
+  OYE6-1F.JPG                              ✓ EXISTS     4.2 MB     Plots: OYE6
+  OYE7-1.JPG                               ✓ EXISTS     2.9 MB     Plots: OYE7
+  OYE7-3V.JPG                              ✓ EXISTS     3.0 MB     Plots: OYE7
+  OYE7-4.JPG                               ✓ EXISTS     2.9 MB     Plots: OYE7
+  OYE7-5VP.jpg                             ✓ EXISTS     5.6 MB     Plots: OYE7
+  OYE8-1.JPG                               ✓ EXISTS     3.4 MB     Plots: OYE8
+  OYE8-3.JPG                               ✓ EXISTS     3.9 MB     Plots: OYE8
+  OYE9-1.JPG                               ✓ EXISTS     2.5 MB     Plots: OYE9
+  OYE9-2.JPG                               ✓ EXISTS     2.9 MB     Plots: OYE9
+  OYE9-34.JPG                              ✓ EXISTS     2.8 MB     Plots: OYE9
+  OYF1-1.JPG                               ✓ EXISTS     3.4 MB     Plots: OYF1
+  OYF1-4V.JPG                              ✓ EXISTS     5.1 MB     Plots: OYF1
+  OYF1-5.JPG                               ✓ EXISTS     2.9 MB     Plots: OYF1
+  OYF1-6.JPG                               ✓ EXISTS     3.6 MB     Plots: OYF1
+  OYF10-1.JPG                              ✓ EXISTS     3.1 MB     Plots: OYF10
+  OYF10-2.JPG                              ✓ EXISTS     3.3 MB     Plots: OYF10
+  OYF10-3.JPG                              ✓ EXISTS     2.7 MB     Plots: OYF10
+  OYF11-1.JPG                              ✓ EXISTS     2.9 MB     Plots: OYF11
+  OYF11-2.JPG                              ✓ EXISTS     4.0 MB     Plots: OYF11
+  OYF11-3.JPG                              ✓ EXISTS     3.3 MB     Plots: OYF11
+  OYF11-5.JPG                              ✓ EXISTS     3.6 MB     Plots: OYF11
+  OYF11-6.JPG                              ✓ EXISTS     3.0 MB     Plots: OYF11
+  OYF11-7.JPG                              ✓ EXISTS     3.0 MB     Plots: OYF11
+  OYF12.JPG                                ✓ EXISTS     3.2 MB     Plots: OYF12
+  OYF2-1V.JPG                              ✓ EXISTS     2.9 MB     Plots: OYF2
+  OYF2-2.JPG                               ✓ EXISTS     2.9 MB     Plots: OYF2
+  OYF2-3.JPG                               ✓ EXISTS     3.1 MB     Plots: OYF2
+  OYF2-4.JPG                               ✓ EXISTS     3.0 MB     Plots: OYF2
+  OYF2-5.JPG                               ✓ EXISTS     3.9 MB     Plots: OYF2
+  OYF3-1.JPG                               ✓ EXISTS     3.2 MB     Plots: OYF3
+  OYF3-2.JPG                               ✓ EXISTS     3.1 MB     Plots: OYF3
+  OYF3-3V.JPG                              ✓ EXISTS     3.1 MB     Plots: OYF3
+  OYF3-4.JPG                               ✓ EXISTS     3.2 MB     Plots: OYF3
+  OYF4-1.JPG                               ✓ EXISTS     3.7 MB     Plots: OYF4
+  OYF4-2.JPG                               ✓ EXISTS     3.4 MB     Plots: OYF4
+  OYF4-3.JPG                               ✓ EXISTS     3.1 MB     Plots: OYF4
+  OYF4-4.JPG                               ✓ EXISTS     2.9 MB     Plots: OYF4
+  OYF5-1B.JPG                              ✓ EXISTS     2.7 MB     Plots: OYF5
+  OYF5-1F.JPG                              ✓ EXISTS     2.9 MB     Plots: OYF5
+  OYF5-2.JPG                               ✓ EXISTS     3.0 MB     Plots: OYF5
+  OYF6-1.JPG                               ✓ EXISTS     3.5 MB     Plots: OYF6
+  OYF6-3.JPG                               ✓ EXISTS     2.9 MB     Plots: OYF6
+  OYF6-4.JPG                               ✓ EXISTS     3.1 MB     Plots: OYF6
+  OYF7-1B.JPG                              ✓ EXISTS     2.9 MB     Plots: OYF7
+  OYF7-1F.JPG                              ✓ EXISTS     3.0 MB     Plots: OYF7
+  OYF7-2B.JPG                              ✓ EXISTS     3.0 MB     Plots: OYF7
+  OYF7-2F.JPG                              ✓ EXISTS     3.1 MB     Plots: OYF7
+  OYF7-3.JPG                               ✓ EXISTS     3.0 MB     Plots: OYF7
+  OYF7-4.JPG                               ✓ EXISTS     3.3 MB     Plots: OYF7
+  OYF8-1.JPG                               ✓ EXISTS     3.1 MB     Plots: OYF8
+  OYF8-2.JPG                               ✓ EXISTS     2.9 MB     Plots: OYF8
+  OYF8-3.JPG                               ✓ EXISTS     2.8 MB     Plots: OYF8
+  OYF8-4.JPG                               ✓ EXISTS     3.0 MB     Plots: OYF8
+  OYF9-1.JPG                               ✓ EXISTS     3.8 MB     Plots: OYF9
+  OYF9-3.JPG                               ✓ EXISTS     3.0 MB     Plots: OYF9
+  OYF9-4.JPG                               ✓ EXISTS     3.2 MB     Plots: OYF9
+  OYG1-1B.JPG                              ✓ EXISTS     4.4 MB     Plots: OYG1
+  OYG1-1F.JPG                              ✓ EXISTS     4.1 MB     Plots: OYG1
+  OYG10-1.JPG                              ✓ EXISTS     3.1 MB     Plots: OYG10
+  OYG10-2.JPG                              ✓ EXISTS     3.5 MB     Plots: OYG10
+  OYG10-3V.JPG                             ✓ EXISTS     3.5 MB     Plots: OYG10
+  OYG10-4.JPG                              ✓ EXISTS     3.4 MB     Plots: OYG10
+  OYG11.JPG                                ✓ EXISTS     3.0 MB     Plots: OYG11
+  OYG12-1.JPG                              ✓ EXISTS     3.3 MB     Plots: OYG12
+  OYG12-2.JPG                              ✓ EXISTS     2.8 MB     Plots: OYG12
+  OYG12-3.JPG                              ✓ EXISTS     3.7 MB     Plots: OYG12
+  OYG12-4.JPG                              ✓ EXISTS     4.0 MB     Plots: OYG12
+  OYG3-1P.JPG                              ✓ EXISTS     5.8 MB     Plots: OYG3
+  OYG3-3.JPG                               ✓ EXISTS     2.9 MB     Plots: OYG3
+  OYG3-4.JPG                               ✓ EXISTS     3.3 MB     Plots: OYG3
+  OYG4-1P.JPG                              ✓ EXISTS     6.0 MB     Plots: OYG4
+  OYG5-1P.JPG                              ✓ EXISTS     4.3 MB     Plots: OYG5
+  OYG5-2.JPG                               ✓ EXISTS     2.7 MB     Plots: OYG5
+  OYG5-3.JPG                               ✓ EXISTS     3.3 MB     Plots: OYG5
+  OYG5-4P.jpg                              ✓ EXISTS     5.3 MB     Plots: OYG5
+  OYG6.JPG                                 ✓ EXISTS     4.4 MB     Plots: OYG6
+  OYG7-3.JPG                               ✓ EXISTS     3.2 MB     Plots: OYG7
+  OYG7-4.JPG                               ✓ EXISTS     3.1 MB     Plots: OYG7
+  OYG8-1.JPG                               ✓ EXISTS     2.8 MB     Plots: OYG8
+  OYG8-2.JPG                               ✓ EXISTS     2.9 MB     Plots: OYG8
+  OYG8-4.JPG                               ✓ EXISTS     2.8 MB     Plots: OYG8
+  OYG9-1.JPG                               ✓ EXISTS     2.7 MB     Plots: OYG9
+  OYG9-2.JPG                               ✓ EXISTS     2.5 MB     Plots: OYG9
+  OYG9-3.JPG                               ✓ EXISTS     2.7 MB     Plots: OYG9
+  OYG9-4.JPG                               ✓ EXISTS     2.8 MB     Plots: OYG9
+  OYH10-1.JPG                              ✓ EXISTS     3.8 MB     Plots: OYH10
+  OYH10-3.JPG                              ✓ EXISTS     3.7 MB     Plots: OYH10
+  OYH10-5.JPG                              ✓ EXISTS     3.5 MB     Plots: OYH10
+  OYH11-1V.JPG                             ✓ EXISTS     3.8 MB     Plots: OYH11
+  OYH11-3.JPG                              ✓ EXISTS     4.7 MB     Plots: OYH11
+  OYH12-1.JPG                              ✓ EXISTS     4.8 MB     Plots: OYH12
+  OYH12-4.jpg                              ✓ EXISTS     3.7 MB     Plots: OYH12
+  OYH2-1.JPG                               ✓ EXISTS     3.5 MB     Plots: OYH2
+  OYH2-2.JPG                               ✓ EXISTS     3.0 MB     Plots: OYH2
+  OYH2-3.JPG                               ✓ EXISTS     3.5 MB     Plots: OYH2
+  OYH3-1.JPG                               ✓ EXISTS     3.3 MB     Plots: OYH3
+  OYH3-2.JPG                               ✓ EXISTS     2.7 MB     Plots: OYH3
+  OYH3-3.JPG                               ✓ EXISTS     3.3 MB     Plots: OYH3
+  OYH4-3.JPG                               ✓ EXISTS     5.1 MB     Plots: OYH4
+  OYH4-4.JPG                               ✓ EXISTS     5.5 MB     Plots: OYH4
+  OYH5-3.JPG                               ✓ EXISTS     3.4 MB     Plots: OYH5
+  OYH6-1P.jpg                              ✓ EXISTS     6.0 MB     Plots: OYH6
+  OYH6-2P.jpg                              ✓ EXISTS     6.0 MB     Plots: OYH6
+  OYH6-3V.JPG                              ✓ EXISTS     3.3 MB     Plots: OYH6
+  OYH7-3.JPG                               ✓ EXISTS     3.7 MB     Plots: OYH7
+  OYH7-4.JPG                               ✓ EXISTS     3.4 MB     Plots: OYH7
+  OYH8-1.JPG                               ✓ EXISTS     3.5 MB     Plots: OYH8
+  OYH8-3.JPG                               ✓ EXISTS     4.0 MB     Plots: OYH8
+  OYH9-5.JPG                               ✓ EXISTS     3.9 MB     Plots: OYH9
+  OYI1-1.JPG                               ✓ EXISTS     3.0 MB     Plots: OYI1
+  OYI1-2.JPG                               ✓ EXISTS     3.1 MB     Plots: OYI1
+  OYI1-3.JPG                               ✓ EXISTS     3.2 MB     Plots: OYI1
+  OYI10-2.JPG                              ✓ EXISTS     4.6 MB     Plots: OYI10
+  OYI10-3.JPG                              ✓ EXISTS     4.1 MB     Plots: OYI10
+  OYI10-4.JPG                              ✓ EXISTS     4.8 MB     Plots: OYI10
+  OYI10-5.JPG                              ✓ EXISTS     4.3 MB     Plots: OYI10
+  OYI11-4.jpg                              ✓ EXISTS     2.7 MB     Plots: OYI11
+  OYI12-3.JPG                              ✓ EXISTS     4.6 MB     Plots: OYI12
+  OYI2-1.JPG                               ✓ EXISTS     2.5 MB     Plots: OYI2
+  OYI2-3.JPG                               ✓ EXISTS     3.3 MB     Plots: OYI2
+  OYI2-4.JPG                               ✓ EXISTS     4.4 MB     Plots: OYI2
+  OYI3-3VP.jpg                             ✓ EXISTS     5.9 MB     Plots: OYI3
+  OYI3-4.JPG                               ✓ EXISTS     3.2 MB     Plots: OYI3
+  OYI3-5.JPG                               ✓ EXISTS     3.4 MB     Plots: OYI3
+  OYI4.JPG                                 ✓ EXISTS     3.2 MB     Plots: OYI4
+  OYI5-1.JPG                               ✓ EXISTS     3.0 MB     Plots: OYI5
+  OYI5-2.JPG                               ✓ EXISTS     4.0 MB     Plots: OYI5
+  OYI5-5.JPG                               ✓ EXISTS     3.3 MB     Plots: OYI5
+  OYI6-1.JPG                               ✓ EXISTS     3.1 MB     Plots: OYI6
+  OYI8-2.JPG                               ✓ EXISTS     3.3 MB     Plots: OYI8
+  OYI8-3.JPG                               ✓ EXISTS     3.6 MB     Plots: OYI8
+  OYI9-3B.JPG                              ✓ EXISTS     7.4 MB     Plots: OYI9
+  OYI9-3F.JPG                              ✓ EXISTS     3.4 MB     Plots: OYI9
+  OYI9-4.JPG                               ✓ EXISTS     3.3 MB     Plots: OYI9
+  OYI9-5.JPG                               ✓ EXISTS     3.4 MB     Plots: OYI9
+  OYJ1-1B.jpg                              ✓ EXISTS     212.2 KB   Plots: OYJ1
+  OYJ1-1F.jpg                              ✓ EXISTS     209.5 KB   Plots: OYJ1
+  OYJ10-1.jpg                              ✓ EXISTS     2.0 MB     Plots: OYJ10
+  OYJ10-2.jpg                              ✓ EXISTS     1.4 MB     Plots: OYJ10
+  OYJ10-3.jpg                              ✓ EXISTS     1.6 MB     Plots: OYJ10
+  OYJ10-4.jpg                              ✓ EXISTS     1.7 MB     Plots: OYJ10
+  OYJ11-1.jpg                              ✓ EXISTS     1.6 MB     Plots: OYJ11
+  OYJ11-3.jpg                              ✓ EXISTS     1.6 MB     Plots: OYJ11
+  OYJ11-4.jpg                              ✓ EXISTS     1.6 MB     Plots: OYJ11
+  OYJ11-5.jpg                              ✓ EXISTS     2.1 MB     Plots: OYJ11
+  OYJ6-1.jpg                               ✓ EXISTS     1.9 MB     Plots: OYJ6
+  OYJ6-2.jpg                               ✓ EXISTS     2.0 MB     Plots: OYJ6
+  OYJ7-1.jpg                               ✓ EXISTS     1.5 MB     Plots: OYJ7
+  OYJ7-2.jpg                               ✓ EXISTS     1.5 MB     Plots: OYJ7
+  OYJ7-3.jpg                               ✓ EXISTS     1.7 MB     Plots: OYJ7
+  OYJ8-1.JPG                               ✓ EXISTS     9.1 MB     Plots: OYJ8
+  OYJ8-2.jpg                               ✓ EXISTS     7.6 MB     Plots: OYJ8
+  OYJ8-3.jpg                               ✓ EXISTS     2.3 MB     Plots: OYJ8
+  OYJ9-1.jpg                               ✓ EXISTS     2.4 MB     Plots: OYJ9
+  OYJ9-2.jpg                               ✓ EXISTS     1.7 MB     Plots: OYJ9
+  OYJ9-3.jpg                               ✓ EXISTS     1.5 MB     Plots: OYJ9
+  OYK10-1.JPG                              ✓ EXISTS     3.2 MB     Plots: OYK10
+  OYK10-2.JPG                              ✓ EXISTS     2.8 MB     Plots: OYK10
+  OYK10-3.JPG                              ✓ EXISTS     3.5 MB     Plots: OYK10
+  OYK10-4.JPG                              ✓ EXISTS     3.3 MB     Plots: OYK10
+  OYK11-1.JPG                              ✓ EXISTS     3.4 MB     Plots: OYK11
+  OYK11-5.JPG                              ✓ EXISTS     3.4 MB     Plots: OYK11
+  OYK12-1P.jpg                             ✓ EXISTS     6.5 MB     Plots: OYK12
+  OYK12-5.JPG                              ✓ EXISTS     3.1 MB     Plots: OYK12
+  OYK2-4.jpg                               ✓ EXISTS     3.9 MB     Plots: OYK2
+  OYK2-4V.JPG                              ✓ EXISTS     3.7 MB     Plots: OYK2
+  OYK3-3F.jpg                              ✓ EXISTS     4.0 MB     Plots: OYK3
+  OYK4-1.jpg                               ✓ EXISTS     3.2 MB     Plots: OYK4
+  OYK5-1V.JPG                              ✓ EXISTS     5.3 MB     Plots: OYK5
+  OYK5-B.JPG                               ✓ EXISTS     4.4 MB     Plots: OYK5
+  OYK5-F.JPG                               ✓ EXISTS     4.4 MB     Plots: OYK5
+  OYK6-1V.JPG                              ✓ EXISTS     6.2 MB     Plots: OYK6
+  OYK6-3.JPG                               ✓ EXISTS     4.8 MB     Plots: OYK6
+  OYK7-2.JPG                               ✓ EXISTS     3.4 MB     Plots: OYK7
+  OYK8.JPG                                 ✓ EXISTS     4.8 MB     Plots: OYK8
+  OYK9.JPG                                 ✓ EXISTS     4.3 MB     Plots: OYK9
+  OYL10-1.JPG                              ✓ EXISTS     3.0 MB     Plots: OYL10
+  OYL10-3.JPG                              ✓ EXISTS     3.1 MB     Plots: OYL10
+  OYL10-4.JPG                              ✓ EXISTS     3.2 MB     Plots: OYL10
+  OYL10-5.JPG                              ✓ EXISTS     3.3 MB     Plots: OYL10
+  OYL11-4.JPG                              ✓ EXISTS     4.1 MB     Plots: OYL11
+  OYL12-1.JPG                              ✓ EXISTS     2.7 MB     Plots: OYL12
+  OYL12-2.JPG                              ✓ EXISTS     2.8 MB     Plots: OYL12
+  OYL12-3.JPG                              ✓ EXISTS     3.4 MB     Plots: OYL12
+  OYL12-4.JPG                              ✓ EXISTS     2.1 MB     Plots: OYL12
+  OYL2-5.JPG                               ✓ EXISTS     3.2 MB     Plots: OYL2
+  OYL3-3.JPG                               ✓ EXISTS     2.8 MB     Plots: OYL3
+  OYL3-4B.JPG                              ✓ EXISTS     4.4 MB     Plots: OYL3
+  OYL3-4F.JPG                              ✓ EXISTS     4.3 MB     Plots: OYL3
+  OYL3-4VP.JPG                             ✓ EXISTS     4.7 MB     Plots: OYL3
+  OYL4-1VP.JPG                             ✓ EXISTS     5.2 MB     Plots: OYL4
+  OYL4-5V.JPG                              ✓ EXISTS     2.6 MB     Plots: OYL4
+  OYL5-1.JPG                               ✓ EXISTS     2.6 MB     Plots: OYL5
+  OYL5-2.JPG                               ✓ EXISTS     2.7 MB     Plots: OYL5
+  OYL5-3.JPG                               ✓ EXISTS     2.4 MB     Plots: OYL5
+  OYL5-4.JPG                               ✓ EXISTS     2.8 MB     Plots: OYL5
+  OYL5-5.JPG                               ✓ EXISTS     3.1 MB     Plots: OYL5
+  OYL6-1.JPG                               ✓ EXISTS     2.6 MB     Plots: OYL6
+  OYL6-2.JPG                               ✓ EXISTS     2.8 MB     Plots: OYL6
+  OYL7-B.JPG                               ✓ EXISTS     4.1 MB     Plots: OYL7
+  OYM1-1B.JPG                              ✓ EXISTS     4.7 MB     Plots: OYM1
+  OYM1-1VF.JPG                             ✓ EXISTS     4.7 MB     Plots: OYM1
+  OYM12.JPG                                ✓ EXISTS     4.4 MB     Plots: OYM12
+  OYM2-2B.jpg                              ✓ EXISTS     220.0 KB   Plots: OYM2
+  OYM2-2F.jpg                              ✓ EXISTS     228.8 KB   Plots: OYM2
+  OYM2-4.JPG                               ✓ EXISTS     2.5 MB     Plots: OYM2
+  OYM2-5.JPG                               ✓ EXISTS     3.7 MB     Plots: OYM2
+  OYM3-4.JPG                               ✓ EXISTS     4.5 MB     Plots: OYM3
+  OYM4-5V.JPG                              ✓ EXISTS     3.0 MB     Plots: OYM4
+  OYM6-1VP.JPG                             ✓ EXISTS     5.6 MB     Plots: OYM6
+  OYM6-2B.JPG                              ✓ EXISTS     4.9 MB     Plots: OYM6
+  OYM6-2F.JPG                              ✓ EXISTS     4.6 MB     Plots: OYM6
+  OYM7-4V.JPG                              ✓ EXISTS     3.5 MB     Plots: OYM7
+  OYM8-1.JPG                               ✓ EXISTS     4.8 MB     Plots: OYM8
+  OYM8-3.JPG                               ✓ EXISTS     2.2 MB     Plots: OYM8
+  OYM8-4.JPG                               ✓ EXISTS     4.6 MB     Plots: OYM8
+  OYM8-5VP.JPG                             ✓ EXISTS     5.0 MB     Plots: OYM8
+
+ORPHANED IMAGES (not referenced in plots.csv)
+----------------------------------------------------------------------------------------------------
+Total: 14 files
+
+  OYD6-VB.jpg                              196.9 KB   Modified: 2024-09-24
+  OYE11-2A.JPG                             2.7 MB     Modified: 2024-09-24
+  OYE11-2C.jpg                             4.3 MB     Modified: 2024-09-24
+  OYE2-2S.JPG                              1.1 MB     Modified: 2024-09-24
+  OYG2-2 .JPG                              4.4 MB     Modified: 2024-09-24
+  OYG8-3 .JPG                              2.9 MB     Modified: 2024-09-24
+  OYI10-3A.JPG                             3.5 MB     Modified: 2024-09-24
+  OYI11-F1.jpg                             3.9 MB     Modified: 2024-09-24
+  OYI11-F2.jpg                             3.9 MB     Modified: 2024-09-24
+  OYJ11-3A.jpg                             1.7 MB     Modified: 2024-09-24
+  OYK2-4A.jpg                              4.8 MB     Modified: 2024-09-24
+  OYK3-3S.jpg                              3.2 MB     Modified: 2024-09-24
+  OYL4.3VJPG.JPG                           4.5 MB     Modified: 2024-09-24
+  OYL7-F1V.JPG                             4.4 MB     Modified: 2024-09-24
+
+====================================================================================================
+SECTION: UT (OICA Upper Terrace)
+====================================================================================================
+
+Physical Files: 135
+Referenced Files: 134
+
+REFERENCED IMAGES (in plots.csv)
+----------------------------------------------------------------------------------------------------
+  UTA1-3.JPG                               ✓ EXISTS     3.9 MB     Plots: UTA1
+  UTA10-3P.JPG                             ✓ EXISTS     5.1 MB     Plots: UTA10
+  UTA10-3V.JPG                             ✓ EXISTS     4.6 MB     Plots: UTA10
+  UTA11-1.JPG                              ✓ EXISTS     4.7 MB     Plots: UTA11
+  UTA11-1VP.JPG                            ✓ EXISTS     4.5 MB     Plots: UTA11
+  UTA12-1.JPG                              ✓ EXISTS     4.9 MB     Plots: UTA12
+  UTA12-3.JPG                              ✓ EXISTS     4.4 MB     Plots: UTA12
+  UTA13-1.JPG                              ✓ EXISTS     4.6 MB     Plots: UTA13
+  UTA13-1P.JPG                             ✓ EXISTS     5.3 MB     Plots: UTA13
+  UTA13-2P.JPG                             ✓ EXISTS     5.0 MB     Plots: UTA13
+  UTA13-3V.JPG                             ✓ EXISTS     3.7 MB     Plots: UTA13
+  UTA13-4.JPG                              ✓ EXISTS     4.3 MB     Plots: UTA13
+  UTA14-1.JPG                              ✓ EXISTS     2.2 MB     Plots: UTA14
+  UTA14-3VP.JPG                            ✓ EXISTS     4.6 MB     Plots: UTA14
+  UTA15-1.JPG                              ✓ EXISTS     3.7 MB     Plots: UTA15
+  UTA15-3.JPG                              ✓ EXISTS     4.5 MB     Plots: UTA15
+  UTA16-1.JPG                              ✓ EXISTS     4.3 MB     Plots: UTA16
+  UTA16-2VP.JPG                            ✓ EXISTS     5.0 MB     Plots: UTA16
+  UTA17.JPG                                ✓ EXISTS     4.5 MB     Plots: UTA17
+  UTA18-1V.JPG                             ✓ EXISTS     4.2 MB     Plots: UTA18
+  UTA19-1.JPG                              ✓ EXISTS     4.3 MB     Plots: UTA19
+  UTA19-1VP.JPG                            ✓ EXISTS     5.2 MB     Plots: UTA19
+  UTA19-4.JPG                              ✓ EXISTS     4.3 MB     Plots: UTA19
+  UTA2-1.JPG                               ✓ EXISTS     3.9 MB     Plots: UTA2
+  UTA2-3.JPG                               ✓ EXISTS     3.8 MB     Plots: UTA2
+  UTA20-1.JPG                              ✓ EXISTS     4.3 MB     Plots: UTA20
+  UTA20-1VP.JPG                            ✓ EXISTS     5.2 MB     Plots: UTA20
+  UTA20-3.JPG                              ✓ EXISTS     4.1 MB     Plots: UTA20
+  UTA20-3P.JPG                             ✓ EXISTS     5.0 MB     Plots: UTA20
+  UTA20-4P.JPG                             ✓ EXISTS     4.9 MB     Plots: UTA20
+  UTA21-1P.JPG                             ✓ EXISTS     5.1 MB     Plots: UTA21
+  UTA21-2P.JPG                             ✓ EXISTS     4.7 MB     Plots: UTA21
+  UTA21-3P.JPG                             ✓ EXISTS     5.1 MB     Plots: UTA21
+  UTA21-4P.JPG                             ✓ EXISTS     4.9 MB     Plots: UTA21
+  UTA21.JPG                                ✓ EXISTS     4.3 MB     Plots: UTA21
+  UTA22-1.JPG                              ✓ EXISTS     4.6 MB     Plots: UTA22
+  UTA22-3.JPG                              ✓ EXISTS     4.2 MB     Plots: UTA22
+  UTA23-1P.JPG                             ✓ EXISTS     4.5 MB     Plots: UTA23
+  UTA23-4P.JPG                             ✓ EXISTS     4.7 MB     Plots: UTA23
+  UTA24-1B.JPG                             ✓ EXISTS     3.3 MB     Plots: UTA24
+  UTA24-1F.JPG                             ✓ EXISTS     4.3 MB     Plots: UTA24
+  UTA24-3.JPG                              ✓ EXISTS     4.0 MB     Plots: UTA24
+  UTA24-5.JPG                              ✓ EXISTS     4.0 MB     Plots: UTA24
+  UTA25-1.JPG                              ✓ EXISTS     4.1 MB     Plots: UTA25
+  UTA25-3.JPG                              ✓ EXISTS     3.9 MB     Plots: UTA25
+  UTA25-4.jpg                              ✓ EXISTS     256.7 KB   Plots: UTA25
+  UTA26-1VP.JPG                            ✓ EXISTS     5.3 MB     Plots: UTA26
+  UTA26-2P.JPG                             ✓ EXISTS     5.5 MB     Plots: UTA26
+  UTA26-3P.JPG                             ✓ EXISTS     4.4 MB     Plots: UTA26
+  UTA26-4P.JPG                             ✓ EXISTS     4.2 MB     Plots: UTA26
+  UTA26.JPG                                ✓ EXISTS     4.4 MB     Plots: UTA26
+  UTA3-1P.JPG                              ✓ EXISTS     4.6 MB     Plots: UTA3
+  UTA3-2VP.JPG                             ✓ EXISTS     4.3 MB     Plots: UTA3
+  UTA3.JPG                                 ✓ EXISTS     4.2 MB     Plots: UTA3
+  UTA4-1.JPG                               ✓ EXISTS     4.0 MB     Plots: UTA4
+  UTA4-4.JPG                               ✓ EXISTS     3.7 MB     Plots: UTA4
+  UTA5-1P.JPG                              ✓ EXISTS     3.2 MB     Plots: UTA5
+  UTA5-2P.JPG                              ✓ EXISTS     3.5 MB     Plots: UTA5
+  UTA5-3.JPG                               ✓ EXISTS     4.9 MB     Plots: UTA5
+  UTA5-4.JPG                               ✓ EXISTS     4.6 MB     Plots: UTA5
+  UTA6-1P.JPG                              ✓ EXISTS     5.1 MB     Plots: UTA6
+  UTA6-2.JPG                               ✓ EXISTS     5.1 MB     Plots: UTA6
+  UTA7-1P.JPG                              ✓ EXISTS     5.1 MB     Plots: UTA7
+  UTA8-1VP.JPG                             ✓ EXISTS     5.5 MB     Plots: UTA8
+  UTA8-2.JPG                               ✓ EXISTS     4.5 MB     Plots: UTA8
+  UTA9-1P.JPG                              ✓ EXISTS     5.4 MB     Plots: UTA9
+  UTA9-2P.JPG                              ✓ EXISTS     5.0 MB     Plots: UTA9
+  UTA9-3VP.JPG                             ✓ EXISTS     5.1 MB     Plots: UTA9
+  UTB1-1.JPG                               ✓ EXISTS     4.8 MB     Plots: UTB1
+  UTB1-4.JPG                               ✓ EXISTS     4.5 MB     Plots: UTB1
+  UTB1-4VP.JPG                             ✓ EXISTS     9.8 MB     Plots: UTB1
+  UTB10-4.jpg                              ✓ EXISTS     173.1 KB   Plots: UTB10
+  UTB11-1.JPG                              ✓ EXISTS     4.6 MB     Plots: UTB11
+  UTB11-2.jpg                              ✓ EXISTS     245.1 KB   Plots: UTB11
+  UTB12-3.JPG                              ✓ EXISTS     9.5 MB     Plots: UTB12
+  UTB13-2VP.JPG                            ✓ EXISTS     4.7 MB     Plots: UTB13
+  UTB13-4.JPG                              ✓ EXISTS     4.7 MB     Plots: UTB13
+  UTB15-3.JPG                              ✓ EXISTS     4.4 MB     Plots: UTB15
+  UTB15-4P.JPG                             ✓ EXISTS     5.3 MB     Plots: UTB15
+  UTB17-2P.jpg                             ✓ EXISTS     224.1 KB   Plots: UTB17
+  UTB17-3P.jpg                             ✓ EXISTS     310.5 KB   Plots: UTB17
+  UTB17-4P.jpg                             ✓ EXISTS     349.2 KB   Plots: UTB17
+  UTB17.jpg                                ✓ EXISTS     199.8 KB   Plots: UTB17
+  UTB18-1P.JPG                             ✓ EXISTS     4.8 MB     Plots: UTB18
+  UTB18-1VP.JPG                            ✓ EXISTS     4.9 MB     Plots: UTB18
+  UTB18-2P.JPG                             ✓ EXISTS     4.4 MB     Plots: UTB18
+  UTB18-3P.JPG                             ✓ EXISTS     4.4 MB     Plots: UTB18
+  UTB18-4.JPG                              ✓ EXISTS     2.4 MB     Plots: UTB18
+  UTB18.JPG                                ✓ EXISTS     4.1 MB     Plots: UTB18
+  UTB19-1P.JPG                             ✓ EXISTS     4.7 MB     Plots: UTB19
+  UTB19-1P2.JPG                            ✓ EXISTS     3.3 MB     Plots: UTB19
+  UTB20-1.JPG                              ✓ EXISTS     4.4 MB     Plots: UTB20
+  UTB20-2.JPG                              ✓ EXISTS     4.3 MB     Plots: UTB20
+  UTB21-1VP.JPG                            ✓ EXISTS     4.9 MB     Plots: UTB21
+  UTB21-3V.JPG                             ✓ EXISTS     4.3 MB     Plots: UTB21
+  UTB22-1P.JPG                             ✓ EXISTS     5.2 MB     Plots: UTB22
+  UTB22-3.JPG                              ✓ EXISTS     4.5 MB     Plots: UTB22
+  UTB23-1.JPG                              ✓ EXISTS     4.7 MB     Plots: UTB23
+  UTB23-2.JPG                              ✓ EXISTS     4.5 MB     Plots: UTB23
+  UTB23-3P.JPG                             ✓ EXISTS     8.2 MB     Plots: UTB23
+  UTB23-4P.JPG                             ✓ EXISTS     5.2 MB     Plots: UTB23
+  UTB24-3P.JPG                             ✓ EXISTS     3.7 MB     Plots: UTB24
+  UTB24-5.JPG                              ✓ EXISTS     4.6 MB     Plots: UTB24
+  UTB26-1P.JPG                             ✓ EXISTS     5.4 MB     Plots: UTB26
+  UTB26-3.JPG                              ✓ EXISTS     4.5 MB     Plots: UTB26
+  UTB26-3VP.JPG                            ✓ EXISTS     3.3 MB     Plots: UTB26
+  UTB3-1.JPG                               ✓ EXISTS     4.4 MB     Plots: UTB3
+  UTB3-1P.JPG                              ✓ EXISTS     4.9 MB     Plots: UTB3
+  UTB3-2VP.JPG                             ✓ EXISTS     4.4 MB     Plots: UTB3
+  UTB3-3.JPG                               ✓ EXISTS     9.4 MB     Plots: UTB3
+  UTB4-5V.JPG                              ✓ EXISTS     8.7 MB     Plots: UTB4
+  UTB6-1.JPG                               ✓ EXISTS     4.1 MB     Plots: UTB6
+  UTB6-3VP.JPG                             ✓ EXISTS     4.7 MB     Plots: UTB6
+  UTB6-4VP.JPG                             ✓ EXISTS     5.1 MB     Plots: UTB6
+  UTB7-1VP.JPG                             ✓ EXISTS     5.2 MB     Plots: UTB7
+  UTB7-2P.JPG                              ✓ EXISTS     5.1 MB     Plots: UTB7
+  UTB7.JPG                                 ✓ EXISTS     4.5 MB     Plots: UTB7
+  UTB8-3P.JPG                              ✓ EXISTS     5.1 MB     Plots: UTB8
+  UTB8-4VP.JPG                             ✓ EXISTS     3.5 MB     Plots: UTB8
+  UTB9-5.jpg                               ✓ EXISTS     221.7 KB   Plots: UTB9
+  UTC1-1.JPG                               ✓ EXISTS     4.5 MB     Plots: UTC1
+  UTC2-1VP.JPG                             ✓ EXISTS     6.8 MB     Plots: UTC2
+  UTC2-3VP.JPG                             ✓ EXISTS     4.4 MB     Plots: UTC2
+  UTC3-1B.JPG                              ✓ EXISTS     4.6 MB     Plots: UTC3
+  UTC3-1F.JPG                              ✓ EXISTS     4.6 MB     Plots: UTC3
+  UTC3-1P.JPG                              ✓ EXISTS     10.5 MB    Plots: UTC3
+  UTC3-2P.JPG                              ✓ EXISTS     10.6 MB    Plots: UTC3
+  UTC4-3V.JPG                              ✓ EXISTS     8.1 MB     Plots: UTC4
+  UTC5-2P.JPG                              ✓ EXISTS     9.1 MB     Plots: UTC5
+  UTC7-5P.jpg                              ✓ EXISTS     4.1 MB     Plots: UTC7
+  UTC8-1VP.JPG                             ✓ EXISTS     5.3 MB     Plots: UTC8
+  UTC8-2VP.JPG                             ✓ EXISTS     5.2 MB     Plots: UTC8
+  UTC8-3.JPG                               ✓ EXISTS     3.5 MB     Plots: UTC8
+  UTC8-5P.JPG                              ✓ EXISTS     5.0 MB     Plots: UTC8
+
+ORPHANED IMAGES (not referenced in plots.csv)
+----------------------------------------------------------------------------------------------------
+Total: 1 files
+
+  UTC4.-1.JPG                              4.6 MB     Modified: 2024-09-24
+
+====================================================================================================
+INVENTORY SUMMARY
+====================================================================================================
+Total Physical Image Files: 765
+Total Referenced Images: 744
+Total Orphaned Images (not referenced): 21
+
+NOTE: Orphaned images may be:
+  - Old versions that should be deleted
+  - Images for plots not yet entered in database
+  - Images with naming errors
+  - Backup copies

@@ -12,7 +12,7 @@ document.addEventListener('csvLoaderReady', function() {
         renderRow: function(friend) {
             if (friend['plot_id'] && friend['name']) {
                 const plotId = friend['plot_id'].toUpperCase();
-                return '<a href="cemetery-viewer-v9.html?plot=' + plotId + '">' +
+                return '<a href="cemetery-viewer.html?plot=' + plotId + '">' +
                        friend['name'] + '</a></br>\n';
             }
             return '';
