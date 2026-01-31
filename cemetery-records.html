@@ -36,13 +36,6 @@
 			}
 
 			/* Page-specific dropdown color overrides */
-			.dropdown-content {
-				background-color: rgba(0,240,240,0.9);
-			}
-
-			.dropdown-content a:hover {
-				background-color: #f1f190;
-			}
 
 			.loading {
 				text-align: center;
@@ -71,20 +64,22 @@
 			<h1 class="page-title"><a href="#" id="logo">Names List</a></h1>
 			<!-- Navigation placeholder - loaded by load-navigation.js -->
 			<div id="nav-placeholder"></div>
-			<div class="content-wrapper spacing-top">
-				<!--Text Div-->
-				<p class="section-heading">Using the Names List</p> <!--Section Heading-->
-					<p>What follows is a list of all persons buried, memorialized or with lots reserved at the Orr's Island Cemetery.  Each name is linked to the applicable plot record page where plot owner, individual grave or memorial location, date of birth, date of death and monument images are displayed. At the top of the record page is a link to a schematic map that shows by section, row and number where each plot is located.</p>
+			<!-- Instructions Card -->
+			<div class="content-card">
+				<p class="section-heading">Using the Names List</p>
+				<p>What follows is a list of all persons buried, memorialized or with lots reserved at the Orr's Island Cemetery. Each name is linked to the applicable plot record page where plot owner, individual grave or memorial location, date of birth, date of death and monument images are displayed. At the top of the record page is a link to a schematic map that shows by section, row and number where each plot is located.</p>
 
-<p>The superscript character after the name provides additional information about the burial where known: Cremation <sup>c</sup>, Memorial Only <sup>m</sup>, Space Reserved <sup>r</sup>, Casket Vault <sup>v</sup>.  The absence of the superscript means the additional information is not known.
+				<p>The superscript character after the name provides additional information about the burial where known: Cremation <sup>c</sup>, Memorial Only <sup>m</sup>, Space Reserved <sup>r</sup>, Casket Vault <sup>v</sup>. The absence of the superscript means the additional information is not known.</p>
 
-<p>You may use your browser search feature, normally "Ctrl F" to enter a name and find all instances of it in the list below.  Or you may simply scan the list in three columns below that is alphabetized by last name then first name.</p>
+				<p>You may use your browser search feature, normally "Ctrl F" to enter a name and find all instances of it in the list below. Or you may simply scan the list in three columns below that is alphabetized by last name then first name.</p>
+			</div>
 
-<div id="namesList">
-<!-- Names list will be loaded here from CSV -->
-</div>
-
-		</div><!--Close text div-->
+			<!-- Names List Card -->
+			<div class="content-card">
+				<div id="namesList">
+					<!-- Names list will be loaded here from CSV -->
+				</div>
+			</div><!-- Close names list card -->
 		</div><!--Close the background container div-->
 		<div class="spacing-bottom"></div>
 		<!-- Footer -->

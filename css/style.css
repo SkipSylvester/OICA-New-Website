@@ -2,9 +2,59 @@
 	Horizons by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+
+	MODERNIZED VERSION - Orr's Island Cemetery
 */
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap");
+
+/* Modern Color Scheme & Variables */
+:root {
+	/* Primary Colors - Forest & Earth Tones */
+	--color-primary: #2d5016;        /* Deep forest green */
+	--color-primary-light: #4a7c2c;  /* Lighter forest */
+	--color-primary-dark: #1a3009;   /* Darker forest */
+
+	/* Accent Colors - Warm Bronze & Copper */
+	--color-accent: #b87333;         /* Warm copper */
+	--color-accent-light: #d4935f;   /* Light copper */
+	--color-accent-dark: #8b5a2b;    /* Dark bronze */
+
+	/* Neutral Colors */
+	--color-bg-light: #ffffff;
+	--color-bg-gray: #f8f9fa;
+	--color-text-dark: #1e293b;
+	--color-text-medium: #475569;
+	--color-text-light: #64748b;
+
+	/* Overlay Colors */
+	--overlay-light: rgba(255, 255, 255, 0.95);
+	--overlay-dark: rgba(30, 41, 59, 0.85);
+	--overlay-subtle: rgba(248, 249, 250, 0.92);
+
+	/* Typography */
+	--font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--font-serif: 'Lora', Georgia, serif;
+	--font-size-base: 17px;
+	--line-height-base: 1.7;
+
+	/* Spacing */
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 1.5rem;
+	--spacing-lg: 2.5rem;
+	--spacing-xl: 4rem;
+
+	/* Border Radius */
+	--radius-sm: 6px;
+	--radius-md: 10px;
+	--radius-lg: 16px;
+
+	/* Shadows */
+	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+	--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+	--shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
 /* Basic */
 
@@ -13,19 +63,21 @@
 	}
 
 	body, input, select, textarea {
-		color: #555555;
-		font-family: 'Raleway', sans-serif;
-		font-size: 13pt;
-		font-weight: 300;
-		line-height: 1.75em;
+		color: var(--color-text-dark);
+		font-family: var(--font-primary);
+		font-size: var(--font-size-base);
+		font-weight: 400;
+		line-height: var(--line-height-base);
 	}
 
 	a {
-		color: #3ac984;
+		color: var(--color-accent);
 		text-decoration: underline;
+		transition: color 0.2s ease;
 	}
 
 		a:hover {
+			color: var(--color-accent-dark);
 			text-decoration: none;
 		}
 
@@ -53,12 +105,16 @@
 			text-decoration: none;
 		}
 
+	h1, h2, h3 {
+		font-family: var(--font-serif);
+	}
+
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.75em;
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.35em;
 	}
 
 	sub {
@@ -397,35 +453,37 @@
 	input[type="reset"],
 	input[type="button"],
 	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-o-appearance: none;
-		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-o-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
-		background: #3ac984;
-		border-radius: 40px;
+		transition: all 0.3s ease;
+		background: var(--color-primary);
+		border-radius: var(--radius-md);
 		border: 0;
 		color: white;
 		cursor: pointer;
 		display: inline-block;
-		padding: 0.80em 2em;
+		padding: 0.85em 2.5em;
 		text-align: center;
 		text-decoration: none;
-		font-size: 1.4em;
+		font-size: 1.1em;
 		font-weight: 600;
 		min-width: 10em;
+		box-shadow: var(--shadow-sm);
 	}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #32b777;
+			background-color: var(--color-primary-light);
+			box-shadow: var(--shadow-md);
+			transform: translateY(-2px);
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		.button:active {
+			transform: translateY(0);
 		}
 
 		input[type="submit"].fit,
@@ -511,20 +569,26 @@
 	}
 
 		#nav > ul > li {
-			border-radius: 10px 10px 0 0;
+			border-radius: var(--radius-md) var(--radius-md) 0 0;
 			display: inline-block;
 			margin-left: 0.5em;
-			padding: 0.5em 1.5em;
+			padding: 0.6em 1.5em;
+			transition: all 0.3s ease;
 		}
 
 			#nav > ul > li a {
 				color: #FFF;
 				text-decoration: none;
-				font-size: 1.2em;
+				font-size: 1.1em;
+				font-weight: 500;
 			}
 
 			#nav > ul > li:first-child {
 				margin-left: 0;
+			}
+
+			#nav > ul > li:hover {
+				background: var(--overlay-dark);
 			}
 
 			#nav > ul > li:hover a {
@@ -532,7 +596,7 @@
 			}
 
 			#nav > ul > li.active {
-				background: #3ac984;
+				background: var(--color-primary);
 			}
 
 				#nav > ul > li.active a {
@@ -547,30 +611,40 @@
 
 	.dropotron {
 		margin-top: -2px;
-		background: #3ac984;
-		border-radius: 10px;
-		color: white;
-		min-width: 12em;
-		padding: 1em 0;
+		background: rgba(248, 249, 244, 0.98);
+		border-radius: var(--radius-md);
+		box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+		color: var(--color-text-dark);
+		min-width: 14em;
+		padding: 0.5em 0;
+		border: 1px solid rgba(45, 80, 22, 0.2);
+		backdrop-filter: blur(10px);
+		z-index: 2200;
 	}
 
 		.dropotron > li {
-			line-height: 2em;
-			padding: 0 1em;
+			line-height: 1.5em;
+			padding: 0.6em 1.5em;
+			transition: all 0.2s ease;
 		}
 
 			.dropotron > li > a {
-				color: #FFF;
+				color: var(--color-text-dark);
 				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.dropotron > li:hover {
+				background-color: rgba(74, 124, 44, 0.15);
 			}
 
 			.dropotron > li.active > a, .dropotron > li:hover > a {
-				color: #FFF;
+				color: var(--color-primary);
 			}
 
 		.dropotron.level-0 {
-			border-radius: 0 10px 10px 10px;
-			font-size: 1em;
+			border-radius: 0 var(--radius-md) var(--radius-md) var(--radius-md);
+			font-size: 0.95em;
 		}
 
 /* Banner */

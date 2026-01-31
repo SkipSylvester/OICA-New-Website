@@ -33,47 +33,51 @@
 			background-size: cover;
 		}
 
-		.dropdown-content {
-			background-color: rgba(0,240,240,0.9);
-		}
-
-		.dropdown-content a:hover {
-			background-color: #f1f190;
+		/* Keep map container simple - no padding that would offset coordinates */
+		.map-section {
+			text-align: center;
+			margin: 2em 0;
 		}
 	</style>
 
 	</head>
 	<body class="spacing-top">
-		<div class="page-container container"> <!--Background-->
+		<div class="page-container container">
 
-			<h1 class="page-title"><a href="#" id="logo">Interactive Map</a></h1><!-- Page Title -->
+			<h1 class="page-title"><a href="#" id="logo">Interactive Map</a></h1>
 
 			<!-- Navigation placeholder - loaded by load-navigation.js -->
 			<div id="nav-placeholder"></div>
-			<div class="content-wrapper spacing-top"> <!--Text Div-->
-				<p class="section-heading">Using the Interactive Map</p> <!--Section Heading-->
 
-				<p>The interactive map displayed below provides access to graphical representations of each plot in the cemetery, including links to images of the stones on that plot.  Each plot is located at an address comprised of section name, row letter and column number. Row letters increase from west to east, column numbers increase from north to south. Within each plot the lot numbers increase from north to south.  Clicking a plot address on the map opens a window with information about that plot and the lots in that plot, including plot owner, occupants of the lots and links to images any stones on the plot.  For technical reasons the interactive map size remains fixed as the size of the containing window decreases so on small screen devices you will need to drag the map image to expose the plot in which you are interested. Click the <a href="available-lots.html">Available Lots</a> link for the list of unsold lots.
-				</p>
-			</div><!--Close Text Div-->			
-			<div class="container" id="Map">
-				<section id="map"><!-- Section 3 -->
-					<img width="1200" alt="Interactive image map" src="images/OICA imap 2021.jpg" usemap="#OICA imap 2018" style="border-style:none" />
-				</section>
-			</div><!--  map container-->
-		</div><!--Close Background Div-->
+			<!-- Instructions Card -->
+			<div class="content-card">
+				<p class="section-heading">Using the Interactive Map</p>
+				<p>The interactive map displayed below provides access to graphical representations of each plot in the cemetery, including links to images of the stones on that plot. Each plot is located at an address comprised of section name, row letter and column number. Row letters increase from west to east, column numbers increase from north to south. Within each plot the lot numbers increase from north to south.</p>
+
+				<p>Clicking a plot address on the map opens a window with information about that plot and the lots in that plot, including plot owner, occupants of the lots and links to images of any stones on the plot.</p>
+
+				<p style="text-align: center; font-weight: 600;">Click the <a href="available-lots.html">Available Lots</a> link for the list of unsold lots.</p>
+			</div>
+
+			<!-- Map - kept simple to preserve coordinate accuracy -->
+			<div class="map-section">
+				<img width="1200" alt="Interactive cemetery map" src="images/OICA imap 2021.jpg" usemap="#OICA imap 2018" />
+			</div>
+
+		</div>
 		<div class="spacing-bottom"></div>
-		<div id="footer"><!-- Footer -->
-			<div class="container"><!-- Copyright etc. container-->
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
 				<div class="copyright">
 					<p>Copyright &copy 2015-2023, Orrs Island Cemetery Association</p>
-					<p>Template Design by: <a href="http://templated.co">TEMPLATED</a> </p> 
-				</div><!--Close copyright class-->
-			</div><!--Close copyright container-->
-		</div><!-- CloseFooter -->
-	
-<!--Image map coordinate data-->			
-			
+					<p>Template Design by: <a href="http://templated.co">TEMPLATED</a></p>
+				</div>
+			</div>
+		</div>
+
+<!--Image map coordinate data-->
+
 		<map id="OICA imap 2018" name="OICA imap 2018">
 <area shape="rect" alt="Old Yard Plot A1 Records" coords="919,236,951,254" href="cemetery-viewer.html?plot=OYA1" title="Old Yard Plot A1 Records" />
 <area shape="rect" alt="Old Yard Plot A2 Records" coords="880,237,911,253" href="cemetery-viewer.html?plot=OYA2" title="Old Yard Plot A2 Records" />
@@ -427,5 +431,5 @@
 <area shape="rect" alt="Intervale Terrace Plot D10 Records" coords="723,734,755,749" href="cemetery-viewer.html?plot=ITD10" title="Intervale Terrace Plot D10 Records" /> -->
 <area shape="default" nohref="nohref" alt="" />
 </map>
-</body>
+	</body>
 </html>

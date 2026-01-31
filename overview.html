@@ -33,14 +33,6 @@
 				background-size: cover;
 			}
 
-			/* Page-specific dropdown color overrides */
-			.dropdown-content {
-				background-color: rgba(0,240,240,0.9);
-			}
-
-			.dropdown-content a:hover {
-				background-color: #f1f190;
-			}
 		</style>
 
 	</head>
@@ -113,9 +105,8 @@
 							padding: 8px 16px;
 							border-radius: 6px;
 							display: inline-block;
-
 							font-size: 1.1em;
-							font-weight: 500;
+							font-weight: 600;
 						}
 
 						/* Arrow navigation on images */
@@ -256,9 +247,8 @@
 						const totalImages = 13;
 						const galleryWrapper = document.getElementById('galleryWrapper');
 						const dotsContainer = document.getElementById('galleryDots');
-						const leftArrow = document.getElementById('leftArrow');
-						const rightArrow = document.getElementById('rightArrow');
-
+					const leftArrow = document.getElementById('leftArrow');
+					const rightArrow = document.getElementById('rightArrow');
 
 						// Create dots
 						for (let i = 0; i < totalImages; i++) {
@@ -269,7 +259,6 @@
 							dotsContainer.appendChild(dot);
 						}
 
-
 						// Update arrow visibility based on current position
 						function updateArrows(currentIndex) {
 							leftArrow.style.display = (currentIndex === 0) ? 'none' : 'flex';
@@ -278,6 +267,7 @@
 
 						// Initialize arrows (hide left on first image)
 						updateArrows(0);
+
 
 						// Scroll to specific image
 						function scrollToImage(target) {
@@ -308,8 +298,9 @@
 
 							document.querySelectorAll('.dot').forEach((dot, index) => {
 								dot.classList.toggle('active', index === currentIndex);
+
 							});
-							updateArrows(currentIndex);
+						updateArrows(currentIndex);
 
 						});
 					</script>
