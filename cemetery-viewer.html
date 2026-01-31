@@ -788,18 +788,18 @@
                     html += `<div class="occupant ${statusClass}">`;
                     html += `<div class="occupant-name">`;
 
+                    // Add veteran flag if applicable (always first)
+                    if (isVeteran) {
+                        html += `🇺🇸 `;
+                    }
+
                     // Add status prefix based on occupant status
                     if (isReserved) {
                         html += `🔒 Reserved: ${occupant.name}`;
                     } else if (isMemorial) {
                         html += `🕊️ Memorial: ${occupant.name}`;
                     } else {
-                        // Add veteran flag before name if applicable
-                        if (isVeteran) {
-                            html += `🇺🇸 ${occupant.name}`;
-                        } else {
-                            html += occupant.name;
-                        }
+                        html += occupant.name;
                     }
 
                     html += `</div>`;

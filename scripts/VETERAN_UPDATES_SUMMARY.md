@@ -37,7 +37,7 @@ Successfully implemented veteran identification system for the OICA Cemetery dat
 #### cemetery-viewer.html
 - Added veteran flag (🇺🇸) display before veteran names
 - Format: `🇺🇸 Veteran Name` (similar to 🔒 Reserved and 🕊️ Memorial)
-- Flag only displays for regular Occupants (not Reserved or Memorial)
+- Flag displays for ALL veterans regardless of status (Occupant, Memorial, Reserved, etc.)
 - Automatically reads veteran status from occupants.csv
 
 ## Results
