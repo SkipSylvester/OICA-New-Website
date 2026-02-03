@@ -33,124 +33,184 @@
 			background-size: cover;
 		}
 
+		.donation-entry {
+			margin: 1.5em 0;
+			padding: 1.5em;
+			background: rgba(255, 255, 255, 0.15);
+			border-radius: 8px;
+			border-left: 4px solid rgba(255, 255, 255, 0.3);
+		}
 
+		.donation-entry h3 {
+			margin: 0 0 0.8em 0;
+			color: #333;
+			font-size: 1.2em;
+			font-weight: 600;
+		}
+
+		.donation-entry p {
+			margin: 0.4em 0;
+			line-height: 1.6;
+		}
+
+		.donation-entry strong {
+			color: #333;
+			min-width: 140px;
+			display: inline-block;
+		}
+
+		.total-section {
+			margin: 2em 0 1em 0;
+			padding: 1.5em;
+			background: rgba(255, 255, 255, 0.25);
+			border-radius: 8px;
+			text-align: center;
+			font-size: 1.1em;
+			font-weight: 600;
+			border: 2px solid rgba(255, 255, 255, 0.4);
+		}
+
+		.note-section {
+			margin: 1em 0;
+			padding: 1.2em;
+			background: rgba(255, 255, 255, 0.2);
+			border-radius: 8px;
+			font-style: italic;
+			border-left: 4px solid rgba(255, 255, 255, 0.4);
+		}
 	</style>
 
 	</head>
 	<body class="spacing-top">
-		<div class="page-container container" style="min-width: 900px;"> <!--Background-->
-			<h1 class="page-title"><a href="#" id="logo">Land Donations</a></h1><!-- Page Title -->
+		<div class="page-container container">
+			<h1 class="page-title"><a href="#" id="logo">Land Donations</a></h1>
 
 			<!-- Navigation placeholder - loaded by load-navigation.js -->
 			<div id="nav-placeholder"></div>
-			<div class="content-wrapper spacing-top" style="font-size: 1.25em;"> <!--Text Div-->
-				<div style="text-align: center;">
-					<div id="1838" style="background-color: rgba(0,90,90,0.5);">
-					</br>
-					Year - 1838</br>
-					From - William and Frances Orr</br>
-					To - The Inhabitants of Orrs Island</br>
-					Parcel Size in Acres - 0.89</br>
-					Location - "Old Yard"</br>
-					Date of Deed - Aug. 8, 1865 (Recorded)
-					</div>
-					<div id="1870" style="background-color: rgba(0,190,190,0.5);">
-					</br>
-					Year - 1870</br>
-					From - William and Frances Orr</br>
-					To - Proprietors of Graveyard</br>
-					Parcel Size in Acres - 0.08</br>
-					Location - Addition to "Old Yard"</br>
-					Date of Deed - Nov. 18, 1970 (Recorded)
-					</div>
-					<div id="1890" style="background-color: rgba(0,90,90,0.5);">
-					<br>
-					Year - 1890</br>
-					From - Charles Orr Family (assumed)</br>
-					To- No deed found</br>
-					Parcel Size in Acres - 0.29</br>
-					Location - "New Yard"</br>
-					Date of Deed - No mention in registry
-					</div>
-					<div id="1875" style="background-color: rgba(0,190,190,0.5);">
-					<br>
-					Year - 1875</br>
-					From - Ephraim Johnson</br>
-					To - Lewis Hansen, et al</br>
-					Parcel Size in Acres - 0.07</br>
-					Location - Addition to "New Yard"</br>
-					Date of Deed - Apr. 26, 1904 (Not recorded)
-					</div>
-					<div id="1940" style="background-color: rgba(0,90,90,0.5);">
-					<br>
-					Year - 1940</br>
-					From - William and Ann Moorhead</br>
-					To - Trustees of the Orrs Island Cemetery</br>
-					Parcel Size in Acres - 0.11</br>
-					Location - "Church Yard"</br>
-					Date of Deed - Oct. 4, 1940 (Recorded)
-					</div>
-					<div id="1956" style="background-color: rgba(0,190,190,0.5);">
-					<br>
-					Year - 1956</br>
-					From - William and Ann Moorhead</br>
-					To - Orrs Island Cemetery Association</br>
-					Parcel Size in Acres - 0.48</br>
-					Location - "Upper Terrace"</br>
-					Date of Deed - Mar. 21, 1956 (Recorded)
-					</div>
-					<div id="1966" style="background-color: rgba(0,90,90,0.5);">
-					<br>
-					Year - 1966</br>
-					From - Arthur and Isabel Marsh</br>
-					To - Orrs Island Cemetery Association</br>
-					Parcel Size in Acres - 1.98</br>
-					Location - "Intervale Terrace" and proposed Valley Section</br>
-					Date of Deed - Apr. 19, 1966 (Recorded)
-					</div>
-					<div id="2013" style="background-color: rgba(0,190,190,0.5);">
-					<br>
-					Year - 2013</br>
-					From - Susan Whiteside</br>
-					To - Orrs Island Cemetery Association</br>
-					Parcel Size in Acres - 1.08</br>
-					Location - Open Space North of Cemetery</br>
-					Date of Deed - Jun.7, 2013 (Recorded)
-					</div>
-					<div id="1966" style="background-color: rgba(0,90,90,0.5);">
-					<br>
-					Year - 2017</br>
-					From - Lee and Sally Theberge</br>
-					To - Orrs Island Cemetery Association</br>
-					Parcel Size in Acres - </br>
-					Location - "Open Space East of Whiteside Parcel</br>
-					Date of Deed - 
-					</div>
-					<div id="1966" style="background-color: rgba(0,190,190,0.5);">
+
+			<!-- Main Content Card -->
+			<div class="content-card">
+				<p class="section-heading">Historic Land Gifts to the Cemetery</p>
+
+				<!-- 1838 Donation -->
+				<div class="donation-entry">
+					<h3>1838 - Original Gift</h3>
+					<p><strong>From:</strong> William and Frances Orr</p>
+					<p><strong>To:</strong> The Inhabitants of Orrs Island</p>
+					<p><strong>Parcel Size:</strong> 0.89 acres</p>
+					<p><strong>Location:</strong> "Old Yard"</p>
+					<p><strong>Date of Deed:</strong> Aug. 8, 1865 (Recorded)</p>
+				</div>
+
+				<!-- 1870 Donation -->
+				<div class="donation-entry">
+					<h3>1870 - Old Yard Addition</h3>
+					<p><strong>From:</strong> William and Frances Orr</p>
+					<p><strong>To:</strong> Proprietors of Graveyard</p>
+					<p><strong>Parcel Size:</strong> 0.08 acres</p>
+					<p><strong>Location:</strong> Addition to "Old Yard"</p>
+					<p><strong>Date of Deed:</strong> Nov. 18, 1970 (Recorded)</p>
+				</div>
+
+				<!-- 1890 Donation -->
+				<div class="donation-entry">
+					<h3>1890 - New Yard</h3>
+					<p><strong>From:</strong> Charles Orr Family (assumed)</p>
+					<p><strong>To:</strong> No deed found</p>
+					<p><strong>Parcel Size:</strong> 0.29 acres</p>
+					<p><strong>Location:</strong> "New Yard"</p>
+					<p><strong>Date of Deed:</strong> No mention in registry</p>
+				</div>
+
+				<!-- 1875 Donation -->
+				<div class="donation-entry">
+					<h3>1875 - New Yard Addition</h3>
+					<p><strong>From:</strong> Ephraim Johnson</p>
+					<p><strong>To:</strong> Lewis Hansen, et al</p>
+					<p><strong>Parcel Size:</strong> 0.07 acres</p>
+					<p><strong>Location:</strong> Addition to "New Yard"</p>
+					<p><strong>Date of Deed:</strong> Apr. 26, 1904 (Not recorded)</p>
+				</div>
+
+				<!-- 1940 Donation -->
+				<div class="donation-entry">
+					<h3>1940 - Church Yard</h3>
+					<p><strong>From:</strong> William and Ann Moorhead</p>
+					<p><strong>To:</strong> Trustees of the Orrs Island Cemetery</p>
+					<p><strong>Parcel Size:</strong> 0.11 acres</p>
+					<p><strong>Location:</strong> "Church Yard"</p>
+					<p><strong>Date of Deed:</strong> Oct. 4, 1940 (Recorded)</p>
+				</div>
+
+				<!-- 1956 Donation -->
+				<div class="donation-entry">
+					<h3>1956 - Upper Terrace</h3>
+					<p><strong>From:</strong> William and Ann Moorhead</p>
+					<p><strong>To:</strong> Orrs Island Cemetery Association</p>
+					<p><strong>Parcel Size:</strong> 0.48 acres</p>
+					<p><strong>Location:</strong> "Upper Terrace"</p>
+					<p><strong>Date of Deed:</strong> Mar. 21, 1956 (Recorded)</p>
+				</div>
+
+				<!-- 1966 Donation -->
+				<div class="donation-entry">
+					<h3>1966 - Intervale Terrace</h3>
+					<p><strong>From:</strong> Arthur and Isabel Marsh</p>
+					<p><strong>To:</strong> Orrs Island Cemetery Association</p>
+					<p><strong>Parcel Size:</strong> 1.98 acres</p>
+					<p><strong>Location:</strong> "Intervale Terrace" and proposed Valley Section</p>
+					<p><strong>Date of Deed:</strong> Apr. 19, 1966 (Recorded)</p>
+				</div>
+
+				<!-- 2013 Donation -->
+				<div class="donation-entry">
+					<h3>2013 - North Open Space</h3>
+					<p><strong>From:</strong> Susan Whiteside</p>
+					<p><strong>To:</strong> Orrs Island Cemetery Association</p>
+					<p><strong>Parcel Size:</strong> 1.08 acres</p>
+					<p><strong>Location:</strong> Open Space North of Cemetery</p>
+					<p><strong>Date of Deed:</strong> Jun. 7, 2013 (Recorded)</p>
+				</div>
+
+				<!-- 2017 Donation -->
+				<div class="donation-entry">
+					<h3>2017 - East Open Space</h3>
+					<p><strong>From:</strong> Lee and Sally Theberge</p>
+					<p><strong>To:</strong> Orrs Island Cemetery Association</p>
+					<p><strong>Location:</strong> Open Space East of Whiteside Parcel</p>
+				</div>
+
+				<!-- Total -->
+				<div class="total-section">
 					The total land area is 4.43 acres
-					</div>
-					<div id="2013" style="background-color: rgba(0,90,90,0.5);">
-					<br>
-					From - Arthur and Isabel Marsh (An Easement)</br>
-					To - Orrs Island Cemetery Association</br>
-					Parcel Size in Acres - 0.33</br>
-					Location - Vehicle and Pedestrian Access South of Cemetery</br>
-					Date of Deed - Apr. 19, 1966 (Recorded)
-					</div>
-					<div id="1966" style="background-color: rgba(0,190,190,0.5);">
-					Note:  Deeds in several instances were replacement deeds or recorded long after the gift of land was made.
-					</div>
-				</div><!--Close text align center-->
-			</div><!--Close text division-->
-		</div><!--Close the background container div-->
+				</div>
+
+				<!-- Easement -->
+				<div class="donation-entry">
+					<h3>1966 - Access Easement</h3>
+					<p><strong>From:</strong> Arthur and Isabel Marsh</p>
+					<p><strong>To:</strong> Orrs Island Cemetery Association</p>
+					<p><strong>Parcel Size:</strong> 0.33 acres</p>
+					<p><strong>Location:</strong> Vehicle and Pedestrian Access South of Cemetery</p>
+					<p><strong>Date of Deed:</strong> Apr. 19, 1966 (Recorded)</p>
+					<p><strong>Type:</strong> Easement</p>
+				</div>
+
+				<!-- Note -->
+				<div class="note-section">
+					Note: Deeds in several instances were replacement deeds or recorded long after the gift of land was made.
+				</div>
+			</div>
+
+		</div>
 		<div class="spacing-bottom"></div>
-		<div id="footer"><!-- Footer -->
-			<div class="container"><!-- Copyright etc. container-->
+		<div id="footer">
+			<div class="container">
 				<div class="copyright">
-					<p>Copyright &copy 2015-2023, Orrs Island Cemetery Association</p>
-					<p>Template Design by: <a href="http://templated.co">TEMPLATED</a> </p> 
-				</div><!--Close copyright class-->
-			</div><!--Close copyright container-->
-		</div><!-- CloseFooter -->	
+					<p>Copyright &copy; 2015-2026, Orrs Island Cemetery Association</p>
+					<p>Template Design by: <a href="http://templated.co">TEMPLATED</a></p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

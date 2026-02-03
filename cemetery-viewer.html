@@ -796,7 +796,16 @@
             html += `</div>`;
 
             if (hasOccupants) {
-                lotOccupants.forEach(occupant => {
+                // Sort occupants: Reserved status goes to bottom if multiple occupants
+                const sortedOccupants = lotOccupants.length > 1
+                    ? [...lotOccupants].sort((a, b) => {
+                        const aIsReserved = a.status === 'Reserved' ? 1 : 0;
+                        const bIsReserved = b.status === 'Reserved' ? 1 : 0;
+                        return aIsReserved - bIsReserved;
+                    })
+                    : lotOccupants;
+
+                sortedOccupants.forEach(occupant => {
                     const isReserved = occupant.status === 'Reserved';
                     const isMemorial = occupant.status === 'Memorial';
                     const isVeteran = occupant.veteran === 'Yes';
@@ -806,9 +815,13 @@
 
                     // Add status prefix based on occupant status
                     if (isReserved) {
-                        html += `🔒 Reserved: ${occupant.name}`;
+                        html += `🔒`;
+                        if (isVeteran) html += `🇺🇸`;
+                        html += ` Reserved: ${occupant.name}`;
                     } else if (isMemorial) {
-                        html += `🕊️ Memorial: ${occupant.name}`;
+                        html += `🕊️`;
+                        if (isVeteran) html += `🇺🇸`;
+                        html += ` Memorial: ${occupant.name}`;
                     } else {
                         // Add veteran flag before name if applicable
                         if (isVeteran) {

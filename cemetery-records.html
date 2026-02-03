@@ -47,15 +47,26 @@
 				min-height: 100px;
 			}
 
+			/* Increase width for names list card */
+			.content-card:has(#namesList) {
+				max-width: 1100px;
+			}
+
 			.names-columns {
 				display: flex;
 				justify-content: space-between;
-				gap: 20px;
+				gap: 35px;
 			}
 
 			.names-column {
 				flex: 1;
 				font-weight: 500;
+				font-size: 1.1em;
+				line-height: 1.6;
+			}
+
+			.names-column a {
+				font-size: 1.05em;
 			}
 		</style>
 	</head>
