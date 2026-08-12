@@ -223,8 +223,7 @@
         .image-item img {
             display: block;
             width: 150px;
-            height: 100px;
-            object-fit: cover;
+            height: auto;
         }
 
         .image-caption {
@@ -314,7 +313,6 @@
             background: white;
             border-radius: 4px;
             border-left: 3px solid #2196F3;
-            position: relative;
         }
 
         .occupant.reserved {
@@ -344,62 +342,6 @@
             color: #999;
             font-style: italic;
             font-size: 17px;
-        }
-
-        /* Empty placeholder for an assumed/open position between a recorded burial and the monument */
-        .occupant.placeholder {
-            border-left-style: dashed;
-            border-left-color: #bbb;
-            background: #f5f5f5;
-        }
-
-        .placeholder-label {
-            font-style: italic;
-            color: #999;
-            font-size: 15px;
-        }
-
-        /* Subtle staff-only burial-type cue: small blue dot(s) centered on the card's right edge.
-           One dot = Vault, two closely-spaced dots = Cremation. Mirrors the left-border color code. */
-        .occupant.has-marker {
-            padding-right: 18px;
-        }
-
-        .burial-marker {
-            position: absolute;
-            right: 6px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2px;
-            pointer-events: none;
-        }
-
-        .burial-dot {
-            width: 3px;
-            height: 3px;
-            border-radius: 50%;
-            background: #2196F3;
-        }
-
-        /* Small circled position number (1-4), shown only when a lot has recorded positions */
-        .position-badge {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #fff;
-            color: #000;
-            border: 1px solid #000;
-            font-size: 9px;
-            font-weight: bold;
-            margin-right: 6px;
-            flex: 0 0 auto;
-            vertical-align: middle;
         }
 
         .no-results {
@@ -826,124 +768,6 @@
             return html;
         }
 
-        // Render the inner card for a single occupant (name, details, notes).
-        // When position (1-4) is provided, a small circled position number is shown before the name.
-        function renderOccupant(occupant, position) {
-            const isReserved = occupant.status === 'Reserved';
-            const isMemorial = occupant.status === 'Memorial';
-            const isVeteran = occupant.veteran === 'Yes';
-            const statusClass = isReserved ? 'reserved' : (isMemorial ? 'memorial' : '');
-            const isVault = occupant.status === 'Vault';
-            const isCremation = occupant.status === 'Cremation';
-            const markerClass = (isVault || isCremation) ? ' has-marker' : '';
-
-            let html = `<div class="occupant ${statusClass}${markerClass}">`;
-            html += `<div class="occupant-name">`;
-            if (position) {
-                html += `<span class="position-badge">${position}</span>`;
-            }
-
-            // Add status prefix based on occupant status
-            if (isReserved) {
-                html += `🔒`;
-                if (isVeteran) html += `🇺🇸`;
-                html += ` Reserved: ${occupant.name}`;
-            } else if (isMemorial) {
-                html += `🕊️`;
-                if (isVeteran) html += `🇺🇸`;
-                html += ` Memorial: ${occupant.name}`;
-            } else {
-                // Add veteran flag before name if applicable
-                if (isVeteran) {
-                    html += `🇺🇸 ${occupant.name}`;
-                } else {
-                    html += occupant.name;
-                }
-            }
-
-            html += `</div>`;
-            html += `<div class="occupant-details">`;
-            if (occupant.former_name) {
-                html += `Formerly: ${occupant.former_name}<br>`;
-            }
-            if (occupant.birth_date) {
-                html += `Born: ${occupant.birth_date}<br>`;
-            }
-            if (occupant.death_date) {
-                html += `Died: ${occupant.death_date}`;
-            }
-            html += `</div>`;
-
-            // Display notes in separate block
-            if (occupant.notes) {
-                html += `<div class="occupant-notes" style="font-size: 15px; font-style: italic; color: #666; margin: 10px 0 0 0; padding: 8px; background: #f9f9f9; border-left: 3px solid #999;">`;
-                html += `📝 ${occupant.notes}`;
-                html += `</div>`;
-            }
-
-            // Subtle staff-only burial-type cue on the right edge: 1 dot = vault, 2 dots = cremation
-            if (isVault) {
-                html += `<span class="burial-marker"><span class="burial-dot"></span></span>`;
-            } else if (isCremation) {
-                html += `<span class="burial-marker"><span class="burial-dot"></span><span class="burial-dot"></span></span>`;
-            }
-
-            html += `</div>`;
-            return html;
-        }
-
-        // Sort occupants so Reserved entries fall to the bottom (only meaningful with >1 occupant)
-        function sortReservedToBottom(occupants) {
-            if (occupants.length <= 1) return occupants;
-            return [...occupants].sort((a, b) => {
-                const aIsReserved = a.status === 'Reserved' ? 1 : 0;
-                const bIsReserved = b.status === 'Reserved' ? 1 : 0;
-                return aIsReserved - bIsReserved;
-            });
-        }
-
-        // An empty slot standing in for an assumed/open position above a recorded burial
-        function renderPlaceholder(position) {
-            return `<div class="occupant placeholder"><div class="placeholder-label"><span class="position-badge">${position}</span>Open</div></div>`;
-        }
-
-        // Render a lot's occupants. Position 1 is closest to the monument (top), running down to 4.
-        // When positions are recorded, occupants are shown in order and any gap between a burial and
-        // the monument is filled with an "Open" placeholder (e.g. a burial at position 3 shows two
-        // placeholders above it). Occupants with no recorded position are listed normally.
-        function renderLotOccupants(lotOccupants) {
-            const byPosition = {};
-            const unpositioned = [];
-            let maxPosition = 0;
-
-            lotOccupants.forEach(o => {
-                const p = parseInt(o.position, 10);
-                if (p >= 1 && p <= 4) {
-                    (byPosition[p] = byPosition[p] || []).push(o);
-                    if (p > maxPosition) maxPosition = p;
-                } else {
-                    unpositioned.push(o);
-                }
-            });
-
-            let html = '';
-
-            // Positioned burials: walk from the monument (1) down to the deepest recorded burial,
-            // inserting a placeholder for each empty position along the way.
-            for (let p = 1; p <= maxPosition; p++) {
-                if (byPosition[p]) {
-                    byPosition[p].forEach(o => html += renderOccupant(o, p));
-                } else {
-                    html += renderPlaceholder(p);
-                }
-            }
-
-            // Occupants without a recorded position are listed as before (no placeholders).
-            sortReservedToBottom(unpositioned).forEach(o => html += renderOccupant(o));
-
-            return html;
-        }
-
         // Render a single lot
         function renderLot(lot, plotId) {
             // Get occupants for this lot
@@ -971,10 +795,66 @@
             }
             html += `</div>`;
 
-            if (!hasOccupants) {
-                html += `<div class="empty-lot">No occupants</div>`;
+            if (hasOccupants) {
+                // Sort occupants: Reserved status goes to bottom if multiple occupants
+                const sortedOccupants = lotOccupants.length > 1
+                    ? [...lotOccupants].sort((a, b) => {
+                        const aIsReserved = a.status === 'Reserved' ? 1 : 0;
+                        const bIsReserved = b.status === 'Reserved' ? 1 : 0;
+                        return aIsReserved - bIsReserved;
+                    })
+                    : lotOccupants;
+
+                sortedOccupants.forEach(occupant => {
+                    const isReserved = occupant.status === 'Reserved';
+                    const isMemorial = occupant.status === 'Memorial';
+                    const isVeteran = occupant.veteran === 'Yes';
+                    const statusClass = isReserved ? 'reserved' : (isMemorial ? 'memorial' : '');
+                    html += `<div class="occupant ${statusClass}">`;
+                    html += `<div class="occupant-name">`;
+
+                    // Add status prefix based on occupant status
+                    if (isReserved) {
+                        html += `🔒`;
+                        if (isVeteran) html += `🇺🇸`;
+                        html += ` Reserved: ${occupant.name}`;
+                    } else if (isMemorial) {
+                        html += `🕊️`;
+                        if (isVeteran) html += `🇺🇸`;
+                        html += ` Memorial: ${occupant.name}`;
+                    } else {
+                        // Add veteran flag before name if applicable
+                        if (isVeteran) {
+                            html += `🇺🇸 ${occupant.name}`;
+                        } else {
+                            html += occupant.name;
+                        }
+                    }
+
+                    html += `</div>`;
+                    html += `<div class="occupant-details">`;
+                    if (occupant.former_name) {
+                        html += `Formerly: ${occupant.former_name}<br>`;
+                    }
+                    if (occupant.birth_date) {
+                        html += `Born: ${occupant.birth_date}<br>`;
+                    }
+                    if (occupant.death_date) {
+                        html += `Died: ${occupant.death_date}`;
+                    }
+                    html += `</div>`;
+
+                    // Display notes in separate block
+                    if (occupant.notes) {
+                        html += `<div class="occupant-notes" style="font-size: 15px; font-style: italic; color: #666; margin: 10px 0 0 0; padding: 8px; background: #f9f9f9; border-left: 3px solid #999;">`;
+                        html += `📝 ${occupant.notes}`;
+                        html += `</div>`;
+                    }
+
+                    html += `</div>`;
+                });
             } else {
-                html += renderLotOccupants(lotOccupants);
+                html += `<div class="empty-lot">No occupants</div>`;
             }
 
             // Display lot notes at the bottom (excluding standard notes)
